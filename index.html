@@ -1009,7 +1009,7 @@ body.dark-mode .button-10 {
 <script>
 
   
- const names = [ "J. Timber 22/23,21,Ajax", "Danilo 22/23,31,Juventus", "N. Otamendi 22/23,35,Benfica", "J. Egan 22/23,30,Sheffield United", "D. Hancko 22/23,25,Feyenoord", "N. Gudelj 22/23,31,Sevilla", "A. Trusty 22/23,24,Arsenal", "T. Alderweireld 22/23,34,Antwerp", "C. Burgess 22/23,31,Union Saint-Gilloise", "P. Chatzidiakos 22/23,26,AZ", "Éder Militão 22/23,25,Real Madrid", "V. van Dijk 22/23,31,Liverpool", "Z. Debast 22/23,19,Anderlecht", "W. Orban 22/23,30,RB Leipzig", "A. Disasi 22/23,25,Monaco", "Z. Vyner 22/23,26,Bristol City", "Dante 22/23,39,Nice", "Gabriel Magalhaes 22/23,25,Arsenal", "G. Mancini 22/23,27,Roma", "António Silva 22/23,19,Benfica", "M. Akanji 22/23,27,Man City", "A. Rüdiger 22/23,30,Real Madrid", "W. Pacho 22/23,21,Antwerp", "M. Ginter 22/23,29,Freiburg", "E. Tapsoba 22/23,24,Bayer Leverkusen", "Ibañez 22/23,24,Roma", "Min-Jae Kim 22/23,26,Napoli", "R. Knoche 22/23,31,Union Berlin", "D. Upamecano 22/23,24,Bayern München", "Rúben Dias 22/23,26,Man City", "C. Smalling 22/23,33,Roma", "Gonçalo Inácio 22/23,21,Sporting CP", "Andrei Girotto 22/23,31,Nantes", "J. Castelletto 22/23,28,Nantes", "J. Cooper 22/23,28,Millwall", "B. Mechele 22/23,30,Club Brugge", "Marquinhos 22/23,29,PSG", "J. Gvardiol 22/23,21,RB Leipzig", "B. Cabango 22/23,23,Swansea City", "D. O'Shea 22/23,24,WBA", "F. Acerbi 22/23,35,Internazionale", "J. Storey 22/23,25,Preston North End", "I. Hien 22/23,24,Hellas Verona", "S. Coates 22/23,32,Sporting CP", "F. Schär 22/23,31,Newcastle United", "M. Talbi 22/23,25,Lorient", "J. Todibo 22/23,23,Nice", "J. Vertonghen 22/23,36,Anderlecht", "T. Lees 22/23,32,Huddersfield Town", "Bremer 22/23,26,Juventus", "T. Lockyer 22/23,28,Luton Town", "G. Hanley 22/23,31,Norwich City", "D. Lenihan 22/23,29,Middlesbrough", "E. Dier 22/23,29,Tottenham", "E. N'Dicka 22/23,23,Eintracht Frankfurt", "D. Lovren 22/23,33,Olympique Lyonnais", "P. Hincapié 22/23,21,Bayer Leverkusen", "S. Van der Heyden 22/23,25,Union Saint-Gilloise", "L. Dunk 22/23,31,Brighton", "F. Tomori 22/23,25,Milan", "R. Porteous 22/23,24,Watford", "Tuta 22/23,23,Eintracht Frankfurt", "C. Kipré 22/23,26,Cardiff City", "S. Botman 22/23,23,Newcastle United", "A. Theate 22/23,23,Rennes", "D. Hyam 22/23,27,Blackburn Rovers", "P. Ng 22/23,27,Cardiff City", "Matheus Reis 22/23,28,Sporting CP", "S. Beukema 22/23,24,AZ", "K. Danso 22/23,24,Lens", "J. Tarkowski 22/23,30,Everton", "Lisandro Martínez 22/23,25,Man United", "M. Kilman 22/23,26,Wolverhampton", "A. Yiadom 22/23,31,Reading", "J. Tah 22/23,27,Bayer Leverkusen", "I. Kandouss 22/23,25,Union Saint-Gilloise", "C. Mbemba 22/23,28,Olympique Marseille", "N. Milenković 22/23,25,Fiorentina", "D. Batth 22/23,32,Sunderland", "Pau Torres 22/23,26,Villarreal", "Sergio Ramos 22/23,37,PSG", "A. Ahmedhodzic 22/23,24,Sheffield United", "M. Guéhi 22/23,22,Crystal Palace", "L. O'Nien 22/23,28,Sunderland", "J. Dunne 22/23,25,Queens Park Rangers", "Iván Marcano 22/23,35,Porto", "S. Pavlović 22/23,22,Salzburg", "A. Jones 22/23,25,Hull City", "W. Faes 22/23,25,Leicester City", "João Basso 22/23,26,Arouca", "T. Ream 22/23,35,Fulham", "M. Martins 22/23,28,Austria Wien", "A. Romagnoli 22/23,28,Lazio", "T. Holmes 22/23,23,Reading", "C. Romero 22/23,25,Tottenham", "N. Wood 22/23,20,Swansea City", "N. Süle 22/23,27,Borussia Dortmund", "R. Rodríguez 22/23,30,Torino", "R. Le Normand 22/23,26,Real Sociedad", "J. Okumu 22/23,25,Gent", "N. Elvedi 22/23,26,Borussia M'gladbach", "M. McKenzie 22/23,24,Genk", "B. Wilmot 22/23,23,Stoke City", "Y. Ndayishimiye 22/23,24,Nice", "M. McGuinness 22/23,22,Cardiff City", "Y. Abdelhamid 22/23,35,Reims", "M. de Ligt 22/23,23,Bayern München", "Riccieli 22/23,24,Famalicão", "David García 22/23,29,Osasuna", "P. Kalulu 22/23,23,Milan", "M. Fox 22/23,29,Stoke City", "Thiago Silva 22/23,38,Chelsea", "W. Harding 22/23,26,Rotherham United", "Unai Núñez 22/23,26,Celta de Vigo", "F. Baschirotto 22/23,26,Lecce", "Pepe 22/23,40,Porto", "E. Konsa 22/23,25,Aston Villa", "J. Torunarigha 22/23,25,Gent", "A. Frías 22/23,25,León", "J. Aidoo 22/23,27,Celta de Vigo", "A. Bastoni 22/23,24,Internazionale", "R. Koch 22/23,26,Leeds United", "Jubal 22/23,29,Auxerre", "Vitor Tormena 22/23,27,Sporting Braga", "B. Mee 22/23,33,Brentford", "Danilo Pereira 22/23,31,PSG", "A. Rouault 22/23,22,Toulouse", "P. Lienhart 22/23,26,Freiburg", "R. Nicolaisen 22/23,26,Toulouse", "L. Lindsay 22/23,27,Preston North End", "M. Bokadi 22/23,27,Standard Liège", "M. Helik 22/23,27,Huddersfield Town", "T. Mings 22/23,30,Aston Villa", "Alejandro Catena 22/23,28,Rayo Vallecano", "L. Balerdi 22/23,24,Olympique Marseille", "J. Andersen 22/23,27,Crystal Palace", "T. McIntyre 22/23,24,Reading", "W. Hoedt 22/23,29,Watford", "J. Giménez 22/23,28,Atlético Madrid", "K. McFadzean 22/23,36,Coventry City", "Djené 22/23,31,Getafe", "Luis Hernández 22/23,34,Cádiz", "C. Humphreys 22/23,24,Rotherham United", "G. Pezzella 22/23,31,Real Betis", "C. Hountondji 22/23,29,Angers SCO", "G. Wüthrich 22/23,28,Sturm Graz", "J. Stones 22/23,29,Man City", "E. Ampadu 22/23,22,Spezia", "R. Raveloson 22/23,26,Auxerre", "M. Darmian 22/23,33,Internazionale", "A. Rrahmani 22/23,29,Napoli", "C. Lukeba 22/23,20,Olympique Lyonnais", "R. Varane 22/23,30,Man United", "S. Luperto 22/23,26,Empoli", "Diogo Leite 22/23,24,Union Berlin", "R. Dickie 22/23,27,Queens Park Rangers", "E. Mihaj 22/23,25,Famalicão", "L. Brassier 22/23,23,Brest", "M. Wieteska 22/23,26,Clermont", "H. Ito 22/23,24,Stuttgart", "J. Lucumí 22/23,24,Bologna", "T. Hübers 22/23,26,Köln", "M. van de Ven 22/23,22,Wolfsburg", "N. Schlotterbeck 22/23,23,Borussia Dortmund", "B. Popović 22/23,23,Cercle Brugge", "D. Alaba 22/23,30,Real Madrid", "C. Montes 22/23,26,Espanyol", "Rodrigo Ely 22/23,29,Almería", "P. Bochniewicz 22/23,27,Heerenveen", "Igor Zubeldía 22/23,26,Real Sociedad", "Filipe Relvas 22/23,23,Portimonense", "D. Doekhi 22/23,24,Union Berlin", "Rafael Tolói 22/23,32,Atalanta", "André Ramalho 22/23,31,PSV", "J. Whatmough 22/23,26,Wigan Athletic", "S. Bueno 22/23,24,Girona", "T. Watanabe 22/23,26,Kortrijk", "W. Saliba 22/23,22,Arsenal", "K. Koulibaly 22/23,31,Chelsea", "Steven Vitória 22/23,36,Chaves", "B. Davies 22/23,30,Tottenham", "S. Babić 22/23,27,Almería", "M. Wöber 22/23,25,Leeds United", "E. Palmer-Brown 22/23,26,Troyes", "Igor Julio 22/23,25,Fiorentina", "Aderllan Santos 22/23,34,Rio Ave", "J. Gradit 22/23,30,Lens", "J. Idzes 22/23,23,Go Ahead Eagles", "T. Mahrer 22/23,33,Austria Klagenfurt", "M. Yoshida 22/23,34,Schalke 04", "Rodrigo Guth 22/23,22,Fortuna Sittard", "J. Bijol 22/23,24,Udinese", "D. Nikolaou 22/23,24,Spezia", "M. Araujo 22/23,28,Emmen", "J. Daland 22/23,23,Cercle Brugge", "R. Pröpper 22/23,29,Twente", "A. Buongiorno 22/23,23,Torino", "C. Cuesta 22/23,24,Genk", "D. Affengruber 22/23,22,Sturm Graz", "L. Martínez Quarta 22/23,27,Fiorentina", "L. Cabrera 22/23,31,Espanyol", "D. Sanderson 22/23,23,Birmingham City", "Pedro Álvaro 22/23,23,Estoril", "Domingos Duarte 22/23,28,Getafe", "J. Gaari 22/23,29,RKC Waalwijk", "N. Pérez 22/23,22,Udinese", "R. El Yaakoubi 22/23,27,Excelsior", "K. Mavropanos 22/23,25,Stuttgart", "F. Luckeneder 22/23,29,LASK", "S. Adewoye 22/23,22,RKC Waalwijk", "C. Mepham 22/23,25,Bournemouth", "J. Gouweleeuw 22/23,31,Augsburg", "E. Pieters 22/23,34,WBA", "J. Beyer 22/23,22,Burnley", "N. Pallois 22/23,35,Nantes", "Iván Márquez 22/23,28,NEC", "Dani Vivian 22/23,23,Athletic Bilbao", "E. Pinnock 22/23,30,Brentford", "T. Plavotić 22/23,25,Ried", "J. Kiwior 22/23,23,Arsenal", "C. Bassey 22/23,23,Ajax", "P. McNair 22/23,28,Middlesbrough", "Anderson 22/23,28,Vizela", "K. Laifis 22/23,30,Standard Liège", "N. Aguerd 22/23,27,West Ham", "Antonio Raíllo 22/23,31,Mallorca", "Samir 22/23,28,Tigres UANL", "T. Harwood-Bellis 22/23,21,Burnley", "F. Almada 22/23,24,Mazatlán", "J. Park 22/23,28,Portimonense", "Pedrão 22/23,26,Portimonense", "Vasco Fernandes 22/23,36,Casa Pia AC", "N. Dussenne 22/23,31,Standard Liège", "V. Lindelöf 22/23,28,Man United", "D. Hadžikadunić 22/23,24,Mallorca", "Volnei 22/23,23,UD Oliveirense", "A. Djiku 22/23,28,Strasbourg", "Rúben Fernandes 22/23,37,Gil Vicente", "M. Valjent 22/23,27,Mallorca", "S. Niakaté 22/23,23,Sporting Braga", "N. Casale 22/23,25,Lazio", "I. Bamba 22/23,21,Vitória Guimarães", "Mikel Villanueva 22/23,30,Vitória Guimarães", "M. Kempf 22/23,28,Hertha BSC", "F. Medina 22/23,24,Lens", "F. Bacher 22/23,22,WSG Swarovski Tirol", "O. Solet 22/23,23,Salzburg", "A. Sandro 22/23,32,Juventus", "M. Veljković 22/23,27,Werder Bremen", "J. Hugonet 22/23,23,Austria Lustenau", "H. Carter 22/23,23,Blackburn Rovers", "André Amaro 22/23,20,Vitória Guimarães", "Nacho Fernández 22/23,33,Real Madrid", "H. Ekdal 22/23,24,Burnley", "A. Mandi 22/23,31,Villarreal", "M. Meulensteen 22/23,23,Vitesse", "A. Christensen 22/23,27,Barcelona", "M. te Wierik 22/23,30,Emmen", "D. Mirani 22/23,27,Volendam", "R. Balker 22/23,24,Groningen", "R. Flamingo 22/23,20,Vitesse", "Nélson Monte 22/23,27,Chaves", "O. Bevan 22/23,19,Yeovil Town", "S. Kolašinac 22/23,29,Olympique Marseille", "Edimilson Fernandes 22/23,27,Mainz 05", "Nuno Lima 22/23,22,Paços de Ferreira", "O. Kabak 22/23,23,Hoffenheim", "M. Salisu 22/23,24,Southampton", "B. Vriends 22/23,32,Sparta Rotterdam", "G. Maripán 22/23,29,Monaco", "P. Wiśniewski 22/23,24,Spezia", "J. Branthwaite 22/23,20,PSV", "Yeray Álvarez 22/23,28,Athletic Bilbao", "C. Lenglet 22/23,27,Tottenham", "M. Diakhaby 22/23,26,Valencia", "N. Isimat-Mirin 22/23,31,Vitesse", "José Fonte 22/23,39,Lille", "S. Savić 22/23,32,Atlético Madrid", "A. Omobamidele 22/23,20,Norwich City", "K. Boateng 22/23,26,Santa Clara", "M. Senesi 22/23,26,Bournemouth", "N. Zolotić 22/23,29,Casa Pia AC", "F. Lejeune 22/23,32,Rayo Vallecano", "I. Zabarnyi 22/23,20,Bournemouth", "R. Abascal 22/23,29,Boavista", "M. Friedl 22/23,25,Werder Bremen", "C. Jullien 22/23,30,Montpellier", "I. Ordets 22/23,30,Bochum", "D. Batubinsika 22/23,27,Maccabi Haifa", "Mario Hermoso 22/23,27,Atlético Madrid", "Bernardo Vital 22/23,22,Estoril", "M. Rodin 22/23,27,Oostende", "P. Jagielka 22/23,40,Stoke City", "P. Schuurs 22/23,23,Torino", "M. Sollbauer 22/23,33,Rapid Wien", "X. Mbuyamba 22/23,21,Volendam", "L. Peltier 22/23,36,Rotherham United", "A. Rogel 22/23,25,Hertha BSC", "Paulo Oliveira 22/23,31,Sporting Braga", "J. Worrall 22/23,26,Nottingham Forest", "R. Araújo 22/23,24,Barcelona", "A. Seidu 22/23,23,Clermont", "O. Gonzalez 22/23,25,Ajaccio", "R. Cannon 22/23,24,Boavista", "O. Colley 22/23,30,Beşiktaş", "Y. Salmier 22/23,30,Troyes", "G. Trauner 22/23,31,Feyenoord", "Zainadine Júnior 22/23,34,Marítimo", "Y. Valery 22/23,24,Angers SCO", "I. Konaté 22/23,24,Liverpool", "M. Jenz 22/23,24,Schalke 04", "S. Piesinger 22/23,31,Wolfsberger AC", "Pablo Marí 22/23,29,Monza", "B. Lambert 22/23,23,Eupen", "J. Amofa 22/23,24,Go Ahead Eagles", "M. Škriniar 22/23,28,Internazionale", "J. Rodon 22/23,25,Rennes", "N. Collins 22/23,22,Wolverhampton", "J. Robinson 22/23,29,Sheffield United", "Javi Sánchez 22/23,26,Real Valladolid", "J. Thorniley 22/23,26,Blackpool", "G. Osho 22/23,24,Luton Town", "M. Hummels 22/23,34,Borussia Dortmund", "K. Djidji 22/23,30,Torino", "M. van der Hoorn 22/23,30,Utrecht", "S. de Vrij 22/23,31,Internazionale", "C. Cathcart 22/23,34,Watford", "N. Araújo 22/23,31,América", "F. Ricca 22/23,28,OH Leuven", "A. Hanche-Olsen 22/23,26,Mainz 05", "S. Diomandé 22/23,22,Olympique Lyonnais", "A. Hughes 22/23,30,Preston North End", "K. Misao 22/23,27,Santa Clara", "G. Scalvini 22/23,19,Atalanta", "Rodrigo Becão 22/23,27,Udinese", "D. Fry 22/23,25,Middlesbrough", "S. Bell 22/23,31,Mainz 05", "R. Atkinson 22/23,24,Bristol City", "C. Dawson 22/23,33,Wolverhampton", "A. Tanghe 22/23,24,Oostende", "A. Obispo 22/23,24,PSV", "L. Mühl 22/23,26,Austria Wien", "T. Adarabioyo 22/23,25,Fulham", "B. Chardonnet 22/23,28,Brest", "A. Izzo 22/23,31,Monza", "O. Diomandé 22/23,18,Sporting CP", "C. Cresswell 22/23,20,Millwall", "H. Maguire 22/23,30,Man United", "D. Amartey 22/23,28,Leicester City", "E. Mašović 22/23,24,Bochum", "J. Bednarek 22/23,27,Southampton", "José Copete 22/23,23,Mallorca", "Sergi Gómez 22/23,31,Espanyol", "R. Neustädter 22/23,35,Westerlo", "Aridane Hernández 22/23,34,Osasuna", "M. Bianchetti 22/23,30,Cremonese", "Luiz Felipe 22/23,26,Real Betis", "A. Flint 22/23,33,Stoke City", "A. Ismajli 22/23,26,Empoli", "H. Darling 22/23,23,Swansea City", "A. Al-Dakhil 22/23,21,Burnley", "I. Diop 22/23,26,Fulham", "K. Zouma 22/23,28,West Ham", "E. Agbadou 22/23,25,Reims", "B. Badiashile 22/23,22,Chelsea", "Édgar González 22/23,26,Real Betis", "N. Edokpolor 22/23,26,Rheindorf Altach", "Bruno Wilson 22/23,26,Vizela", "Fernando Varela 22/23,35,Casa Pia AC", "C. Tilt 22/23,31,Wigan Athletic", "F. Daniliuc 22/23,22,Salernitana", "M. Hilgers 22/23,22,Twente", "K. Itakura 22/23,26,Borussia M'gladbach", "C. Nelson 22/23,30,Blackpool", "Fábio Cardoso 22/23,29,Porto", "Joaquín Fernández 22/23,26,Real Valladolid", "I. Doukouré 22/23,19,Strasbourg", "S. McLoughlin 22/23,26,Hull City", "L. Caldirola 22/23,32,Monza", "G. Ferrari 22/23,31,Sassuolo", "B. Amione 22/23,21,Sampdoria", "J. Opoku 22/23,24,Arouca", "M. Erlić 22/23,25,Sassuolo", "K. Naismith 22/23,31,Bristol City", "J. Panzo 22/23,22,Coventry City", "C. Taylor 22/23,29,Burnley", "L. Badé 22/23,23,Sevilla", "A. Ogbonna 22/23,35,West Ham", "M. Caufriez 22/23,26,Clermont", "E. Shabani 22/23,19,Mainz 05", "J. Vásquez 22/23,24,Cremonese", "A. Webster 22/23,28,Brighton", "T. Chalobah 22/23,23,Chelsea", "O. Alderete 22/23,26,Getafe", "M. Blažič 22/23,30,Angers SCO", "J. Kayembe 22/23,28,Charleroi", "B. Kouyaté 22/23,26,Montpellier", "A. Ferrari 22/23,28,Cremonese", "S. Gigot 22/23,29,Olympique Marseille", "Thiago Mendes 22/23,31,Olympique Lyonnais", "M. Ekpiteta 22/23,27,Blackpool", "K. Jakić 22/23,26,Eintracht Frankfurt", "Tomás Araújo 22/23,21,Gil Vicente", "T. Nianzou 22/23,20,Sevilla", "D. Bates 22/23,26,Mechelen", "B. van Duijl 22/23,17,Volendam", "A. Laporte 22/23,29,Man City", "W. Janssens 22/23,28,Sint-Truiden", "E. Aiwu 22/23,22,Cremonese", "O. Kossounou 22/23,22,Bayer Leverkusen", "Raúl Albiol 22/23,37,Villarreal", "L. McNally 22/23,23,Coventry City", "R. Pérez 22/23,33,San Lorenzo", "C. Coady 22/23,30,Everton", "M. Mbow 22/23,23,RFC Seraing", "D. Vos 22/23,21,Emmen", "F. Gatti 22/23,24,Juventus", "L. Querfeld 22/23,19,Rapid Wien", "D. Potts 22/23,29,Luton Town", "Léo Andrade 22/23,25,Khimki", "A. Pieper 22/23,25,Werder Bremen", "L. Lochoshvili 22/23,25,Cremonese", "R. Paeshuyse 22/23,21,Eupen", "C. Basham 22/23,34,Sheffield United", "J. Gomez 22/23,26,Liverpool", "B. Benamar 22/23,26,Volendam", "N. Sarr 22/23,29,Reading", "M. Sagnan 22/23,24,Utrecht", "T. Leistner 22/23,32,Sint-Truiden", "S. Hutchinson 22/23,32,Millwall", "N. Stark 22/23,28,Werder Bremen", "R. Wood 22/23,37,Rotherham United", "O. Urhoghide 22/23,22,Oostende", "S. Umtiti 22/23,29,Lecce", "J. Veldmate 22/23,34,Emmen", "Pedro Bigas 22/23,33,Elche", "S. Bornauw 22/23,24,Wolfsburg", "R. Pantalon 22/23,25,Rio Ave", "V. Sasso 22/23,32,Boavista", "Titi 22/23,35,Fortaleza", "A. Soumaoro 22/23,30,Bologna", "Patrick William 22/23,26,Rio Ave", "R. Tagir 22/23,20,Westerlo", "C. Avinel 22/23,36,Ajaccio", "Tiago Djaló 22/23,22,Lille", "K. Akpoguma 22/23,28,Hoffenheim", "N. Mehssatou 22/23,20,Kortrijk", "D. Baumgartner 22/23,26,Wolfsberger AC", "G. Pereira 22/23,23,Gil Vicente", "A. Auassar 22/23,36,Sparta Rotterdam", "S. McKenna 22/23,26,Nottingham Forest", "A. Bella-Kotchap 22/23,21,Southampton", "A. Sylla 22/23,20,Club Brugge", "M. Le Marchand 22/23,33,Strasbourg", "Adryelson 22/23,25,Botafogo", "K. Mac Allister 22/23,25,Argentinos Juniors", "Marcos Alonso 22/23,32,Barcelona", "Lucas Alves 22/23,30,Portimonense", "Lucas Galvão 22/23,31,Austria Wien", "H. Delcroix 22/23,24,Anderlecht", "H. Palacios 22/23,29,Elche", "N. Viergever 22/23,33,Utrecht", "Daniel Ayala 22/23,32,Blackburn Rovers", "S. Baidoo 22/23,19,Salzburg", "M. Bauer 22/23,23,Augsburg", "Nino 22/23,26,Fluminense", "H. Souttar 22/23,24,Leicester City", "V. Cuesta 22/23,34,Botafogo", "D. Ballard 22/23,23,Sunderland", "Lyanco 22/23,26,Southampton", "L. Bergsma 22/23,26,Cambuur", "C. Vidal 22/23,22,Ajaccio", "L. Pirola 22/23,21,Salernitana", "B. Nuytinck 22/23,33,Sampdoria", "Fabricio Bruno 22/23,27,Flamengo", "M. Tol 22/23,25,Cambuur", "E. Cömert 22/23,25,Valencia", "M. Haïdara 22/23,30,Lens", "B. Djimsiti 22/23,30,Atalanta", "Carlos Ponck 22/23,28,Chaves", "S. Wharton 22/23,25,Blackburn Rovers", "Bernardo 22/23,28,Salzburg", "Eric García 22/23,22,Barcelona", "A. Dari 22/23,24,Brest", "F. Sánchez 22/23,19,Gimnasia La Plata", "K. Vogt 22/23,31,Hoffenheim", "João Nunes 22/23,27,Casa Pia AC", "D. Lavalée 22/23,26,Mechelen", "J. El Yamiq 22/23,31,Real Valladolid", "G. Cunningham 22/23,32,Preston North End", "J. Jeanvier 22/23,31,Auxerre", "S. Mitrović 22/23,33,Getafe", "L. Villalba 22/23,28,Argentinos Juniors", "N. Figal 22/23,29,Boca Juniors", "Unai García 22/23,31,Osasuna", "M. Dekker 22/23,19,AZ", "Patric 22/23,30,Lazio", "José Marsà 22/23,21,Sporting Gijón", "M. Thiaw 22/23,21,Milan", "J. Chabot 22/23,25,Köln", "M. Hasebe 22/23,39,Eintracht Frankfurt", "N. Gyömbér 22/23,30,Salernitana", "F. Gattoni 22/23,24,San Lorenzo", "Z. Romero 22/23,23,Estudiantes", "D. Siovas 22/23,34,Fortuna Sittard", "C. Kabasele 22/23,32,Watford", "B. Gibson 22/23,30,Norwich City", "K. Pierie 22/23,22,Excelsior", "S. Kjær 22/23,34,Milan", "F. Tobio 22/23,33,Huracán", "K. Piątkowski 22/23,22,Gent", "S. Andreou 22/23,20,Charleroi", "R. Schifferl 22/23,23,Wolfsberger AC", "A. Filin 22/23,26,Eupen", "Ivanildo Fernandes 22/23,27,Vizela", "K. Günter 22/23,28,Sampdoria", "M. Rose 22/23,27,Coventry City", "E. Brítez 22/23,31,Fortaleza", "R. Bauer 22/23,28,Sint-Truiden", "D. Bronn 22/23,27,Salernitana", "F. Russo 22/23,28,Ludogorets", "L. Perrin 22/23,24,Strasbourg", "M. Roberts 22/23,32,Birmingham City", "D. Van den Buijs 22/23,27,RKC Waalwijk", "B. Meïté 22/23,21,Lorient", "Bruno Alves 22/23,32,Grêmio", "Jon Pacheco 22/23,22,Real Sociedad", "Robert Renan 22/23,19,Zenit", "G. Gómez 22/23,30,Palmeiras", "Tobias Figueiredo 22/23,29,Hull City", "P. Ceccaroni 22/23,27,Lecce", "L. Morales 22/23,32,Gimnasia La Plata", "A. Mbengue 22/23,21,Reading", "A. Borković 22/23,23,Sturm Graz", "W. Ditta 22/23,25,Newell's Old Boys", "T. Derijck 22/23,35,Zulte-Waregem", "M. Meisl 22/23,22,Austria Wien", "F. Smand 22/23,20,Cambuur", "M. Taloverov 22/23,22,LASK", "F. Garcés 22/23,23,Colón", "A. Luciatti 22/23,30,Tigre", "S. Ajayi 22/23,29,WBA", "G. Hernández 22/23,25,San Lorenzo", "J. Porozo 22/23,22,Troyes", "T. Cardona 22/23,27,Defensa y Justicia", "Bruno Melo 22/23,30,Goiás", "F. Ogier 22/23,34,Clermont", "J. Bruma 22/23,31,Heerenveen", "Alexsandro 22/23,23,Lille", "L. Sigali 22/23,36,Racing Club", "M. Lacroix 22/23,23,Wolfsburg", "K. Long 22/23,32,Birmingham City", "W. Fofana 22/23,22,Chelsea", "W. Troost-Ekong 22/23,29,Salernitana", "Marlon 22/23,27,Monza", "E. Roco 22/23,30,Elche", "M. Lackner 22/23,32,Ried", "F. Mallo 22/23,28,Rosario Central", "C. Özkacar 22/23,22,Valencia", "N. Galović 22/23,30,Arouca", "P. Hristov 22/23,24,Venezia", "M. Estève 22/23,21,Montpellier", "Jemerson 22/23,30,Atlético Mineiro", "A. Carboni 22/23,22,Venezia", "Maracás 22/23,29,Paços de Ferreira", "P. Dawidowicz 22/23,28,Hellas Verona", "Felipe 22/23,34,Nottingham Forest", "M. Mosquera 22/23,22,Marítimo", "M. Sonnleitner 22/23,36,Hartberg", "Gabriel Paulista 22/23,32,Valencia", "Fali 22/23,29,Cádiz", "L. Bonucci 22/23,36,Juventus", "Íñigo Martínez 22/23,32,Athletic Bilbao", "Diego Llorente 22/23,29,Roma", "C. Masterson 22/23,24,Gillingham", "Fernando Calero 22/23,27,Espanyol", "J. Bager 22/23,26,Charleroi", "Ruan 22/23,23,Sassuolo", "P. Perdichizzi 22/23,30,Westerlo", "I. Touré 22/23,20,Auxerre", "F. Uremović 22/23,26,Hertha BSC", "M. Demiral 22/23,25,Atalanta", "J. Brooks 22/23,30,Hoffenheim", "L. Lollo 22/23,36,Estudiantes", "Thiago Heleno 22/23,34,Athletico Paranaense", "F. Strauss 22/23,22,Rheindorf Altach", "G. Nyamsi 22/23,26,Strasbourg", "P. Sandler 22/23,26,NEC", "R. Meissen 22/23,21,Sparta Rotterdam", "David López 22/23,33,Girona", "A. King 22/23,34,Bristol City", "M. Pollock 22/23,21,Watford", "J. St. Juste 22/23,26,Sporting CP", "F. Alarcón 22/23,28,Instituto", "Simo Keddari 22/23,18,Espanyol", "S. Nieuwpoort 22/23,30,Excelsior", "L. Colwill 22/23,20,Chelsea", "Messias 22/23,28,Santos", "D. Opare 22/23,32,RFC Seraing", "F. Rasmussen 22/23,31,Godoy Cruz", "J. Hendry 22/23,28,Club Brugge", "A. Gravillon 22/23,25,Torino", "A. Sylla 22/23,22,RFC Seraing", "K. Wimmer 22/23,30,Rapid Wien", "J. Laporte 22/23,29,Lorient", "Julio Pleguezuelo 22/23,26,Twente", "P. Jaeckel 22/23,24,Union Berlin", "José Ángel Carmona 22/23,21,Elche", "Jorge Cuenca 22/23,23,Villarreal", "João Silva 22/23,24,Kortrijk", "J. Vanlerberghe 22/23,26,Mechelen", "L. Kilian 22/23,23,Köln", "A. Rami 22/23,37,Troyes", "T. Oermann 22/23,19,Wolfsberger AC", "J. Matip 22/23,31,Liverpool", "Morato 22/23,21,Benfica", "S. Nsoki 22/23,24,Hoffenheim", "Chumi 22/23,24,Almería", "K. Rekik 22/23,28,Sevilla", "G. Medel 22/23,35,Bologna", "Rezende 22/23,28,Bahia", "D. Oroz 22/23,22,Vitesse", "Gil 22/23,35,Corinthians", "Lucas Halter 22/23,23,Goiás", "M. Tounkara 22/23,21,Vitória Guimarães", "R. Burke 22/23,26,Luton Town", "J. Handl 22/23,25,Austria Wien", "G. Magnani 22/23,27,Hellas Verona", "F. Sierralta 22/23,26,Watford", "B. Bianchi 22/23,34,Atlético Tucumán", "W. Omari 22/23,23,Rennes", "K. Naughton 22/23,34,Swansea City", "C. Quintana 22/23,35,Rosario Central", "F. Uduokhai 22/23,25,Augsburg", "A. Callens 22/23,31,Girona", "L. Cooper 22/23,31,Leeds United", "Kike Salas 22/23,21,Tenerife", "G. Hall 22/23,31,Middlesbrough", "R. Kluivert 22/23,22,Utrecht", "P. Goltz 22/23,38,Colón", "M. Horvat 22/23,24,Hartberg", "J. Turi 22/23,21,Ried", "Borja López 22/23,29,Zulte-Waregem", "M. Eerdhuijzen 22/23,22,Sparta Rotterdam", "S. van Ottele 22/23,21,Heerenveen", "Juanpe 22/23,32,Girona", "D. Marcq 22/23,34,Charleroi", "Ygor Nogueira 22/23,28,Santa Clara", "D. Ćaleta-Car 22/23,26,Southampton", "M. Tshibuabua 22/23,21,RFC Seraing", "L. Willen 22/23,20,Zulte-Waregem", "Vitão 22/23,23,Internacional", "P. Barrios 22/23,32,Godoy Cruz", "Iago Maidana 22/23,27,América Mineiro", "I. Hautekiet 22/23,21,Standard Liège", "J. Novillo 22/23,25,Huracán", "N. Soldo 22/23,22,Köln", "A. Bamba 22/23,33,Angers SCO", "F. Calderón 22/23,25,Unión Santa Fe", "F. Ceccherini 22/23,31,Hellas Verona", "R. Holding 22/23,27,Arsenal", "David Carmo 22/23,23,Porto", "C. Corvalán 22/23,34,Unión Santa Fe", "C. Lema 22/23,33,Lanús", "R. Norrington-Davies 22/23,24,Sheffield United", "J. Stephens 22/23,29,Southampton", "C. Báez 22/23,33,Independiente", "Matheus Costa 22/23,28,Marítimo", "M. Tambedou 22/23,20,Zulte-Waregem", "João Victor 22/23,24,Nantes", "M. Wasinski 22/23,19,Kortrijk", "A. Mumin 22/23,24,Rayo Vallecano", "E. Cornelisse 22/23,20,Vitesse", "L. González Pírez 22/23,31,River Plate", "J. Kramer 22/23,26,NEC", "R. Sykes 22/23,24,Union Saint-Gilloise", "Bernardo Espinosa 22/23,33,Girona", "M. Caldara 22/23,29,Spezia", "N. Colombo 22/23,24,Defensa y Justicia", "C. Wooh 22/23,21,Rennes", "E. Olivera 22/23,33,Banfield", "D. Zagadou 22/23,24,Stuttgart", "A. Rébola 22/23,34,Belgrano", "M. Lemos 22/23,27,Atlético Mineiro", "T. Blokzijl 22/23,18,Groningen", "J. Simpson 22/23,26,Cardiff City", "M. Friedrich 22/23,27,Borussia M'gladbach", "W. Kannemann 22/23,32,Grêmio", "Zé Ivaldo 22/23,26,Athletico Paranaense", "Josué Sá 22/23,30,Rio Ave", "A. Hack 22/23,29,Mainz 05", "J. Guilavogui 22/23,32,Wolfsburg", "Marllon 22/23,31,Cuiabá", "S. van Beek 22/23,28,Heerenveen", "Lucas Oliveira 22/23,27,Cruzeiro", "A. Maciel 22/23,26,Banfield", "E. Ferigra 22/23,24,Paços de Ferreira", "T. Rotter 22/23,31,Hartberg", "B. Wright 22/23,30,Rotherham United", "J. Evans 22/23,35,Leicester City", "M. Zanka Jørgensen 22/23,33,Brentford", "M. Keane 22/23,30,Everton", "L. Bessile 22/23,24,Eupen", "Lucas Cunha 22/23,26,Red Bull Bragantino", "Léo Pereira 22/23,27,Flamengo", "S. Knežević 22/23,26,Charleroi", "M. Nastasić 22/23,30,Mallorca", "L. Klostermann 22/23,27,RB Leipzig", "Luan 22/23,30,Palmeiras", "Lucas Beraldo 22/23,19,São Paulo", "Ximo Navarro 22/23,33,Fortuna Sittard", "Juan Jesus 22/23,31,Napoli", "M. Niakhaté 22/23,27,Nottingham Forest", "Kanu 22/23,26,Bahia", "E. Aguilera 22/23,33,Tigre", "D. Sánchez 22/23,26,Tottenham", "S. Barreto 22/23,24,Independiente", "G. Mercado 22/23,36,Internacional", "M. Centurión 22/23,24,Arsenal", "Mexer 22/23,34,Estoril", "G. Nauber 22/23,31,Go Ahead Eagles", "J. Sørensen 22/23,25,Norwich City", "L. Balogun 22/23,34,Queens Park Rangers", "N. Meriano 22/23,22,Belgrano", "M. Torrén 22/23,34,Argentinos Juniors", "J. Kerr 22/23,26,Wigan Athletic", "B. Valdez 22/23,30,Boca Juniors", "S. Bradley 22/23,31,Luton Town", "F. Roncaglia 22/23,36,Boca Juniors", "E. Ebosse 22/23,24,Udinese", "J. Sosa 22/23,21,Bologna", "G. Sauro 22/23,33,Huracán", "Bruno Viana 22/23,28,Coritiba", "B. Diaby 22/23,25,Preston North End", "E. Insúa 22/23,34,Racing Club", "M. Brizuela 22/23,26,Vélez Sarsfield", "H. Dean 22/23,31,Birmingham City", "Luciano Castán 22/23,33,Cruzeiro", "G. González 22/23,28,Mallorca", "Ítalo 22/23,21,Santa Clara", "S. Seymor 22/23,21,Excelsior", "D. Wouters 22/23,26,Mechelen", "R. Edmonds-Green 22/23,24,Huddersfield Town", "D. Coppola 22/23,19,Hellas Verona", "Sidimar 22/23,30,Goiás", "C. Taylor 22/23,21,Stoke City", "S. Caulker 22/23,31,Wigan Athletic", "N. Romero 22/23,19,Atlético Tucumán", "J. Murillo 22/23,31,Sampdoria", "F. Fazio 22/23,36,Salernitana", "John Nwankwo 22/23,22,Elche", "Renê 22/23,31,Marítimo", "M. García 22/23,23,Sarmiento", "E. Godoy 22/23,29,Belgrano", "J. Pombo 22/23,22,Arsenal", "Y. Nakayama 22/23,26,Huddersfield Town", "L. Ranieri 22/23,24,Fiorentina", "Natan 22/23,22,Red Bull Bragantino", "D. Ouedraogo 22/23,24,OH Leuven", "R. Williams 22/23,22,Liverpool", "C. Verdonk 22/23,26,NEC", "David Luiz 22/23,36,Flamengo", "J. Canale 22/23,26,Lanús", "N. Capraro 22/23,25,Barracas Central", "M. Barać 22/23,28,Oostende", "Léo 22/23,27,Vasco da Gama", "G. Velázquez 22/23,32,Newell's Old Boys", "K. Fila 22/23,24,Zulte-Waregem", "M. Bola 22/23,25,Middlesbrough", "H. Marcelin 22/23,23,Cercle Brugge", "A. Diallo 22/23,27,RB Leipzig", "M. Sarr 22/23,24,Monaco", "B. Godeau 22/23,31,Gent", "J. Clarke-Salter 22/23,25,Queens Park Rangers", "B. Capon 22/23,35,Oostende", "A. Ouattara 22/23,22,Genk", "G. Piovi 22/23,28,Racing Club", "Ricardo Silva 22/23,30,América Mineiro", "F. Katelaris 22/23,26,Oostende", "D. Dessoleil 22/23,30,Kortrijk", "J. van Aken 22/23,28,Heerenveen", "J. Mccart 22/23,25,Leyton Orient", "M. Bech Sørensen 22/23,24,Groningen", "M. Pellegrino 22/23,20,Platense", "K. Bonifazi 22/23,27,Bologna", "S. Trémoulet 22/23,23,RFC Seraing", "A. Dijksteel 22/23,26,Middlesbrough", "M. Smets 22/23,19,Sint-Truiden", "D. D'Ambrosio 22/23,34,Internazionale", "Diego González 22/23,28,Elche", "M. Karamarko 22/23,25,Hartberg", "Bruno Uvini 22/23,32,Grêmio", "Nathan Silva 22/23,26,Atlético Mineiro", "V. Chiricheș 22/23,33,Cremonese", "S. Núñez 22/23,23,Estudiantes", "Jorge Meré 22/23,26,Cádiz", "C. Hérelle 22/23,30,Brest", "L. Østigård 22/23,23,Napoli", "S. Cook 22/23,32,Nottingham Forest", "P. Díaz 22/23,28,River Plate", "Gabriel Xavier 22/23,22,Bahia", "J. Flint 22/23,22,Volendam", "R. Arboleda 22/23,31,São Paulo", "J. Belocian 22/23,18,Rennes", "K. De Winter 22/23,20,Empoli", "P. Retsos 22/23,24,Olympiacos Piraeus", "David Duarte 22/23,28,Bahia", "Éder 22/23,28,América Mineiro", "Murillo dos Santos 22/23,20,Corinthians", "Adriel 22/23,26,Austria Lustenau", "F. Mansilla 22/23,24,Newell's Old Boys", "E. Bailly 22/23,29,Olympique Marseille", "W. Boly 22/23,32,Nottingham Forest", "T. Blackett 22/23,29,Rotherham United", "L. Greiml 22/23,21,Schalke 04", "O. Camara 22/23,20,Angers SCO", "L. Yoro 22/23,17,Lille", "Víctor Chust 22/23,23,Cádiz", "W. Boyle 22/23,27,Huddersfield Town", "C. Okoli 22/23,21,Atalanta", "M. Dárdai 22/23,21,Hertha BSC", "I. Vázquez 22/23,25,Platense", "L. Magallán 22/23,29,Elche", "P. Kimpembe 22/23,27,PSG", "N. Murru 22/23,28,Sampdoria", "C. Söyüncü 22/23,27,Leicester City", "N. Aké 22/23,28,Man City", "J. Hato 22/23,17,Ajax", "Average 22/23,27,Club", "Rúben Fernandes 23/24,37,Gil Vicente", "Manu 23/24,22,Vitória Guimarães", "Jorge Fernandes 23/24,26,Vitória Guimarães", "N. Otamendi 23/24,35,Benfica", "Gabriel Pereira 23/24,23,Gil Vicente", "Marcelo 23/24,34,Moreirense", "Fernando Varela 23/24,35,Casa Pia AC", "Filipe Relvas 23/24,24,Portimonense", "N. Zolotić 23/24,30,Casa Pia AC", "Bruno Wilson 23/24,26,Vizela", "Aderllan Santos 23/24,34,Rio Ave", "António Silva 23/24,20,Benfica", "Gonçalo Inácio 23/24,22,Sporting CP", "C. Awaziem 23/24,26,Boavista", "Anderson 23/24,28,Vizela", "Kialonda Gaspar 23/24,26,Estrela Amadora", "O. Diomandé 23/24,19,Sporting CP", "Volnei Feltes 23/24,23,Estoril", "Bruno Rodrigues 23/24,22,Chaves", "Otávio 23/24,21,Famalicão", "Vasco Fernandes 23/24,36,Casa Pia AC", "S. Coates 23/24,33,Sporting CP", "Alemão 23/24,21,Portimonense", "Bernardo Vital 23/24,22,Estoril", "Pedrão 23/24,26,Portimonense", "Rafael Fernandes 23/24,21,Arouca", "Gonçalo Silva 23/24,32,Farense", "Pedro Álvaro 23/24,23,Estoril", "Riccieli 23/24,25,Famalicão", "José Fonte 23/24,39,Sporting Braga", "Maracás 23/24,29,Moreirense", "J. Omurwa 23/24,25,Estrela Amadora", "R. Abascal 23/24,29,Boavista", "Tiago Esgaio 23/24,28,Arouca", "R. Pantalon 23/24,26,Rio Ave", "Ygor Nogueira 23/24,28,Chaves", "Martín Aguirregabiria 23/24,27,Famalicão", "Javi Montero 23/24,24,Arouca", "S. Vitória 23/24,36,Chaves", "N. Galović 23/24,31,Arouca", "Wendell 23/24,30,Porto", "David Carmo 23/24,24,Porto", "Josué Sá 23/24,31,Rio Ave", "Miguel Lopes 23/24,36,Estrela Amadora", "Sandro Cruz 23/24,22,Chaves", "Mansur 23/24,30,Estrela Amadora", "Artur Jorge 23/24,29,Farense", "Tomás Ribeiro 23/24,24,Vitória Guimarães", "G. Frimpong 23/24,24,Moreirense", "S. Saatçı 23/24,20,Sporting Braga", "S. Niakaté 23/24,24,Sporting Braga", "Fábio Cardoso 23/24,29,Porto", "Iván Marcano 23/24,36,Porto", "Pepe 23/24,40,Porto", "Filipe Ferreira 23/24,33,Boavista", "Mikel Villanueva 23/24,30,Vitória Guimarães", "Z. Muscat 23/24,30,Farense", "E. Cabaco 23/24,28,Estoril", "Matheus Reis 23/24,28,Sporting CP", "D. Mirani 23/24,27,Volendam", "D. Siovas 23/24,35,Fortuna Sittard", "D. Hancko 23/24,25,Feyenoord", "L. Geertruida 23/24,23,Feyenoord", "T. Velthuis 23/24,21,Sparta Rotterdam", "C. Widell 23/24,20,Excelsior", "Rodrigo Guth 23/24,22,Fortuna Sittard", "S. Kersten 23/24,25,PEC Zwolle", "J. Hato 23/24,17,Ajax", "J. Hoogma 23/24,25,Heracles", "M. Hilgers 23/24,22,Twente", "C. Verdonk 23/24,26,NEC", "R. Pröpper 23/24,30,Twente", "B. Vriends 23/24,32,Sparta Rotterdam", "R. El Yaakoubi 23/24,27,Excelsior", "André Ramalho 23/24,31,PSV", "O. Boscagli 23/24,25,PSV", "D. Oroz 23/24,23,Vitesse", "P. Bochniewicz 23/24,27,Heerenveen", "R. Flamingo 23/24,20,Utrecht", "B. Nuytinck 23/24,33,NEC", "D. van Bruggen 23/24,27,Almere City", "N. Isimat-Mirin 23/24,31,Vitesse", "B. Benamar 23/24,26,Volendam", "T. Barbet 23/24,22,Almere City", "B. van Polen 23/24,38,PEC Zwolle", "J. Amofa 23/24,24,Go Ahead Eagles", "S. Floranus 23/24,25,Almere City", "M. Sagnan 23/24,24,Utrecht", "J. Kramer 23/24,27,Go Ahead Eagles", "R. Hendriks 23/24,22,Vitesse", "J. Šutalo 23/24,23,Ajax", "T. Lam 23/24,29,PEC Zwolle", "Alexandre Penetra 23/24,22,AZ", "J. Schouten 23/24,26,PSV", "M. van der Hoorn 23/24,31,Utrecht", "D. Van den Buijs 23/24,28,RKC Waalwijk", "R. Bazoer 23/24,27,AZ", "B. Plat 23/24,23,Volendam", "G. Nauber 23/24,31,Go Ahead Eagles", "J. Flint 23/24,23,Volendam", "S. Bultman 23/24,18,Heracles", "S. Adewoye 23/24,23,RKC Waalwijk", "S. Nieuwpoort 23/24,30,Excelsior", "J. Gaari 23/24,29,RKC Waalwijk", "S. van Beek 23/24,29,Heerenveen", "S. van Ottele 23/24,21,Heerenveen", "L. Mbe Soh 23/24,22,Almere City", "R. Vita 23/24,22,Fortuna Sittard", "M. Ross 23/24,22,NEC", "G. Trauner 23/24,31,Feyenoord", "S. Sonnenberg 23/24,24,Heracles", "Unai Núñez 23/24,26,Celta de Vigo", "Javi Hernández 23/24,25,Cádiz", "F. Lejeune 23/24,32,Rayo Vallecano", "Ignasi Miquel 23/24,31,Granada", "M. Valjent 23/24,27,Mallorca", "Carlos Neva 23/24,27,Granada", "A. Rüdiger 23/24,30,Real Madrid", "D. Blind 23/24,33,Girona", "E. Konsa 23/24,26,Aston Villa", "C. Starfelt 23/24,28,Celta de Vigo", "M. Kilman 23/24,26,Wolverhampton", "F. Schär 23/24,31,Newcastle United", "W. Saliba 23/24,22,Arsenal", "E. Pinnock 23/24,30,Brentford", "K. Walker 23/24,33,Man City", "I. Zabarnyi 23/24,21,Bournemouth", "J. Andersen 23/24,27,Crystal Palace", "G. Magnani 23/24,28,Hellas Verona", "Pau Torres 23/24,26,Aston Villa", "J. Tarkowski 23/24,30,Everton", "M. Pongračić 23/24,26,Lecce", "David García 23/24,29,Osasuna", "R. Drăgușin 23/24,21,Genoa", "C. Dawson 23/24,33,Wolverhampton", "Zubeldía 23/24,26,Real Sociedad", "Y. Abdelhamid 23/24,36,Reims", "J. Robinson 23/24,30,Sheffield United", "Álex Suárez 23/24,30,Las Palmas", "K. Danso 23/24,25,Lens", "G. Lloris 23/24,28,Le Havre", "A. Romagnoli 23/24,28,Lazio", "S. Luperto 23/24,27,Empoli", "M. Talbi 23/24,25,Lorient", "Bremer 23/24,26,Juventus", "Catena 23/24,29,Osasuna", "G. Pezzella 23/24,32,Real Betis", "Dani Vivian 23/24,24,Athletic Bilbao", "Dante 23/24,40,Nice", "M. van de Ven 23/24,22,Tottenham", "B. White 23/24,26,Arsenal", "Hermoso 23/24,28,Atlético Madrid", "David López 23/24,34,Girona", "N. Collins 23/24,22,Brentford", "M. Erlić 23/24,25,Sassuolo", "Fali 23/24,30,Cádiz", "Thiago Silva 23/24,39,Chelsea", "R. Nicolaisen 23/24,26,Toulouse", "B. Cristante 23/24,28,Roma", "L. Dunk 23/24,31,Brighton", "K. Zouma 23/24,29,West Ham", "R. Rodríguez 23/24,31,Torino", "K. Kouyaté 23/24,26,Montpellier", "G. Nyamsi 23/24,26,Strasbourg", "A. Pelmard 23/24,23,Clermont", "L. Colwill 23/24,20,Chelsea", "S. Beukema 23/24,24,Bologna", "A. Dossena 23/24,25,Cagliari", "M. Guéhi 23/24,23,Crystal Palace", "B. Chardonnet 23/24,28,Brest", "W. Singo 23/24,22,Monaco", "P. Mainka 23/24,29,Heidenheim", "W. Pacho 23/24,22,Eintracht Frankfurt", "R. Koch 23/24,27,Eintracht Frankfurt", "Bernardo 23/24,28,Bochum", "N. Pérez 23/24,23,Udinese", "J. Bijol 23/24,24,Udinese", "W. Anton 23/24,27,Stuttgart", "Y. Salmier 23/24,30,Le Havre", "M. Wöber 23/24,25,Borussia M'gladbach", "M. Lacroix 23/24,23,Wolfsburg", "C. Romero 23/24,25,Tottenham", "Chumi 23/24,24,Almería", "M. Škriniar 23/24,28,PSG", "T. Ream 23/24,36,Fulham", "N. Aguerd 23/24,27,West Ham", "T. Hübers 23/24,27,Köln", "P. Lienhart 23/24,27,Freiburg", "F. Tomori 23/24,25,Milan", "J. Tah 23/24,27,Bayer Leverkusen", "A. Sedlar 23/24,31,Deportivo Alavés", "F. Baschirotto 23/24,27,Lecce", "B. Djimsiti 23/24,30,Atalanta", "Diogo Leite 23/24,24,Union Berlin", "A. Al Dakhil 23/24,21,Burnley", "E. Tapsoba 23/24,24,Bayer Leverkusen", "M. Bani 23/24,29,Genoa", "D. Alaba 23/24,31,Real Madrid", "M. Simakan 23/24,23,RB Leipzig", "Logan Costa 23/24,22,Toulouse", "Mika Mármol 23/24,22,Las Palmas", "J. Todibo 23/24,23,Nice", "I. Doukouré 23/24,20,Strasbourg", "N. Gyömbér 23/24,31,Salernitana", "T. Lockyer 23/24,28,Luton Town", "Kim Min-Jae 23/24,26,Bayern München", "G. Mancini 23/24,27,Roma", "J. Gradit 23/24,30,Lens", "J. Chabot 23/24,25,Köln", "N. Milenković 23/24,26,Fiorentina", "A. Tchouaméni 23/24,23,Real Madrid", "A. Witsel 23/24,34,Atlético Madrid", "F. Medina 23/24,24,Lens", "Fali Candé 23/24,25,Metz", "L. Yoro 23/24,17,Lille", "N. Gudelj 23/24,31,Sevilla", "J. Branthwaite 23/24,21,Everton", "N. Schlotterbeck 23/24,23,Borussia Dortmund", "J. Vásquez 23/24,25,Genoa", "M. Ginter 23/24,29,Freiburg", "L. Martínez Quarta 23/24,27,Fiorentina", "T. Siersleben 23/24,23,Heidenheim", "C. Mbemba 23/24,29,Olympique Marseille", "G. Scalvini 23/24,19,Atalanta", "C. Klarer 23/24,23,Darmstadt 98", "J. Castelletto 23/24,28,Nantes", "A. Sanganté 23/24,21,Le Havre", "A. Disasi 23/24,25,Chelsea", "H. Ito 23/24,24,Stuttgart", "P. Dawidowicz 23/24,28,Hellas Verona", "J. Koundé 23/24,24,Barcelona", "S. Kolašinac 23/24,30,Atalanta", "Aridane Hernández 23/24,34,Rayo Vallecano", "L. Caldirola 23/24,32,Monza", "Raúl Albiol 23/24,38,Villarreal", "K. Vogt 23/24,32,Hoffenheim", "E. Fernandes 23/24,27,Mainz 05", "Aitor Paredes 23/24,23,Athletic Bilbao", "Robin Le Normand 23/24,26,Real Sociedad", "L. Brassier 23/24,24,Brest", "G. Álvarez 23/24,23,Getafe", "W. Boly 23/24,32,Nottingham Forest", "S. Romagnoli 23/24,33,Frosinone", "S. van den Berg 23/24,21,Mainz 05", "P. Schuurs 23/24,23,Torino", "F. Terracciano 23/24,20,Hellas Verona", "V. van Dijk 23/24,32,Liverpool", "F. Uduokhai 23/24,26,Augsburg", "A. Ahmedhodžić 23/24,24,Sheffield United", "W. Omari 23/24,23,Rennes", "O. Kossounou 23/24,22,Bayer Leverkusen", "Rúben Dias 23/24,26,Man City", "G. González 23/24,29,Mallorca", "Alexsandro Ribeiro 23/24,24,Lille", "Gabriel Paulista 23/24,32,Valencia", "Cristhian Mosquera 23/24,19,Valencia", "A. Seidu 23/24,23,Clermont", "I. Ordets 23/24,31,Bochum", "M. Thiaw 23/24,22,Milan", "M. Nastasić 23/24,30,Mallorca", "L. Badé 23/24,23,Sevilla", "A. Abqar 23/24,24,Deportivo Alavés", "J. Brooks 23/24,30,Hoffenheim", "M. Darmian 23/24,33,Internazionale", "F. Gatti 23/24,25,Juventus", "Pablo Marí 23/24,30,Monza", "D. Doekhi 23/24,25,Union Berlin", "L. Perrin 23/24,24,Strasbourg", "M. Hummels 23/24,34,Borussia Dortmund", "Danilo 23/24,32,Juventus", "Tuta 23/24,24,Eintracht Frankfurt", "A. Christensen 23/24,27,Barcelona", "I. Diop 23/24,26,Fulham", "D. Zakaria 23/24,26,Monaco", "A. Theate 23/24,23,Rennes", "F. Acerbi 23/24,35,Internazionale", "B. Diakité 23/24,22,Lille", "E. Cömert 23/24,25,Nantes", "Marquinhos 23/24,29,PSG", "E. Mašović 23/24,24,Bochum", "G. Zappa 23/24,23,Cagliari", "I. Monterisi 23/24,21,Frosinone", "S. Mitrović 23/24,33,Getafe", "M. Lovato 23/24,23,Salernitana", "Gabriel Magalhaes 23/24,25,Arsenal", "S. Magassa 23/24,20,Monaco", "M. Veljković 23/24,28,Werder Bremen", "V. Lindelöf 23/24,29,Man United", "J. Laporte 23/24,30,Lorient", "C. Lukeba 23/24,20,RB Leipzig", "M. Diakhaby 23/24,26,Valencia", "D. Zagadou 23/24,24,Stuttgart", "A. Jung 23/24,32,Werder Bremen", "M. Friedl 23/24,25,Werder Bremen", "J. Okumu 23/24,26,Reims", "D. Kohr 23/24,29,Mainz 05", "J. Gvardiol 23/24,21,Man City", "A. Buongiorno 23/24,24,Torino", "L. Pirola 23/24,21,Salernitana", "A. Bastoni 23/24,24,Internazionale", "M. Akanji 23/24,28,Man City", "Édgar González 23/24,26,Almería", "I. Traoré 23/24,37,Metz", "S. Diomandé 23/24,22,Olympique Lyonnais", "A. Tamèze 23/24,29,Torino", "K. Itakura 23/24,26,Borussia M'gladbach", "S. de Vrij 23/24,31,Internazionale", "S. Savić 23/24,32,Atlético Madrid", "C. Okoli 23/24,22,Frosinone", "E. Agbadou 23/24,26,Reims", "E. Ndicka 23/24,24,Roma", "C. Özkacar 23/24,23,Valencia", "R. Knoche 23/24,31,Union Berlin", "K. Sildillia 23/24,21,Freiburg", "D. O'Shea 23/24,24,Burnley", "R. Burke 23/24,27,Luton Town", "César Azpilicueta 23/24,34,Atlético Madrid", "R. Bensebaini 23/24,28,Borussia Dortmund", "J. Gouweleeuw 23/24,32,Augsburg", "Saúl Coco 23/24,24,Las Palmas", "Miguel Rubio 23/24,25,Granada", "S. Touré 23/24,20,Lorient", "R. Calafiori 23/24,21,Bologna", "N. Elvedi 23/24,27,Borussia M'gladbach", "Eric García 23/24,22,Girona", "D. Upamecano 23/24,24,Bayern München", "Luis Hernández 23/24,34,Cádiz", "S. Bell 23/24,32,Mainz 05", "Domingos Duarte 23/24,28,Getafe", "N. Aké 23/24,28,Man City", "C. Riad 23/24,20,Real Betis", "A. Bell 23/24,29,Luton Town", "L. Kelly 23/24,25,Bournemouth", "K. Ajer 23/24,25,Brentford", "C. Zesiger 23/24,25,Wolfsburg", "N. Casale 23/24,25,Lazio", "Clinton Mata 23/24,30,Olympique Lyonnais", "J. Matip 23/24,32,Liverpool", "Diego Llorente 23/24,30,Roma", "A. Pieper 23/24,25,Werder Bremen", "J. Gomez 23/24,26,Liverpool", "Natan 23/24,22,Napoli", "S. Walukiewicz 23/24,23,Empoli", "Toti Gomes 23/24,24,Wolverhampton", "Raúl Torrente 23/24,22,Granada", "R. Araújo 23/24,24,Barcelona", "M. Maglica 23/24,25,Darmstadt 98", "R. Pierre-Gabriel 23/24,25,Nantes", "M. Diarra 23/24,22,Toulouse", "F. de Jong 23/24,26,Barcelona", "M. Senesi 23/24,26,Bournemouth", "L. Østigård 23/24,23,Napoli", "O. Kabak 23/24,23,Hoffenheim", "Danilo Pereira 23/24,32,PSG", "C. Hérelle 23/24,31,Metz", "J. Beyer 23/24,23,Burnley", "I. Konaté 23/24,24,Liverpool", "B. Omeragić 23/24,21,Montpellier", "K. De Winter 23/24,21,Genoa", "J. Egan 23/24,30,Sheffield United", "Rafa Marín 23/24,21,Deportivo Alavés", "C. Kabasele 23/24,32,Udinese", "M. Bauer 23/24,23,Augsburg", "J. Lascelles 23/24,29,Newcastle United", "M. Gabbia 23/24,24,Villarreal", "Ruan Tressoldi 23/24,24,Sassuolo", "Jorge Cuenca 23/24,23,Villarreal", "A. Mandi 23/24,32,Villarreal", "M. Vojvoda 23/24,28,Torino", "G. Maripán 23/24,29,Monaco", "Murillo dos Santos 23/24,21,Nottingham Forest", "A. Webster 23/24,28,Brighton", "A. Ismajli 23/24,27,Empoli", "S. Botman 23/24,23,Newcastle United", "J. Evans 23/24,35,Man United", "S. Gigot 23/24,30,Olympique Marseille", "J. Duverne 23/24,26,Nantes", "J. Worrall 23/24,26,Nottingham Forest", "Kaiky 23/24,19,Almería", "F. Mendy 23/24,22,Lorient", "O. Alderete 23/24,26,Getafe", "Patric 23/24,30,Lazio", "T. Mengi 23/24,21,Luton Town", "M. Caufriez 23/24,26,Clermont", "C. Montes 23/24,26,Almería", "S. McKenna 23/24,26,Nottingham Forest", "J. Aidoo 23/24,28,Celta de Vigo", "R. Tolói 23/24,33,Atalanta", "J. Lucumí 23/24,25,Bologna", "T. Weah 23/24,23,Juventus", "J. Belocian 23/24,18,Rennes", "P. Rosario 23/24,26,Nice", "A. Trusty 23/24,25,Sheffield United", "A. Carboni 23/24,22,Monza", "S. Birindelli 23/24,24,Monza", "Amir Rrahmani 23/24,29,Napoli", "H. Maguire 23/24,30,Man United", "C. Bassey 23/24,23,Fulham", "M. Wieteska 23/24,26,Cagliari", "L. Bonucci 23/24,36,Union Berlin", "G. Ferrari 23/24,31,Sassuolo", "A. Izzo 23/24,31,Monza", "Copete 23/24,24,Mallorca", "A. Rouault 23/24,22,Stuttgart", "N. Pallois 23/24,36,Nantes", "B. Pavard 23/24,27,Internazionale", "A. Obert 23/24,21,Cagliari", "P. Hatzidiakos 23/24,26,Cagliari", "L. Ranieri 23/24,24,Fiorentina", "M. Niakhaté 23/24,27,Nottingham Forest", "M. Friedrich 23/24,27,Borussia M'gladbach", "Lisandro Martínez 23/24,25,Man United", "G. Baldock 23/24,30,Sheffield United", "A. Sylla 23/24,20,Strasbourg", "C. Groß 23/24,34,Werder Bremen", "Luiz Felipe 23/24,26,Real Betis", "Sergio Ramos 23/24,37,Sevilla", "M. Andersen 23/24,25,Luton Town", "K. Schlotterbeck 23/24,26,Bochum", "Íñigo Martínez 23/24,32,Barcelona", "L. Balerdi 23/24,24,Olympique Marseille", "N. Stark 23/24,28,Werder Bremen", "D. Ćaleta-Car 23/24,27,Olympique Lyonnais", "Juan Jesus 23/24,32,Napoli", "M. Jenz 23/24,24,Wolfsburg", "I. Hien 23/24,24,Hellas Verona", "K. Akpoguma 23/24,28,Hoffenheim", "L. Klostermann 23/24,27,RB Leipzig", "C. Basham 23/24,35,Sheffield United", "T. Kristensen 23/24,21,Udinese", "F. Ogier 23/24,34,Clermont", "R. Varane 23/24,30,Man United", "D. Rugani 23/24,29,Juventus", "N. Süle 23/24,28,Borussia Dortmund", "Jorge Meré 23/24,26,Cádiz", "Jon Pacheco 23/24,22,Real Sociedad" ];
+ const names = [ "J. Timber 22/23,21,Ajax", "Danilo 22/23,31,Juventus", "N. Otamendi 22/23,35,Benfica", "J. Egan 22/23,30,Sheffield United", "D. Hancko 22/23,25,Feyenoord", "N. Gudelj 22/23,31,Sevilla", "A. Trusty 22/23,24,Arsenal", "T. Alderweireld 22/23,34,Antwerp", "C. Burgess 22/23,31,Union Saint-Gilloise", "P. Chatzidiakos 22/23,26,AZ", "Éder Militão 22/23,25,Real Madrid", "V. van Dijk 22/23,31,Liverpool", "Z. Debast 22/23,19,Anderlecht", "W. Orban 22/23,30,RB Leipzig", "A. Disasi 22/23,25,Monaco", "Z. Vyner 22/23,26,Bristol City", "Dante 22/23,39,Nice", "Gabriel Magalhaes 22/23,25,Arsenal", "G. Mancini 22/23,27,Roma", "António Silva 22/23,19,Benfica", "M. Akanji 22/23,27,Man City", "A. Rüdiger 22/23,30,Real Madrid", "W. Pacho 22/23,21,Antwerp", "M. Ginter 22/23,29,Freiburg", "E. Tapsoba 22/23,24,Bayer Leverkusen", "Ibañez 22/23,24,Roma", "Min-Jae Kim 22/23,26,Napoli", "R. Knoche 22/23,31,Union Berlin", "D. Upamecano 22/23,24,Bayern München", "Rúben Dias 22/23,26,Man City", "C. Smalling 22/23,33,Roma", "Gonçalo Inácio 22/23,21,Sporting CP", "Andrei Girotto 22/23,31,Nantes", "J. Castelletto 22/23,28,Nantes", "J. Cooper 22/23,28,Millwall", "B. Mechele 22/23,30,Club Brugge", "Marquinhos 22/23,29,PSG", "J. Gvardiol 22/23,21,RB Leipzig", "B. Cabango 22/23,23,Swansea City", "D. O'Shea 22/23,24,WBA", "F. Acerbi 22/23,35,Internazionale", "J. Storey 22/23,25,Preston North End", "I. Hien 22/23,24,Hellas Verona", "S. Coates 22/23,32,Sporting CP", "F. Schär 22/23,31,Newcastle United", "M. Talbi 22/23,25,Lorient", "J. Todibo 22/23,23,Nice", "J. Vertonghen 22/23,36,Anderlecht", "T. Lees 22/23,32,Huddersfield Town", "Bremer 22/23,26,Juventus", "T. Lockyer 22/23,28,Luton Town", "G. Hanley 22/23,31,Norwich City", "D. Lenihan 22/23,29,Middlesbrough", "E. Dier 22/23,29,Tottenham", "E. N'Dicka 22/23,23,Eintracht Frankfurt", "D. Lovren 22/23,33,Olympique Lyonnais", "P. Hincapié 22/23,21,Bayer Leverkusen", "S. Van der Heyden 22/23,25,Union Saint-Gilloise", "L. Dunk 22/23,31,Brighton", "F. Tomori 22/23,25,Milan", "R. Porteous 22/23,24,Watford", "Tuta 22/23,23,Eintracht Frankfurt", "C. Kipré 22/23,26,Cardiff City", "S. Botman 22/23,23,Newcastle United", "A. Theate 22/23,23,Rennes", "D. Hyam 22/23,27,Blackburn Rovers", "P. Ng 22/23,27,Cardiff City", "Matheus Reis 22/23,28,Sporting CP", "S. Beukema 22/23,24,AZ", "K. Danso 22/23,24,Lens", "J. Tarkowski 22/23,30,Everton", "Lisandro Martínez 22/23,25,Man United", "M. Kilman 22/23,26,Wolverhampton", "A. Yiadom 22/23,31,Reading", "J. Tah 22/23,27,Bayer Leverkusen", "I. Kandouss 22/23,25,Union Saint-Gilloise", "C. Mbemba 22/23,28,Olympique Marseille", "N. Milenković 22/23,25,Fiorentina", "D. Batth 22/23,32,Sunderland", "Pau Torres 22/23,26,Villarreal", "Sergio Ramos 22/23,37,PSG", "A. Ahmedhodzic 22/23,24,Sheffield United", "M. Guéhi 22/23,22,Crystal Palace", "L. O'Nien 22/23,28,Sunderland", "J. Dunne 22/23,25,Queens Park Rangers", "Iván Marcano 22/23,35,Porto", "S. Pavlović 22/23,22,Salzburg", "A. Jones 22/23,25,Hull City", "W. Faes 22/23,25,Leicester City", "João Basso 22/23,26,Arouca", "T. Ream 22/23,35,Fulham", "M. Martins 22/23,28,Austria Wien", "A. Romagnoli 22/23,28,Lazio", "T. Holmes 22/23,23,Reading", "C. Romero 22/23,25,Tottenham", "N. Wood 22/23,20,Swansea City", "N. Süle 22/23,27,Borussia Dortmund", "R. Rodríguez 22/23,30,Torino", "R. Le Normand 22/23,26,Real Sociedad", "J. Okumu 22/23,25,Gent", "N. Elvedi 22/23,26,Borussia M'gladbach", "M. McKenzie 22/23,24,Genk", "B. Wilmot 22/23,23,Stoke City", "Y. Ndayishimiye 22/23,24,Nice", "M. McGuinness 22/23,22,Cardiff City", "Y. Abdelhamid 22/23,35,Reims", "M. de Ligt 22/23,23,Bayern München", "Riccieli 22/23,24,Famalicão", "David García 22/23,29,Osasuna", "P. Kalulu 22/23,23,Milan", "M. Fox 22/23,29,Stoke City", "Thiago Silva 22/23,38,Chelsea", "W. Harding 22/23,26,Rotherham United", "Unai Núñez 22/23,26,Celta de Vigo", "F. Baschirotto 22/23,26,Lecce", "Pepe 22/23,40,Porto", "E. Konsa 22/23,25,Aston Villa", "J. Torunarigha 22/23,25,Gent", "A. Frías 22/23,25,León", "J. Aidoo 22/23,27,Celta de Vigo", "A. Bastoni 22/23,24,Internazionale", "R. Koch 22/23,26,Leeds United", "Jubal 22/23,29,Auxerre", "Vitor Tormena 22/23,27,Sporting Braga", "B. Mee 22/23,33,Brentford", "Danilo Pereira 22/23,31,PSG", "A. Rouault 22/23,22,Toulouse", "P. Lienhart 22/23,26,Freiburg", "R. Nicolaisen 22/23,26,Toulouse", "L. Lindsay 22/23,27,Preston North End", "M. Bokadi 22/23,27,Standard Liège", "M. Helik 22/23,27,Huddersfield Town", "T. Mings 22/23,30,Aston Villa", "Alejandro Catena 22/23,28,Rayo Vallecano", "L. Balerdi 22/23,24,Olympique Marseille", "J. Andersen 22/23,27,Crystal Palace", "T. McIntyre 22/23,24,Reading", "W. Hoedt 22/23,29,Watford", "J. Giménez 22/23,28,Atlético Madrid", "K. McFadzean 22/23,36,Coventry City", "Djené 22/23,31,Getafe", "Luis Hernández 22/23,34,Cádiz", "C. Humphreys 22/23,24,Rotherham United", "G. Pezzella 22/23,31,Real Betis", "C. Hountondji 22/23,29,Angers SCO", "G. Wüthrich 22/23,28,Sturm Graz", "J. Stones 22/23,29,Man City", "E. Ampadu 22/23,22,Spezia", "R. Raveloson 22/23,26,Auxerre", "M. Darmian 22/23,33,Internazionale", "A. Rrahmani 22/23,29,Napoli", "C. Lukeba 22/23,20,Olympique Lyonnais", "R. Varane 22/23,30,Man United", "S. Luperto 22/23,26,Empoli", "Diogo Leite 22/23,24,Union Berlin", "R. Dickie 22/23,27,Queens Park Rangers", "E. Mihaj 22/23,25,Famalicão", "L. Brassier 22/23,23,Brest", "M. Wieteska 22/23,26,Clermont", "H. Ito 22/23,24,Stuttgart", "J. Lucumí 22/23,24,Bologna", "T. Hübers 22/23,26,Köln", "M. van de Ven 22/23,22,Wolfsburg", "N. Schlotterbeck 22/23,23,Borussia Dortmund", "B. Popović 22/23,23,Cercle Brugge", "D. Alaba 22/23,30,Real Madrid", "C. Montes 22/23,26,Espanyol", "Rodrigo Ely 22/23,29,Almería", "P. Bochniewicz 22/23,27,Heerenveen", "Igor Zubeldía 22/23,26,Real Sociedad", "Filipe Relvas 22/23,23,Portimonense", "D. Doekhi 22/23,24,Union Berlin", "Rafael Tolói 22/23,32,Atalanta", "André Ramalho 22/23,31,PSV", "J. Whatmough 22/23,26,Wigan Athletic", "S. Bueno 22/23,24,Girona", "T. Watanabe 22/23,26,Kortrijk", "W. Saliba 22/23,22,Arsenal", "K. Koulibaly 22/23,31,Chelsea", "Steven Vitória 22/23,36,Chaves", "B. Davies 22/23,30,Tottenham", "S. Babić 22/23,27,Almería", "M. Wöber 22/23,25,Leeds United", "E. Palmer-Brown 22/23,26,Troyes", "Igor Julio 22/23,25,Fiorentina", "Aderllan Santos 22/23,34,Rio Ave", "J. Gradit 22/23,30,Lens", "J. Idzes 22/23,23,Go Ahead Eagles", "T. Mahrer 22/23,33,Austria Klagenfurt", "M. Yoshida 22/23,34,Schalke 04", "Rodrigo Guth 22/23,22,Fortuna Sittard", "J. Bijol 22/23,24,Udinese", "D. Nikolaou 22/23,24,Spezia", "M. Araujo 22/23,28,Emmen", "J. Daland 22/23,23,Cercle Brugge", "R. Pröpper 22/23,29,Twente", "A. Buongiorno 22/23,23,Torino", "C. Cuesta 22/23,24,Genk", "D. Affengruber 22/23,22,Sturm Graz", "L. Martínez Quarta 22/23,27,Fiorentina", "L. Cabrera 22/23,31,Espanyol", "D. Sanderson 22/23,23,Birmingham City", "Pedro Álvaro 22/23,23,Estoril", "Domingos Duarte 22/23,28,Getafe", "J. Gaari 22/23,29,RKC Waalwijk", "N. Pérez 22/23,22,Udinese", "R. El Yaakoubi 22/23,27,Excelsior", "K. Mavropanos 22/23,25,Stuttgart", "F. Luckeneder 22/23,29,LASK", "S. Adewoye 22/23,22,RKC Waalwijk", "C. Mepham 22/23,25,Bournemouth", "J. Gouweleeuw 22/23,31,Augsburg", "E. Pieters 22/23,34,WBA", "J. Beyer 22/23,22,Burnley", "N. Pallois 22/23,35,Nantes", "Iván Márquez 22/23,28,NEC", "Dani Vivian 22/23,23,Athletic Bilbao", "E. Pinnock 22/23,30,Brentford", "T. Plavotić 22/23,25,Ried", "J. Kiwior 22/23,23,Arsenal", "C. Bassey 22/23,23,Ajax", "P. McNair 22/23,28,Middlesbrough", "Anderson 22/23,28,Vizela", "K. Laifis 22/23,30,Standard Liège", "N. Aguerd 22/23,27,West Ham", "Antonio Raíllo 22/23,31,Mallorca", "Samir 22/23,28,Tigres UANL", "T. Harwood-Bellis 22/23,21,Burnley", "F. Almada 22/23,24,Mazatlán", "J. Park 22/23,28,Portimonense", "Pedrão 22/23,26,Portimonense", "Vasco Fernandes 22/23,36,Casa Pia AC", "N. Dussenne 22/23,31,Standard Liège", "V. Lindelöf 22/23,28,Man United", "D. Hadžikadunić 22/23,24,Mallorca", "Volnei 22/23,23,UD Oliveirense", "A. Djiku 22/23,28,Strasbourg", "Rúben Fernandes 22/23,37,Gil Vicente", "M. Valjent 22/23,27,Mallorca", "S. Niakaté 22/23,23,Sporting Braga", "N. Casale 22/23,25,Lazio", "I. Bamba 22/23,21,Vitória Guimarães", "Mikel Villanueva 22/23,30,Vitória Guimarães", "M. Kempf 22/23,28,Hertha BSC", "F. Medina 22/23,24,Lens", "F. Bacher 22/23,22,WSG Swarovski Tirol", "O. Solet 22/23,23,Salzburg", "A. Sandro 22/23,32,Juventus", "M. Veljković 22/23,27,Werder Bremen", "J. Hugonet 22/23,23,Austria Lustenau", "H. Carter 22/23,23,Blackburn Rovers", "André Amaro 22/23,20,Vitória Guimarães", "Nacho Fernández 22/23,33,Real Madrid", "H. Ekdal 22/23,24,Burnley", "A. Mandi 22/23,31,Villarreal", "M. Meulensteen 22/23,23,Vitesse", "A. Christensen 22/23,27,Barcelona", "M. te Wierik 22/23,30,Emmen", "D. Mirani 22/23,27,Volendam", "R. Balker 22/23,24,Groningen", "R. Flamingo 22/23,20,Vitesse", "Nélson Monte 22/23,27,Chaves", "O. Bevan 22/23,19,Yeovil Town", "S. Kolašinac 22/23,29,Olympique Marseille", "Edimilson Fernandes 22/23,27,Mainz 05", "Nuno Lima 22/23,22,Paços de Ferreira", "O. Kabak 22/23,23,Hoffenheim", "M. Salisu 22/23,24,Southampton", "B. Vriends 22/23,32,Sparta Rotterdam", "G. Maripán 22/23,29,Monaco", "P. Wiśniewski 22/23,24,Spezia", "J. Branthwaite 22/23,20,PSV", "Yeray Álvarez 22/23,28,Athletic Bilbao", "C. Lenglet 22/23,27,Tottenham", "M. Diakhaby 22/23,26,Valencia", "N. Isimat-Mirin 22/23,31,Vitesse", "José Fonte 22/23,39,Lille", "S. Savić 22/23,32,Atlético Madrid", "A. Omobamidele 22/23,20,Norwich City", "K. Boateng 22/23,26,Santa Clara", "M. Senesi 22/23,26,Bournemouth", "N. Zolotić 22/23,29,Casa Pia AC", "F. Lejeune 22/23,32,Rayo Vallecano", "I. Zabarnyi 22/23,20,Bournemouth", "R. Abascal 22/23,29,Boavista", "M. Friedl 22/23,25,Werder Bremen", "C. Jullien 22/23,30,Montpellier", "I. Ordets 22/23,30,Bochum", "D. Batubinsika 22/23,27,Maccabi Haifa", "Mario Hermoso 22/23,27,Atlético Madrid", "Bernardo Vital 22/23,22,Estoril", "M. Rodin 22/23,27,Oostende", "P. Jagielka 22/23,40,Stoke City", "P. Schuurs 22/23,23,Torino", "M. Sollbauer 22/23,33,Rapid Wien", "X. Mbuyamba 22/23,21,Volendam", "L. Peltier 22/23,36,Rotherham United", "A. Rogel 22/23,25,Hertha BSC", "Paulo Oliveira 22/23,31,Sporting Braga", "J. Worrall 22/23,26,Nottingham Forest", "R. Araújo 22/23,24,Barcelona", "A. Seidu 22/23,23,Clermont", "O. Gonzalez 22/23,25,Ajaccio", "R. Cannon 22/23,24,Boavista", "O. Colley 22/23,30,Beşiktaş", "Y. Salmier 22/23,30,Troyes", "G. Trauner 22/23,31,Feyenoord", "Zainadine Júnior 22/23,34,Marítimo", "Y. Valery 22/23,24,Angers SCO", "I. Konaté 22/23,24,Liverpool", "M. Jenz 22/23,24,Schalke 04", "S. Piesinger 22/23,31,Wolfsberger AC", "Pablo Marí 22/23,29,Monza", "B. Lambert 22/23,23,Eupen", "J. Amofa 22/23,24,Go Ahead Eagles", "M. Škriniar 22/23,28,Internazionale", "J. Rodon 22/23,25,Rennes", "N. Collins 22/23,22,Wolverhampton", "J. Robinson 22/23,29,Sheffield United", "Javi Sánchez 22/23,26,Real Valladolid", "J. Thorniley 22/23,26,Blackpool", "G. Osho 22/23,24,Luton Town", "M. Hummels 22/23,34,Borussia Dortmund", "K. Djidji 22/23,30,Torino", "M. van der Hoorn 22/23,30,Utrecht", "S. de Vrij 22/23,31,Internazionale", "C. Cathcart 22/23,34,Watford", "N. Araújo 22/23,31,América", "F. Ricca 22/23,28,OH Leuven", "A. Hanche-Olsen 22/23,26,Mainz 05", "S. Diomandé 22/23,22,Olympique Lyonnais", "A. Hughes 22/23,30,Preston North End", "K. Misao 22/23,27,Santa Clara", "G. Scalvini 22/23,19,Atalanta", "Rodrigo Becão 22/23,27,Udinese", "D. Fry 22/23,25,Middlesbrough", "S. Bell 22/23,31,Mainz 05", "R. Atkinson 22/23,24,Bristol City", "C. Dawson 22/23,33,Wolverhampton", "A. Tanghe 22/23,24,Oostende", "A. Obispo 22/23,24,PSV", "L. Mühl 22/23,26,Austria Wien", "T. Adarabioyo 22/23,25,Fulham", "B. Chardonnet 22/23,28,Brest", "A. Izzo 22/23,31,Monza", "O. Diomandé 22/23,18,Sporting CP", "C. Cresswell 22/23,20,Millwall", "H. Maguire 22/23,30,Man United", "D. Amartey 22/23,28,Leicester City", "E. Mašović 22/23,24,Bochum", "J. Bednarek 22/23,27,Southampton", "José Copete 22/23,23,Mallorca", "Sergi Gómez 22/23,31,Espanyol", "R. Neustädter 22/23,35,Westerlo", "Aridane Hernández 22/23,34,Osasuna", "M. Bianchetti 22/23,30,Cremonese", "Luiz Felipe 22/23,26,Real Betis", "A. Flint 22/23,33,Stoke City", "A. Ismajli 22/23,26,Empoli", "H. Darling 22/23,23,Swansea City", "A. Al-Dakhil 22/23,21,Burnley", "I. Diop 22/23,26,Fulham", "K. Zouma 22/23,28,West Ham", "E. Agbadou 22/23,25,Reims", "B. Badiashile 22/23,22,Chelsea", "Édgar González 22/23,26,Real Betis", "N. Edokpolor 22/23,26,Rheindorf Altach", "Bruno Wilson 22/23,26,Vizela", "Fernando Varela 22/23,35,Casa Pia AC", "C. Tilt 22/23,31,Wigan Athletic", "F. Daniliuc 22/23,22,Salernitana", "M. Hilgers 22/23,22,Twente", "K. Itakura 22/23,26,Borussia M'gladbach", "C. Nelson 22/23,30,Blackpool", "Fábio Cardoso 22/23,29,Porto", "Joaquín Fernández 22/23,26,Real Valladolid", "I. Doukouré 22/23,19,Strasbourg", "S. McLoughlin 22/23,26,Hull City", "L. Caldirola 22/23,32,Monza", "G. Ferrari 22/23,31,Sassuolo", "B. Amione 22/23,21,Sampdoria", "J. Opoku 22/23,24,Arouca", "M. Erlić 22/23,25,Sassuolo", "K. Naismith 22/23,31,Bristol City", "J. Panzo 22/23,22,Coventry City", "C. Taylor 22/23,29,Burnley", "L. Badé 22/23,23,Sevilla", "A. Ogbonna 22/23,35,West Ham", "M. Caufriez 22/23,26,Clermont", "E. Shabani 22/23,19,Mainz 05", "J. Vásquez 22/23,24,Cremonese", "A. Webster 22/23,28,Brighton", "T. Chalobah 22/23,23,Chelsea", "O. Alderete 22/23,26,Getafe", "M. Blažič 22/23,30,Angers SCO", "J. Kayembe 22/23,28,Charleroi", "B. Kouyaté 22/23,26,Montpellier", "A. Ferrari 22/23,28,Cremonese", "S. Gigot 22/23,29,Olympique Marseille", "Thiago Mendes 22/23,31,Olympique Lyonnais", "M. Ekpiteta 22/23,27,Blackpool", "K. Jakić 22/23,26,Eintracht Frankfurt", "Tomás Araújo 22/23,21,Gil Vicente", "T. Nianzou 22/23,20,Sevilla", "D. Bates 22/23,26,Mechelen", "B. van Duijl 22/23,17,Volendam", "A. Laporte 22/23,29,Man City", "W. Janssens 22/23,28,Sint-Truiden", "E. Aiwu 22/23,22,Cremonese", "O. Kossounou 22/23,22,Bayer Leverkusen", "Raúl Albiol 22/23,37,Villarreal", "L. McNally 22/23,23,Coventry City", "R. Pérez 22/23,33,San Lorenzo", "C. Coady 22/23,30,Everton", "M. Mbow 22/23,23,RFC Seraing", "D. Vos 22/23,21,Emmen", "F. Gatti 22/23,24,Juventus", "L. Querfeld 22/23,19,Rapid Wien", "D. Potts 22/23,29,Luton Town", "Léo Andrade 22/23,25,Khimki", "A. Pieper 22/23,25,Werder Bremen", "L. Lochoshvili 22/23,25,Cremonese", "R. Paeshuyse 22/23,21,Eupen", "C. Basham 22/23,34,Sheffield United", "J. Gomez 22/23,26,Liverpool", "B. Benamar 22/23,26,Volendam", "N. Sarr 22/23,29,Reading", "M. Sagnan 22/23,24,Utrecht", "T. Leistner 22/23,32,Sint-Truiden", "S. Hutchinson 22/23,32,Millwall", "N. Stark 22/23,28,Werder Bremen", "R. Wood 22/23,37,Rotherham United", "O. Urhoghide 22/23,22,Oostende", "S. Umtiti 22/23,29,Lecce", "J. Veldmate 22/23,34,Emmen", "Pedro Bigas 22/23,33,Elche", "S. Bornauw 22/23,24,Wolfsburg", "R. Pantalon 22/23,25,Rio Ave", "V. Sasso 22/23,32,Boavista", "Titi 22/23,35,Fortaleza", "A. Soumaoro 22/23,30,Bologna", "Patrick William 22/23,26,Rio Ave", "R. Tagir 22/23,20,Westerlo", "C. Avinel 22/23,36,Ajaccio", "Tiago Djaló 22/23,22,Lille", "K. Akpoguma 22/23,28,Hoffenheim", "N. Mehssatou 22/23,20,Kortrijk", "D. Baumgartner 22/23,26,Wolfsberger AC", "G. Pereira 22/23,23,Gil Vicente", "A. Auassar 22/23,36,Sparta Rotterdam", "S. McKenna 22/23,26,Nottingham Forest", "A. Bella-Kotchap 22/23,21,Southampton", "A. Sylla 22/23,20,Club Brugge", "M. Le Marchand 22/23,33,Strasbourg", "Adryelson 22/23,25,Botafogo", "K. Mac Allister 22/23,25,Argentinos Juniors", "Marcos Alonso 22/23,32,Barcelona", "Lucas Alves 22/23,30,Portimonense", "Lucas Galvão 22/23,31,Austria Wien", "H. Delcroix 22/23,24,Anderlecht", "H. Palacios 22/23,29,Elche", "N. Viergever 22/23,33,Utrecht", "Daniel Ayala 22/23,32,Blackburn Rovers", "S. Baidoo 22/23,19,Salzburg", "M. Bauer 22/23,23,Augsburg", "Nino 22/23,26,Fluminense", "H. Souttar 22/23,24,Leicester City", "V. Cuesta 22/23,34,Botafogo", "D. Ballard 22/23,23,Sunderland", "Lyanco 22/23,26,Southampton", "L. Bergsma 22/23,26,Cambuur", "C. Vidal 22/23,22,Ajaccio", "L. Pirola 22/23,21,Salernitana", "B. Nuytinck 22/23,33,Sampdoria", "Fabricio Bruno 22/23,27,Flamengo", "M. Tol 22/23,25,Cambuur", "E. Cömert 22/23,25,Valencia", "M. Haïdara 22/23,30,Lens", "B. Djimsiti 22/23,30,Atalanta", "Carlos Ponck 22/23,28,Chaves", "S. Wharton 22/23,25,Blackburn Rovers", "Bernardo 22/23,28,Salzburg", "Eric García 22/23,22,Barcelona", "A. Dari 22/23,24,Brest", "F. Sánchez 22/23,19,Gimnasia La Plata", "K. Vogt 22/23,31,Hoffenheim", "João Nunes 22/23,27,Casa Pia AC", "D. Lavalée 22/23,26,Mechelen", "J. El Yamiq 22/23,31,Real Valladolid", "G. Cunningham 22/23,32,Preston North End", "J. Jeanvier 22/23,31,Auxerre", "S. Mitrović 22/23,33,Getafe", "L. Villalba 22/23,28,Argentinos Juniors", "N. Figal 22/23,29,Boca Juniors", "Unai García 22/23,31,Osasuna", "M. Dekker 22/23,19,AZ", "Patric 22/23,30,Lazio", "José Marsà 22/23,21,Sporting Gijón", "M. Thiaw 22/23,21,Milan", "J. Chabot 22/23,25,Köln", "M. Hasebe 22/23,39,Eintracht Frankfurt", "N. Gyömbér 22/23,30,Salernitana", "F. Gattoni 22/23,24,San Lorenzo", "Z. Romero 22/23,23,Estudiantes", "D. Siovas 22/23,34,Fortuna Sittard", "C. Kabasele 22/23,32,Watford", "B. Gibson 22/23,30,Norwich City", "K. Pierie 22/23,22,Excelsior", "S. Kjær 22/23,34,Milan", "F. Tobio 22/23,33,Huracán", "K. Piątkowski 22/23,22,Gent", "S. Andreou 22/23,20,Charleroi", "R. Schifferl 22/23,23,Wolfsberger AC", "A. Filin 22/23,26,Eupen", "Ivanildo Fernandes 22/23,27,Vizela", "K. Günter 22/23,28,Sampdoria", "M. Rose 22/23,27,Coventry City", "E. Brítez 22/23,31,Fortaleza", "R. Bauer 22/23,28,Sint-Truiden", "D. Bronn 22/23,27,Salernitana", "F. Russo 22/23,28,Ludogorets", "L. Perrin 22/23,24,Strasbourg", "M. Roberts 22/23,32,Birmingham City", "D. Van den Buijs 22/23,27,RKC Waalwijk", "B. Meïté 22/23,21,Lorient", "Bruno Alves 22/23,32,Grêmio", "Jon Pacheco 22/23,22,Real Sociedad", "Robert Renan 22/23,19,Zenit", "G. Gómez 22/23,30,Palmeiras", "Tobias Figueiredo 22/23,29,Hull City", "P. Ceccaroni 22/23,27,Lecce", "L. Morales 22/23,32,Gimnasia La Plata", "A. Mbengue 22/23,21,Reading", "A. Borković 22/23,23,Sturm Graz", "W. Ditta 22/23,25,Newell's Old Boys", "T. Derijck 22/23,35,Zulte-Waregem", "M. Meisl 22/23,22,Austria Wien", "F. Smand 22/23,20,Cambuur", "M. Taloverov 22/23,22,LASK", "F. Garcés 22/23,23,Colón", "A. Luciatti 22/23,30,Tigre", "S. Ajayi 22/23,29,WBA", "G. Hernández 22/23,25,San Lorenzo", "J. Porozo 22/23,22,Troyes", "T. Cardona 22/23,27,Defensa y Justicia", "Bruno Melo 22/23,30,Goiás", "F. Ogier 22/23,34,Clermont", "J. Bruma 22/23,31,Heerenveen", "Alexsandro 22/23,23,Lille", "L. Sigali 22/23,36,Racing Club", "M. Lacroix 22/23,23,Wolfsburg", "K. Long 22/23,32,Birmingham City", "W. Fofana 22/23,22,Chelsea", "W. Troost-Ekong 22/23,29,Salernitana", "Marlon 22/23,27,Monza", "E. Roco 22/23,30,Elche", "M. Lackner 22/23,32,Ried", "F. Mallo 22/23,28,Rosario Central", "C. Özkacar 22/23,22,Valencia", "N. Galović 22/23,30,Arouca", "P. Hristov 22/23,24,Venezia", "M. Estève 22/23,21,Montpellier", "Jemerson 22/23,30,Atlético Mineiro", "A. Carboni 22/23,22,Venezia", "Maracás 22/23,29,Paços de Ferreira", "P. Dawidowicz 22/23,28,Hellas Verona", "Felipe 22/23,34,Nottingham Forest", "M. Mosquera 22/23,22,Marítimo", "M. Sonnleitner 22/23,36,Hartberg", "Gabriel Paulista 22/23,32,Valencia", "Fali 22/23,29,Cádiz", "L. Bonucci 22/23,36,Juventus", "Íñigo Martínez 22/23,32,Athletic Bilbao", "Diego Llorente 22/23,29,Roma", "C. Masterson 22/23,24,Gillingham", "Fernando Calero 22/23,27,Espanyol", "J. Bager 22/23,26,Charleroi", "Ruan 22/23,23,Sassuolo", "P. Perdichizzi 22/23,30,Westerlo", "I. Touré 22/23,20,Auxerre", "F. Uremović 22/23,26,Hertha BSC", "M. Demiral 22/23,25,Atalanta", "J. Brooks 22/23,30,Hoffenheim", "L. Lollo 22/23,36,Estudiantes", "Thiago Heleno 22/23,34,Athletico Paranaense", "F. Strauss 22/23,22,Rheindorf Altach", "G. Nyamsi 22/23,26,Strasbourg", "P. Sandler 22/23,26,NEC", "R. Meissen 22/23,21,Sparta Rotterdam", "David López 22/23,33,Girona", "A. King 22/23,34,Bristol City", "M. Pollock 22/23,21,Watford", "J. St. Juste 22/23,26,Sporting CP", "F. Alarcón 22/23,28,Instituto", "Simo Keddari 22/23,18,Espanyol", "S. Nieuwpoort 22/23,30,Excelsior", "L. Colwill 22/23,20,Chelsea", "Messias 22/23,28,Santos", "D. Opare 22/23,32,RFC Seraing", "F. Rasmussen 22/23,31,Godoy Cruz", "J. Hendry 22/23,28,Club Brugge", "A. Gravillon 22/23,25,Torino", "A. Sylla 22/23,22,RFC Seraing", "K. Wimmer 22/23,30,Rapid Wien", "J. Laporte 22/23,29,Lorient", "Julio Pleguezuelo 22/23,26,Twente", "P. Jaeckel 22/23,24,Union Berlin", "José Ángel Carmona 22/23,21,Elche", "Jorge Cuenca 22/23,23,Villarreal", "João Silva 22/23,24,Kortrijk", "J. Vanlerberghe 22/23,26,Mechelen", "L. Kilian 22/23,23,Köln", "A. Rami 22/23,37,Troyes", "T. Oermann 22/23,19,Wolfsberger AC", "J. Matip 22/23,31,Liverpool", "Morato 22/23,21,Benfica", "S. Nsoki 22/23,24,Hoffenheim", "Chumi 22/23,24,Almería", "K. Rekik 22/23,28,Sevilla", "G. Medel 22/23,35,Bologna", "Rezende 22/23,28,Bahia", "D. Oroz 22/23,22,Vitesse", "Gil 22/23,35,Corinthians", "Lucas Halter 22/23,23,Goiás", "M. Tounkara 22/23,21,Vitória Guimarães", "R. Burke 22/23,26,Luton Town", "J. Handl 22/23,25,Austria Wien", "G. Magnani 22/23,27,Hellas Verona", "F. Sierralta 22/23,26,Watford", "B. Bianchi 22/23,34,Atlético Tucumán", "W. Omari 22/23,23,Rennes", "K. Naughton 22/23,34,Swansea City", "C. Quintana 22/23,35,Rosario Central", "F. Uduokhai 22/23,25,Augsburg", "A. Callens 22/23,31,Girona", "L. Cooper 22/23,31,Leeds United", "Kike Salas 22/23,21,Tenerife", "G. Hall 22/23,31,Middlesbrough", "R. Kluivert 22/23,22,Utrecht", "P. Goltz 22/23,38,Colón", "M. Horvat 22/23,24,Hartberg", "J. Turi 22/23,21,Ried", "Borja López 22/23,29,Zulte-Waregem", "M. Eerdhuijzen 22/23,22,Sparta Rotterdam", "S. van Ottele 22/23,21,Heerenveen", "Juanpe 22/23,32,Girona", "D. Marcq 22/23,34,Charleroi", "Ygor Nogueira 22/23,28,Santa Clara", "D. Ćaleta-Car 22/23,26,Southampton", "M. Tshibuabua 22/23,21,RFC Seraing", "L. Willen 22/23,20,Zulte-Waregem", "Vitão 22/23,23,Internacional", "P. Barrios 22/23,32,Godoy Cruz", "Iago Maidana 22/23,27,América Mineiro", "I. Hautekiet 22/23,21,Standard Liège", "J. Novillo 22/23,25,Huracán", "N. Soldo 22/23,22,Köln", "A. Bamba 22/23,33,Angers SCO", "F. Calderón 22/23,25,Unión Santa Fe", "F. Ceccherini 22/23,31,Hellas Verona", "R. Holding 22/23,27,Arsenal", "David Carmo 22/23,23,Porto", "C. Corvalán 22/23,34,Unión Santa Fe", "C. Lema 22/23,33,Lanús", "R. Norrington-Davies 22/23,24,Sheffield United", "J. Stephens 22/23,29,Southampton", "C. Báez 22/23,33,Independiente", "Matheus Costa 22/23,28,Marítimo", "M. Tambedou 22/23,20,Zulte-Waregem", "João Victor 22/23,24,Nantes", "M. Wasinski 22/23,19,Kortrijk", "A. Mumin 22/23,24,Rayo Vallecano", "E. Cornelisse 22/23,20,Vitesse", "L. González Pírez 22/23,31,River Plate", "J. Kramer 22/23,26,NEC", "R. Sykes 22/23,24,Union Saint-Gilloise", "Bernardo Espinosa 22/23,33,Girona", "M. Caldara 22/23,29,Spezia", "N. Colombo 22/23,24,Defensa y Justicia", "C. Wooh 22/23,21,Rennes", "E. Olivera 22/23,33,Banfield", "D. Zagadou 22/23,24,Stuttgart", "A. Rébola 22/23,34,Belgrano", "M. Lemos 22/23,27,Atlético Mineiro", "T. Blokzijl 22/23,18,Groningen", "J. Simpson 22/23,26,Cardiff City", "M. Friedrich 22/23,27,Borussia M'gladbach", "W. Kannemann 22/23,32,Grêmio", "Zé Ivaldo 22/23,26,Athletico Paranaense", "Josué Sá 22/23,30,Rio Ave", "A. Hack 22/23,29,Mainz 05", "J. Guilavogui 22/23,32,Wolfsburg", "Marllon 22/23,31,Cuiabá", "S. van Beek 22/23,28,Heerenveen", "Lucas Oliveira 22/23,27,Cruzeiro", "A. Maciel 22/23,26,Banfield", "E. Ferigra 22/23,24,Paços de Ferreira", "T. Rotter 22/23,31,Hartberg", "B. Wright 22/23,30,Rotherham United", "J. Evans 22/23,35,Leicester City", "M. Zanka Jørgensen 22/23,33,Brentford", "M. Keane 22/23,30,Everton", "L. Bessile 22/23,24,Eupen", "Lucas Cunha 22/23,26,Red Bull Bragantino", "Léo Pereira 22/23,27,Flamengo", "S. Knežević 22/23,26,Charleroi", "M. Nastasić 22/23,30,Mallorca", "L. Klostermann 22/23,27,RB Leipzig", "Luan 22/23,30,Palmeiras", "Lucas Beraldo 22/23,19,São Paulo", "Ximo Navarro 22/23,33,Fortuna Sittard", "Juan Jesus 22/23,31,Napoli", "M. Niakhaté 22/23,27,Nottingham Forest", "Kanu 22/23,26,Bahia", "E. Aguilera 22/23,33,Tigre", "D. Sánchez 22/23,26,Tottenham", "S. Barreto 22/23,24,Independiente", "G. Mercado 22/23,36,Internacional", "M. Centurión 22/23,24,Arsenal", "Mexer 22/23,34,Estoril", "G. Nauber 22/23,31,Go Ahead Eagles", "J. Sørensen 22/23,25,Norwich City", "L. Balogun 22/23,34,Queens Park Rangers", "N. Meriano 22/23,22,Belgrano", "M. Torrén 22/23,34,Argentinos Juniors", "J. Kerr 22/23,26,Wigan Athletic", "B. Valdez 22/23,30,Boca Juniors", "S. Bradley 22/23,31,Luton Town", "F. Roncaglia 22/23,36,Boca Juniors", "E. Ebosse 22/23,24,Udinese", "J. Sosa 22/23,21,Bologna", "G. Sauro 22/23,33,Huracán", "Bruno Viana 22/23,28,Coritiba", "B. Diaby 22/23,25,Preston North End", "E. Insúa 22/23,34,Racing Club", "M. Brizuela 22/23,26,Vélez Sarsfield", "H. Dean 22/23,31,Birmingham City", "Luciano Castán 22/23,33,Cruzeiro", "G. González 22/23,28,Mallorca", "Ítalo 22/23,21,Santa Clara", "S. Seymor 22/23,21,Excelsior", "D. Wouters 22/23,26,Mechelen", "R. Edmonds-Green 22/23,24,Huddersfield Town", "D. Coppola 22/23,19,Hellas Verona", "Sidimar 22/23,30,Goiás", "C. Taylor 22/23,21,Stoke City", "S. Caulker 22/23,31,Wigan Athletic", "N. Romero 22/23,19,Atlético Tucumán", "J. Murillo 22/23,31,Sampdoria", "F. Fazio 22/23,36,Salernitana", "John Nwankwo 22/23,22,Elche", "Renê 22/23,31,Marítimo", "M. García 22/23,23,Sarmiento", "E. Godoy 22/23,29,Belgrano", "J. Pombo 22/23,22,Arsenal", "Y. Nakayama 22/23,26,Huddersfield Town", "L. Ranieri 22/23,24,Fiorentina", "Natan 22/23,22,Red Bull Bragantino", "D. Ouedraogo 22/23,24,OH Leuven", "R. Williams 22/23,22,Liverpool", "C. Verdonk 22/23,26,NEC", "David Luiz 22/23,36,Flamengo", "J. Canale 22/23,26,Lanús", "N. Capraro 22/23,25,Barracas Central", "M. Barać 22/23,28,Oostende", "Léo 22/23,27,Vasco da Gama", "G. Velázquez 22/23,32,Newell's Old Boys", "K. Fila 22/23,24,Zulte-Waregem", "M. Bola 22/23,25,Middlesbrough", "H. Marcelin 22/23,23,Cercle Brugge", "A. Diallo 22/23,27,RB Leipzig", "M. Sarr 22/23,24,Monaco", "B. Godeau 22/23,31,Gent", "J. Clarke-Salter 22/23,25,Queens Park Rangers", "B. Capon 22/23,35,Oostende", "A. Ouattara 22/23,22,Genk", "G. Piovi 22/23,28,Racing Club", "Ricardo Silva 22/23,30,América Mineiro", "F. Katelaris 22/23,26,Oostende", "D. Dessoleil 22/23,30,Kortrijk", "J. van Aken 22/23,28,Heerenveen", "J. Mccart 22/23,25,Leyton Orient", "M. Bech Sørensen 22/23,24,Groningen", "M. Pellegrino 22/23,20,Platense", "K. Bonifazi 22/23,27,Bologna", "S. Trémoulet 22/23,23,RFC Seraing", "A. Dijksteel 22/23,26,Middlesbrough", "M. Smets 22/23,19,Sint-Truiden", "D. D'Ambrosio 22/23,34,Internazionale", "Diego González 22/23,28,Elche", "M. Karamarko 22/23,25,Hartberg", "Bruno Uvini 22/23,32,Grêmio", "Nathan Silva 22/23,26,Atlético Mineiro", "V. Chiricheș 22/23,33,Cremonese", "S. Núñez 22/23,23,Estudiantes", "Jorge Meré 22/23,26,Cádiz", "C. Hérelle 22/23,30,Brest", "L. Østigård 22/23,23,Napoli", "S. Cook 22/23,32,Nottingham Forest", "P. Díaz 22/23,28,River Plate", "Gabriel Xavier 22/23,22,Bahia", "J. Flint 22/23,22,Volendam", "R. Arboleda 22/23,31,São Paulo", "J. Belocian 22/23,18,Rennes", "K. De Winter 22/23,20,Empoli", "P. Retsos 22/23,24,Olympiacos Piraeus", "David Duarte 22/23,28,Bahia", "Éder 22/23,28,América Mineiro", "Murillo dos Santos 22/23,20,Corinthians", "Adriel 22/23,26,Austria Lustenau", "F. Mansilla 22/23,24,Newell's Old Boys", "E. Bailly 22/23,29,Olympique Marseille", "W. Boly 22/23,32,Nottingham Forest", "T. Blackett 22/23,29,Rotherham United", "L. Greiml 22/23,21,Schalke 04", "O. Camara 22/23,20,Angers SCO", "L. Yoro 22/23,17,Lille", "Víctor Chust 22/23,23,Cádiz", "W. Boyle 22/23,27,Huddersfield Town", "C. Okoli 22/23,21,Atalanta", "M. Dárdai 22/23,21,Hertha BSC", "I. Vázquez 22/23,25,Platense", "L. Magallán 22/23,29,Elche", "P. Kimpembe 22/23,27,PSG", "N. Murru 22/23,28,Sampdoria", "C. Söyüncü 22/23,27,Leicester City", "N. Aké 22/23,28,Man City", "J. Hato 22/23,17,Ajax", "Average 22/23,27,Club", "Bruno Wilson 23/24,26,Vizela", "Aderllan Santos 23/24,34,Rio Ave", "Rúben Fernandes 23/24,37,Gil Vicente", "C. Awaziem 23/24,26,Boavista", "Jorge Fernandes 23/24,26,Vitória Guimarães", "N. Otamendi 23/24,35,Benfica", "Anderson 23/24,28,Vizela", "Marcelo 23/24,34,Moreirense", "Fernando Varela 23/24,35,Casa Pia AC", "Filipe Relvas 23/24,24,Portimonense", "N. Zolotić 23/24,30,Casa Pia AC", "Kialonda Gaspar 23/24,26,Estrela Amadora", "O. Diomandé 23/24,19,Sporting CP", "António Silva 23/24,20,Benfica", "Otávio 23/24,21,Famalicão", "Manu 23/24,22,Vitória Guimarães", "Gonçalo Inácio 23/24,22,Sporting CP", "Gabriel Pereira 23/24,23,Gil Vicente", "S. Coates 23/24,33,Sporting CP", "Gonçalo Silva 23/24,32,Farense", "Volnei Feltes 23/24,23,Estoril", "Alemão 23/24,21,Portimonense", "Bernardo Vital 23/24,22,Estoril", "Bruno Rodrigues 23/24,22,Chaves", "J. Omurwa 23/24,25,Estrela Amadora", "R. Abascal 23/24,29,Boavista", "Pedrão 23/24,26,Portimonense", "Pedro Álvaro 23/24,23,Estoril", "Riccieli 23/24,25,Famalicão", "José Fonte 23/24,39,Sporting Braga", "Vasco Fernandes 23/24,36,Casa Pia AC", "Maracás 23/24,29,Moreirense", "N. Galović 23/24,31,Arouca", "Javi Montero 23/24,24,Arouca", "Josué Sá 23/24,31,Rio Ave", "Tiago Esgaio 23/24,28,Arouca", "Rafael Fernandes 23/24,21,Arouca", "Miguel Lopes 23/24,36,Estrela Amadora", "Ygor Nogueira 23/24,28,Chaves", "David Carmo 23/24,24,Porto", "Sandro Cruz 23/24,22,Chaves", "R. Pantalon 23/24,26,Rio Ave", "Martín Aguirregabiria 23/24,27,Famalicão", "Tomás Ribeiro 23/24,24,Vitória Guimarães", "S. Vitória 23/24,36,Chaves", "Wendell 23/24,30,Porto", "Mansur 23/24,30,Estrela Amadora", "Z. Muscat 23/24,30,Farense", "S. Niakaté 23/24,24,Sporting Braga", "Artur Jorge 23/24,29,Farense", "Matheus Reis 23/24,28,Sporting CP", "G. Frimpong 23/24,24,Moreirense", "S. Saatçı 23/24,20,Sporting Braga", "Nathan 23/24,22,Famalicão", "Fábio Cardoso 23/24,29,Porto", "Pepe 23/24,40,Porto", "Filipe Ferreira 23/24,33,Boavista", "Iván Marcano 23/24,36,Porto", "Miguel Nóbrega 23/24,23,Rio Ave", "Paulo Oliveira 23/24,31,Sporting Braga", "Mikel Villanueva 23/24,30,Vitória Guimarães", "E. Cabaco 23/24,28,Estoril", "D. Mirani 23/24,27,Volendam", "D. Hancko 23/24,25,Feyenoord", "D. Siovas 23/24,35,Fortuna Sittard", "L. Geertruida 23/24,23,Feyenoord", "C. Widell 23/24,20,Excelsior", "T. Velthuis 23/24,21,Sparta Rotterdam", "Rodrigo Guth 23/24,23,Fortuna Sittard", "S. Kersten 23/24,25,PEC Zwolle", "J. Hato 23/24,17,Ajax", "M. Hilgers 23/24,22,Twente", "C. Verdonk 23/24,26,NEC", "R. Pröpper 23/24,30,Twente", "B. Vriends 23/24,32,Sparta Rotterdam", "J. Hoogma 23/24,25,Heracles", "O. Boscagli 23/24,25,PSV", "D. Oroz 23/24,23,Vitesse", "P. Bochniewicz 23/24,27,Heerenveen", "André Ramalho 23/24,31,PSV", "R. El Yaakoubi 23/24,27,Excelsior", "R. Flamingo 23/24,20,Utrecht", "B. Nuytinck 23/24,33,NEC", "D. van Bruggen 23/24,27,Almere City", "N. Isimat-Mirin 23/24,31,Vitesse", "B. Benamar 23/24,26,Volendam", "B. van Polen 23/24,38,PEC Zwolle", "J. Amofa 23/24,24,Go Ahead Eagles", "T. Lam 23/24,29,PEC Zwolle", "R. Bazoer 23/24,27,AZ", "M. Sagnan 23/24,24,Utrecht", "J. Kramer 23/24,27,Go Ahead Eagles", "R. Hendriks 23/24,22,Vitesse", "J. Šutalo 23/24,23,Ajax", "T. Barbet 23/24,22,Almere City", "S. Floranus 23/24,25,Almere City", "J. Schouten 23/24,26,PSV", "D. Van den Buijs 23/24,28,RKC Waalwijk", "Alexandre Penetra 23/24,22,AZ", "J. Flint 23/24,23,Volendam", "M. van der Hoorn 23/24,31,Utrecht", "S. Bultman 23/24,18,Heracles", "S. Nieuwpoort 23/24,30,Excelsior", "J. Gaari 23/24,29,RKC Waalwijk", "S. van Beek 23/24,29,Heerenveen", "M. Dijks 23/24,30,Fortuna Sittard", "G. Nauber 23/24,31,Go Ahead Eagles", "B. Plat 23/24,23,Volendam", "L. Mbe Soh 23/24,22,Almere City", "S. Adewoye 23/24,23,RKC Waalwijk", "S. van Ottele 23/24,21,Heerenveen", "M. Ross 23/24,22,NEC", "R. Vita 23/24,22,Fortuna Sittard", "S. Sonnenberg 23/24,24,Heracles", "G. Trauner 23/24,31,Feyenoord", "J. Jacobs 23/24,23,Almere City", "Unai Núñez 23/24,26,Celta de Vigo", "F. Lejeune 23/24,32,Rayo Vallecano", "Ignasi Miquel 23/24,31,Granada", "Dani Vivian 23/24,24,Athletic Bilbao", "Carlos Neva 23/24,27,Granada", "D. Blind 23/24,33,Girona", "E. Konsa 23/24,26,Aston Villa", "C. Starfelt 23/24,28,Celta de Vigo", "M. Kilman 23/24,26,Wolverhampton", "Thiago Silva 23/24,39,Chelsea", "F. Schär 23/24,31,Newcastle United", "W. Saliba 23/24,22,Arsenal", "E. Pinnock 23/24,30,Brentford", "R. Nicolaisen 23/24,26,Toulouse", "I. Zabarnyi 23/24,21,Bournemouth", "J. Andersen 23/24,27,Crystal Palace", "Pau Torres 23/24,26,Aston Villa", "Javi Hernández 23/24,25,Cádiz", "J. Tarkowski 23/24,30,Everton", "C. Dawson 23/24,33,Wolverhampton", "B. Cristante 23/24,28,Roma", "G. Magnani 23/24,28,Hellas Verona", "M. Pongračić 23/24,26,Lecce", "David García 23/24,29,Osasuna", "R. Drăgușin 23/24,21,Genoa", "J. Robinson 23/24,30,Sheffield United", "G. Lloris 23/24,28,Le Havre", "Álex Suárez 23/24,30,Las Palmas", "N. Pérez 23/24,23,Udinese", "J. Bijol 23/24,24,Udinese", "K. Danso 23/24,25,Lens", "Y. Abdelhamid 23/24,36,Reims", "S. Luperto 23/24,27,Empoli", "M. Talbi 23/24,25,Lorient", "M. de Roon 23/24,32,Atalanta", "Dante 23/24,40,Nice", "Catena 23/24,29,Osasuna", "Bremer 23/24,26,Juventus", "A. Romagnoli 23/24,28,Lazio", "G. Pezzella 23/24,32,Real Betis", "M. Valjent 23/24,27,Mallorca", "Mario Hermoso 23/24,28,Atlético Madrid", "A. Rüdiger 23/24,30,Real Madrid", "N. Collins 23/24,22,Brentford", "Logan Costa 23/24,22,Toulouse", "M. Erlić 23/24,25,Sassuolo", "G. Mancini 23/24,27,Roma", "L. Dunk 23/24,31,Brighton", "K. Zouma 23/24,29,West Ham", "A. Pelmard 23/24,23,Clermont", "A. Disasi 23/24,25,Chelsea", "G. Nyamsi 23/24,26,Strasbourg", "Zubeldía 23/24,26,Real Sociedad", "S. Beukema 23/24,24,Bologna", "M. Guéhi 23/24,23,Crystal Palace", "B. Chardonnet 23/24,28,Brest", "W. Singo 23/24,22,Monaco", "T. Ream 23/24,36,Fulham", "P. Mainka 23/24,29,Heidenheim", "W. Anton 23/24,27,Stuttgart", "W. Pacho 23/24,22,Eintracht Frankfurt", "Bernardo 23/24,28,Bochum", "A. Dossena 23/24,25,Cagliari", "Chumi 23/24,24,Almería", "N. Aguerd 23/24,27,West Ham", "M. van de Ven 23/24,22,Tottenham", "R. Rodríguez 23/24,31,Torino", "M. Škriniar 23/24,28,PSG", "T. Hübers 23/24,27,Köln", "Aitor Paredes 23/24,23,Athletic Bilbao", "L. Caldirola 23/24,32,Monza", "M. Wöber 23/24,25,Borussia M'gladbach", "P. Lienhart 23/24,27,Freiburg", "F. Tomori 23/24,25,Milan", "B. White 23/24,26,Arsenal", "J. Tah 23/24,27,Bayer Leverkusen", "F. Baschirotto 23/24,27,Lecce", "B. Djimsiti 23/24,30,Atalanta", "A. Sedlar 23/24,31,Deportivo Alavés", "G. Álvarez 23/24,23,Getafe", "J. Todibo 23/24,23,Nice", "L. Colwill 23/24,20,Chelsea", "D. Alaba 23/24,31,Real Madrid", "Diogo Leite 23/24,24,Union Berlin", "Mika Mármol 23/24,22,Las Palmas", "T. Lockyer 23/24,28,Luton Town", "I. Doukouré 23/24,20,Strasbourg", "Kim Min-Jae 23/24,26,Bayern München", "David López 23/24,34,Girona", "J. Gradit 23/24,30,Lens", "N. Milenković 23/24,26,Fiorentina", "J. Chabot 23/24,25,Köln", "Fali 23/24,30,Cádiz", "A. Witsel 23/24,34,Atlético Madrid", "F. Medina 23/24,24,Lens", "A. Abqar 23/24,24,Deportivo Alavés", "J. Branthwaite 23/24,21,Everton", "K. Kouyaté 23/24,26,Montpellier", "M. Ginter 23/24,29,Freiburg", "N. Schlotterbeck 23/24,23,Borussia Dortmund", "N. Gudelj 23/24,31,Sevilla", "L. Martínez Quarta 23/24,27,Fiorentina", "J. Vásquez 23/24,25,Genoa", "M. Bani 23/24,29,Genoa", "R. Koch 23/24,27,Eintracht Frankfurt", "Y. Salmier 23/24,30,Le Havre", "C. Klarer 23/24,23,Darmstadt 98", "A. Sanganté 23/24,21,Le Havre", "C. Mbemba 23/24,29,Olympique Marseille", "M. Lacroix 23/24,23,Wolfsburg", "J. Castelletto 23/24,28,Nantes", "H. Ito 23/24,24,Stuttgart", "C. Romero 23/24,25,Tottenham", "S. Kolašinac 23/24,30,Atalanta", "Raúl Albiol 23/24,38,Villarreal", "K. Vogt 23/24,32,Hoffenheim", "Robin Le Normand 23/24,27,Real Sociedad", "L. Brassier 23/24,24,Brest", "L. Yoro 23/24,18,Lille", "A. Al Dakhil 23/24,21,Burnley", "E. Tapsoba 23/24,24,Bayer Leverkusen", "M. Simakan 23/24,23,RB Leipzig", "J. Koundé 23/24,25,Barcelona", "N. Gyömbér 23/24,31,Salernitana", "V. van Dijk 23/24,32,Liverpool", "S. Magassa 23/24,20,Monaco", "S. van den Berg 23/24,21,Mainz 05", "F. Terracciano 23/24,20,Hellas Verona", "Fali Candé 23/24,25,Metz", "Rúben Dias 23/24,26,Man City", "F. Uduokhai 23/24,26,Augsburg", "Gabriel Paulista 23/24,32,Valencia", "Cristhian Mosquera 23/24,19,Valencia", "O. Kossounou 23/24,22,Bayer Leverkusen", "Alexsandro Ribeiro 23/24,24,Lille", "W. Omari 23/24,23,Rennes", "A. Tchouaméni 23/24,23,Real Madrid", "M. Thiaw 23/24,22,Milan", "A. Seidu 23/24,23,Clermont", "M. Akanji 23/24,28,Man City", "Rubén Duarte 23/24,28,Deportivo Alavés", "L. Badé 23/24,23,Sevilla", "Pablo Marí 23/24,30,Monza", "L. Perrin 23/24,24,Strasbourg", "T. Siersleben 23/24,23,Heidenheim", "F. Gatti 23/24,25,Juventus", "D. Zakaria 23/24,26,Monaco", "G. Scalvini 23/24,19,Atalanta", "Tuta 23/24,24,Eintracht Frankfurt", "A. Theate 23/24,23,Rennes", "P. Dawidowicz 23/24,28,Hellas Verona", "Aridane Hernández 23/24,34,Rayo Vallecano", "S. Diomandé 23/24,22,Olympique Lyonnais", "W. Boly 23/24,32,Nottingham Forest", "E. Fernandes 23/24,27,Mainz 05", "E. Mašović 23/24,24,Bochum", "Marquinhos 23/24,29,PSG", "G. Zappa 23/24,23,Cagliari", "I. Monterisi 23/24,21,Frosinone", "E. Ndicka 23/24,24,Roma", "Gabriel Magalhaes 23/24,25,Arsenal", "S. Romagnoli 23/24,33,Frosinone", "P. Schuurs 23/24,23,Torino", "V. Lindelöf 23/24,29,Man United", "M. Veljković 23/24,28,Werder Bremen", "A. Ahmedhodžić 23/24,24,Sheffield United", "D. Zagadou 23/24,24,Stuttgart", "Eric García 23/24,22,Girona", "A. Jung 23/24,32,Werder Bremen", "G. González 23/24,29,Mallorca", "J. Gvardiol 23/24,21,Man City", "M. Friedl 23/24,25,Werder Bremen", "M. Hummels 23/24,34,Borussia Dortmund", "D. Kohr 23/24,29,Mainz 05", "J. Okumu 23/24,26,Reims", "I. Ordets 23/24,31,Bochum", "A. Buongiorno 23/24,24,Torino", "M. Nastasić 23/24,30,Mallorca", "J. Scally 23/24,20,Borussia M'gladbach", "E. Cömert 23/24,25,Nantes", "J. Brooks 23/24,30,Hoffenheim", "L. Pirola 23/24,21,Salernitana", "M. Darmian 23/24,33,Internazionale", "Édgar González 23/24,26,Almería", "D. Doekhi 23/24,25,Union Berlin", "Danilo 23/24,32,Juventus", "I. Traoré 23/24,37,Metz", "Diego Llorente 23/24,30,Roma", "A. Christensen 23/24,27,Barcelona", "I. Diop 23/24,26,Fulham", "B. Diakité 23/24,22,Lille", "F. Acerbi 23/24,35,Internazionale", "A. Tamèze 23/24,29,Torino", "C. Okoli 23/24,22,Frosinone", "K. Sildillia 23/24,21,Freiburg", "E. Agbadou 23/24,26,Reims", "S. Mitrović 23/24,33,Getafe", "D. O'Shea 23/24,24,Burnley", "M. Lovato 23/24,23,Salernitana", "D. Upamecano 23/24,25,Bayern München", "J. Gouweleeuw 23/24,32,Augsburg", "O. Kabak 23/24,23,Hoffenheim", "Saúl Coco 23/24,24,Las Palmas", "L. Østigård 23/24,23,Napoli", "R. Calafiori 23/24,21,Bologna", "J. Laporte 23/24,30,Lorient", "S. Touré 23/24,20,Lorient", "C. Lukeba 23/24,20,RB Leipzig", "R. Knoche 23/24,31,Union Berlin", "J. Beyer 23/24,23,Burnley", "M. Diakhaby 23/24,26,Valencia", "N. Elvedi 23/24,27,Borussia M'gladbach", "R. Bensebaini 23/24,28,Borussia Dortmund", "L. Kelly 23/24,25,Bournemouth", "C. Riad 23/24,20,Real Betis", "K. Ajer 23/24,25,Brentford", "G. Maripán 23/24,29,Monaco", "Neto Borges 23/24,27,Clermont", "A. Bastoni 23/24,24,Internazionale", "C. Zesiger 23/24,25,Wolfsburg", "J. Matip 23/24,32,Liverpool", "M. Diarra 23/24,23,Toulouse", "Clinton Mata 23/24,31,Olympique Lyonnais", "K. Itakura 23/24,26,Borussia M'gladbach", "S. de Vrij 23/24,31,Internazionale", "Toti Gomes 23/24,24,Wolverhampton", "S. Savić 23/24,32,Atlético Madrid", "Raúl Torrente 23/24,22,Granada", "C. Özkacar 23/24,23,Valencia", "R. Araújo 23/24,24,Barcelona", "S. Gigot 23/24,30,Olympique Marseille", "R. Burke 23/24,27,Luton Town", "M. Senesi 23/24,26,Bournemouth", "César Azpilicueta 23/24,34,Atlético Madrid", "Miguel Rubio 23/24,25,Granada", "Amir Rrahmani 23/24,29,Napoli", "Rafa Marín 23/24,21,Deportivo Alavés", "B. Omeragić 23/24,21,Montpellier", "J. Lascelles 23/24,30,Newcastle United", "Domingos Duarte 23/24,28,Getafe", "C. Kabasele 23/24,32,Udinese", "Luis Hernández 23/24,34,Cádiz", "S. Bell 23/24,32,Mainz 05", "Jorge Cuenca 23/24,23,Villarreal", "N. Aké 23/24,28,Man City", "A. Bell 23/24,29,Luton Town", "C. Hérelle 23/24,31,Metz", "J. Belocian 23/24,18,Rennes", "A. Webster 23/24,28,Brighton", "A. Ismajli 23/24,27,Empoli", "N. Casale 23/24,25,Lazio", "O. Alderete 23/24,26,Getafe", "K. De Winter 23/24,21,Genoa", "J. Duverne 23/24,26,Nantes", "A. Pieper 23/24,25,Werder Bremen", "J. Gomez 23/24,26,Liverpool", "Murillo dos Santos 23/24,21,Nottingham Forest", "T. Mengi 23/24,21,Luton Town", "Natan 23/24,22,Napoli", "S. Walukiewicz 23/24,23,Empoli", "F. Mendy 23/24,22,Lorient", "Patric 23/24,30,Lazio", "M. Caufriez 23/24,26,Clermont", "M. Maglica 23/24,25,Darmstadt 98", "P. Rosario 23/24,26,Nice", "R. Pierre-Gabriel 23/24,25,Nantes", "A. Trusty 23/24,25,Sheffield United", "C. Bassey 23/24,23,Fulham", "F. de Jong 23/24,26,Barcelona", "A. Carboni 23/24,22,Monza", "I. Hien 23/24,24,Hellas Verona", "H. Maguire 23/24,30,Man United", "Danilo Pereira 23/24,32,PSG", "I. Konaté 23/24,24,Liverpool", "G. Ferrari 23/24,31,Sassuolo", "J. van Hecke 23/24,23,Brighton", "J. Egan 23/24,30,Sheffield United", "M. Vojvoda 23/24,28,Torino", "M. Bauer 23/24,23,Augsburg", "M. Gabbia 23/24,24,Villarreal", "S. Birindelli 23/24,24,Monza", "Ruan Tressoldi 23/24,24,Sassuolo", "A. Mandi 23/24,32,Villarreal", "M. Niakhaté 23/24,27,Nottingham Forest", "G. Baldock 23/24,30,Sheffield United", "S. Botman 23/24,23,Newcastle United", "J. Evans 23/24,35,Man United", "K. Schlotterbeck 23/24,26,Bochum", "Íñigo Martínez 23/24,32,Barcelona", "D. D'Ambrosio 23/24,35,Monza", "J. Worrall 23/24,26,Nottingham Forest", "Kaiky 23/24,19,Almería", "J. O'Brien 23/24,22,Olympique Lyonnais", "K. Akpoguma 23/24,28,Hoffenheim", "N. Pallois 23/24,36,Nantes", "J. Lucumí 23/24,25,Bologna", "C. Montes 23/24,26,Almería", "S. McKenna 23/24,26,Nottingham Forest", "N. Süle 23/24,28,Borussia Dortmund", "L. Ranieri 23/24,24,Fiorentina", "J. Aidoo 23/24,28,Celta de Vigo", "R. Tolói 23/24,33,Atalanta", "L. Bonucci 23/24,36,Union Berlin", "T. Weah 23/24,23,Juventus", "D. Rugani 23/24,29,Juventus", "João Ferreira 23/24,22,Udinese", "M. Gulde 23/24,32,Freiburg", "M. Wieteska 23/24,26,Cagliari", "E. Goldaniga 23/24,30,Cagliari", "Nacho 23/24,33,Real Madrid", "A. Izzo 23/24,31,Monza", "M. Friedrich 23/24,27,Borussia M'gladbach", "Copete 23/24,24,Mallorca", "A. Rouault 23/24,22,Stuttgart", "B. Pavard 23/24,27,Internazionale", "A. Obert 23/24,21,Cagliari", "C. Zimmermann 23/24,30,Darmstadt 98", "P. Chatzidiakos 23/24,26,Cagliari", "Lisandro Martínez 23/24,25,Man United", "J. Giménez 23/24,28,Atlético Madrid", "A. Mumin 23/24,25,Rayo Vallecano", "C. Groß 23/24,34,Werder Bremen", "A. Sylla 23/24,20,Strasbourg", "Luiz Felipe 23/24,26,Real Betis", "M. Leitsch 23/24,25,Mainz 05", "Sergio Ramos 23/24,37,Sevilla", "M. Andersen 23/24,25,Luton Town", "J. Müller 23/24,29,Darmstadt 98", "L. Balerdi 23/24,24,Olympique Marseille", "D. Ćaleta-Car 23/24,27,Olympique Lyonnais", "N. Stark 23/24,28,Werder Bremen" ];
     const searchInput = document.getElementById("searchInput1");
    const matchingNamesContainer = document.getElementById("matchingNames");
   const searchButton = document.getElementById("searchButton");
@@ -2007,442 +2007,453 @@ ctx.fillText('datamb.football', 345, 476);
 827,N. Aké 22/23,Man City,28,0.976,0.981,0.862,0.153,0.656,0.725,0.858,3899
 828,J. Hato 22/23,Ajax,17,0.931,0.899,0.958,0.551,0.134,0.109,0.954,2067
 829,Average 22/23,Club,27,0.528,0.489,0.534,0.506,0.467,0.499,0.590,2513
-830,Rúben Fernandes 23/24,Gil Vicente,37,0.579,0.363,0.388,0.027,0.167,0.468,0.213,1026
-831,Manu 23/24,Vitória Guimarães,22,0.374,0.514,0.758,0.875,0.809,0.114,0.218,1013
-832,Jorge Fernandes 23/24,Vitória Guimarães,26,0.354,0.4,0.666,0.593,0.383,0.65,0.432,1013
-833,N. Otamendi 23/24,Benfica,35,0.754,0.829,0.342,0.103,0.416,0.777,0.965,1011
-834,Gabriel Pereira 23/24,Gil Vicente,23,0.735,0.54,0.181,0.528,0.45,0.441,0.218,1007
-835,Marcelo 23/24,Moreirense,34,0.4,0.234,0.627,0.701,0.873,0.439,0.133,1000
-836,Fernando Varela 23/24,Casa Pia AC,35,0.149,0.326,0.321,0.618,0.834,0.268,0.328,985
-837,Filipe Relvas 23/24,Portimonense,24,0.245,0.406,0.48,0.855,0.459,0.609,0.328,985
-838,N. Zolotić 23/24,Casa Pia AC,30,0.554,0.652,0.675,0.816,0.595,0.278,0.558,981
-839,Bruno Wilson 23/24,Vizela,26,0.266,0.737,0.735,0.324,0.241,0.234,0.347,932
-840,Aderllan Santos 23/24,Rio Ave,34,0.636,0.073,0.558,0.583,0.88,0.779,0.082,922
-841,António Silva 23/24,Benfica,20,0.758,0.979,0.443,0.48,0.783,0.278,0.905,919
-842,Gonçalo Inácio 23/24,Sporting CP,22,0.951,0.758,0.995,0.34,0.77,0.149,0.926,919
-843,C. Awaziem 23/24,Boavista,26,0.393,0.402,0.383,0.209,0.528,0.531,0.158,915
-844,Anderson 23/24,Vizela,28,0.142,0.54,0.121,0.245,0.11,0.501,0.082,911
-845,Kialonda Gaspar 23/24,Estrela Amadora,26,0.388,0.425,0.816,0.747,0.236,0.804,0.731,868
-846,O. Diomandé 23/24,Sporting CP,19,0.885,0.726,0.772,0.078,0.671,0.687,0.845,857
-847,Volnei Feltes 23/24,Estoril,23,0.052,0.006,0.563,0.466,0.004,0.356,0.174,833
-848,Bruno Rodrigues 23/24,Chaves,22,0.206,0.618,0.436,0.287,0.839,0.278,0.248,828
-849,Otávio 23/24,Famalicão,21,0.314,0.22,0.827,0.96,0.908,0.781,0.094,818
-850,Vasco Fernandes 23/24,Casa Pia AC,36,0.268,0.039,0.565,0.521,0.616,0.137,0.174,805
-851,S. Coates 23/24,Sporting CP,33,0.832,0.344,0.466,0.105,0.597,0.947,0.186,797
-852,Alemão 23/24,Portimonense,21,0.091,0.068,0.091,0.832,0.593,0.457,0.404,794
-853,Bernardo Vital 23/24,Estoril,22,0.312,0.777,0.25,0.597,0.057,0.367,0.105,780
-854,Pedrão 23/24,Portimonense,26,0.197,0.462,0.524,0.356,0.124,0.163,0.337,759
-855,Rafael Fernandes 23/24,Arouca,21,0.501,0.862,0.285,0.216,0.887,0.758,0.632,744
-856,Gonçalo Silva 23/24,Farense,32,0.114,0.232,0.416,0.418,0.328,0.151,0.273,736
-857,Pedro Álvaro 23/24,Estoril,23,0.151,0.347,0.236,0.114,0.432,0.436,0,722
-858,Riccieli 23/24,Famalicão,25,0.475,0.413,0.427,0.567,0.747,0.763,0,715
-859,José Fonte 23/24,Sporting Braga,39,0.627,0.528,0.441,0.347,0.324,0.613,0.206,707
-860,Maracás 23/24,Moreirense,29,0.321,0.728,0.036,0.632,0.108,0.517,0.287,698
-861,J. Omurwa 23/24,Estrela Amadora,25,0.31,0.687,0.294,0.517,0.229,0.949,0.537,676
-862,R. Abascal 23/24,Boavista,29,0.473,0.367,0.751,0.705,0.34,0.531,0,667
-863,Tiago Esgaio 23/24,Arouca,28,0.177,0.101,0.797,0.868,0.351,0.848,0.632,652
-864,R. Pantalon 23/24,Rio Ave,26,0.544,0.291,0.687,0.179,0.006,0.278,0.404,633
-865,Ygor Nogueira 23/24,Chaves,28,0.195,0.14,0.048,0.301,0.636,0.97,0.314,629
-866,Martín Aguirregabiria 23/24,Famalicão,27,0.117,0.202,0.905,0.567,0.179,0.567,0.498,619
-867,Javi Montero 23/24,Arouca,24,0.524,0.11,0.689,0.731,0.128,0.048,0.577,610
-868,S. Vitória 23/24,Chaves,36,0.087,0.11,0.002,0.036,0.151,0.655,0.121,606
-869,N. Galović 23/24,Arouca,31,0.381,0.931,0.144,0.19,0.956,0.278,0.121,603
-870,Wendell 23/24,Porto,30,0.347,0.222,0.37,0.501,0.087,0.949,0.97,600
-871,David Carmo 23/24,Porto,24,0.721,0.266,0.786,0.319,0.082,0.855,0.694,578
-872,Josué Sá 23/24,Rio Ave,31,0.588,0.494,0.533,0.517,0.259,0.694,0.765,577
-873,Miguel Lopes 23/24,Estrela Amadora,36,0.296,0.252,0.165,0.181,0.367,0.526,0.337,572
-874,Sandro Cruz 23/24,Chaves,22,0.05,0.064,0.082,0.606,0.698,0.073,0.537,560
-875,Mansur 23/24,Estrela Amadora,30,0.514,0.613,0.717,0.487,0.726,0.085,0.632,554
-876,Artur Jorge 23/24,Farense,29,0.066,0.034,0.027,0.754,0.296,0.567,0.248,540
-877,Tomás Ribeiro 23/24,Vitória Guimarães,24,0.331,0.149,0.726,0.174,0.179,0.917,0.128,528
-878,G. Frimpong 23/24,Moreirense,24,0.075,0.31,0.2,0.305,0.245,0.004,0.473,515
-879,S. Saatçı 23/24,Sporting Braga,20,0.751,0.583,0.572,0.942,0.99,0.393,0.133,511
-880,S. Niakaté 23/24,Sporting Braga,24,0.377,0.142,0.466,0.549,0.459,0.156,0.528,470
-881,Fábio Cardoso 23/24,Porto,29,0.914,0.942,0.829,0.149,0.367,0.259,0.841,460
-882,Iván Marcano 23/24,Porto,36,0.859,0.8,0.937,0,0.018,0.659,0.875,435
-883,Pepe 23/24,Porto,40,0.731,0.439,0.924,0.691,0.839,0.531,0.314,414
-884,Filipe Ferreira 23/24,Boavista,33,0.363,0.374,0.721,0.124,0.016,0.278,0.448,410
-885,Mikel Villanueva 23/24,Vitória Guimarães,30,0.379,0.402,0.682,0.659,0.05,0.473,0.586,401
-886,Z. Muscat 23/24,Farense,30,0.048,0.544,0.013,0.282,0.606,0.239,0,398
-887,E. Cabaco 23/24,Estoril,28,0.326,0.273,0.919,0.225,0.795,0.278,0.186,398
-888,Matheus Reis 23/24,Sporting CP,28,0.418,0.487,0.229,0.11,0.073,0.006,0.79,396
-889,D. Mirani 23/24,Volendam,27,0.252,0.271,0.225,0.806,0.091,0.386,0.641,1097
-890,D. Siovas 23/24,Fortuna Sittard,35,0.404,0.172,0.505,0.675,0.744,0.981,0.128,1083
-891,D. Hancko 23/24,Feyenoord,25,0.954,0.682,0.921,0.206,0.891,0.229,0.981,1083
-892,L. Geertruida 23/24,Feyenoord,23,0.855,0.891,0.77,0.048,0.866,0.694,0.967,1078
-893,T. Velthuis 23/24,Sparta Rotterdam,21,0.659,0.733,0.36,0.6,0.613,0.19,0.563,1074
-894,C. Widell 23/24,Excelsior,20,0.452,0.611,0.645,0.714,0.567,0.613,0.206,1072
-895,Rodrigo Guth 23/24,Fortuna Sittard,22,0.393,0.094,0.574,0.482,0.459,0.556,0.694,1069
-896,S. Kersten 23/24,PEC Zwolle,25,0.406,0.551,0.618,0.829,0.733,0.068,0.606,1066
-897,J. Hato 23/24,Ajax,17,0.947,0.926,0.885,0.8,0.645,0.809,0.903,1033
-898,J. Hoogma 23/24,Heracles,25,0.714,0.365,0.917,0.149,0.071,0.583,0.921,1019
-899,M. Hilgers 23/24,Twente,22,0.645,0.565,0.154,0.144,0.65,0.043,0.944,972
-900,C. Verdonk 23/24,NEC,26,0.475,0.091,0.983,0.942,0.565,0.363,0.747,971
-901,R. Pröpper 23/24,Twente,30,0.891,0.567,0.96,0.344,0.781,0.351,0.606,970
-902,B. Vriends 23/24,Sparta Rotterdam,32,0.517,0.652,0.744,0.783,0.333,0.42,0.328,968
-903,R. El Yaakoubi 23/24,Excelsior,27,0.262,0.108,0.641,0.542,0.177,0.519,0.666,963
-904,André Ramalho 23/24,PSV,31,0.898,0.68,0.99,0.781,0.751,0.786,0.577,909
-905,O. Boscagli 23/24,PSV,25,0.937,0.572,1,0.708,0.783,0.264,0.91,904
-906,D. Oroz 23/24,Vitesse,23,0.257,0.126,0.526,0.308,0.367,0.788,0.294,894
-907,P. Bochniewicz 23/24,Heerenveen,27,0.666,0.763,0.825,0.427,0.459,0.613,0.595,887
-908,R. Flamingo 23/24,Utrecht,20,0.17,0.082,0.416,0.643,0.839,0.264,0.386,845
-909,B. Nuytinck 23/24,NEC,33,0.664,0.678,0.71,0.245,0.687,0.37,0.85,842
-910,D. van Bruggen 23/24,Almere City,27,0.009,0.002,0.19,0.852,0.662,0.278,0,838
-911,N. Isimat-Mirin 23/24,Vitesse,31,0.728,0.393,0.358,0.747,0.503,0.379,0.39,833
-912,B. Benamar 23/24,Volendam,26,0.441,0.675,0.397,0.675,0.56,0.77,0.914,815
-913,T. Barbet 23/24,Almere City,22,0.188,0.213,0.583,0.333,0.291,0.239,0.708,811
-914,B. van Polen 23/24,PEC Zwolle,38,0.179,0.222,0.347,0.841,0.416,0.2,0.4,807
-915,J. Amofa 23/24,Go Ahead Eagles,24,0.135,0.62,0.793,0.42,0.627,0.278,0.731,788
-916,S. Floranus 23/24,Almere City,25,0.128,0.229,0.197,0.8,0.103,0.758,0.404,784
-917,M. Sagnan 23/24,Utrecht,24,0.344,0.308,0.597,0.36,0.813,0.671,0.268,756
-918,J. Kramer 23/24,Go Ahead Eagles,27,0.216,0.156,0.131,0.526,0.79,0.531,0.498,744
-919,R. Hendriks 23/24,Vitesse,22,0.383,0.604,0.413,0.186,0.602,0.744,0.498,737
-920,J. Šutalo 23/24,Ajax,23,0.942,0.691,0.611,0.563,0.942,0.411,0.519,720
-921,T. Lam 23/24,PEC Zwolle,29,0.777,0.351,0.673,0.783,0.924,0.613,0.655,715
-922,Alexandre Penetra 23/24,AZ,22,0.917,0.694,0.864,0.045,0.179,0.105,0.439,706
-923,J. Schouten 23/24,PSV,26,0.737,0.705,0.489,0.381,0.839,0.018,0.604,686
-924,M. van der Hoorn 23/24,Utrecht,31,0.551,0.448,0.887,0.349,0.34,0.498,0.747,674
-925,D. Van den Buijs 23/24,RKC Waalwijk,28,0.717,0.078,0.903,0.581,0.213,0.795,0.829,664
-926,R. Bazoer 23/24,AZ,27,0.816,0.917,0.388,0.016,1,0.917,0.859,661
-927,B. Plat 23/24,Volendam,23,0.144,0.098,0.259,0.993,0.625,0.77,0.708,651
-928,G. Nauber 23/24,Go Ahead Eagles,31,0.243,0.489,0.602,0.485,0.262,0.519,0.232,645
-929,J. Flint 23/24,Volendam,23,0.482,0.613,0.728,0.965,0.388,0.689,0.482,635
-930,S. Bultman 23/24,Heracles,18,0.567,0.087,0.767,0.917,0.726,0.252,0.662,617
-931,S. Adewoye 23/24,RKC Waalwijk,23,0.432,0.154,0.335,0.432,0.636,0.597,0.574,614
-932,S. Nieuwpoort 23/24,Excelsior,30,0.351,0.443,0.004,0.029,0.942,0.048,0,595
-933,J. Gaari 23/24,RKC Waalwijk,29,0.574,0.264,0.406,0.287,0.112,0.613,0.8,590
-934,S. van Beek 23/24,Heerenveen,29,0.662,0.873,0.565,0.668,0.459,0.473,0.245,585
-935,S. van Ottele 23/24,Heerenveen,21,0.779,0.445,0.993,0.908,0.206,0.613,0.885,584
-936,L. Mbe Soh 23/24,Almere City,22,0.193,0.195,0.491,0.857,0.459,0.025,0.36,543
-937,R. Vita 23/24,Fortuna Sittard,22,0.055,0.009,0.659,0.97,0.262,0.006,0.685,510
-938,M. Ross 23/24,NEC,22,0.108,0.062,0.521,0.16,0.013,0.793,0.498,495
-939,G. Trauner 23/24,Feyenoord,31,0.967,0.954,0.772,0.089,0.839,0.809,0.871,490
-940,S. Sonnenberg 23/24,Heracles,24,0.549,0.188,0.287,0.77,0.965,0.935,0.719,484
-941,Unai Núñez 23/24,Celta de Vigo,26,0.305,0.131,0.728,0.689,0.393,0.457,0.425,1227
-942,Javi Hernández 23/24,Cádiz,25,0.002,0.032,0.206,0.19,0.036,0.278,0.742,1207
-943,F. Lejeune 23/24,Rayo Vallecano,32,0.324,0.386,0.896,0.183,0.28,0.124,0.248,1195
-944,Ignasi Miquel 23/24,Granada,31,0.2,0.2,0.427,0.36,0.356,0.381,0.282,1188
-945,M. Valjent 23/24,Mallorca,27,0.057,0.448,0.16,0.549,0.406,0.588,0.186,1175
-946,Carlos Neva 23/24,Granada,27,0.029,0.022,0.425,0.422,0.427,0.11,0.473,1164
-947,A. Rüdiger 23/24,Real Madrid,30,0.595,0.496,0.434,0.02,0.133,0.809,0.694,1155
-948,D. Blind 23/24,Girona,33,0.875,0.802,0.97,0.091,0.413,0.204,0.951,1142
-949,E. Konsa 23/24,Aston Villa,26,0.701,0.951,0.11,0.117,0.758,0.248,0.482,1137
-950,C. Starfelt 23/24,Celta de Vigo,28,0.131,0.843,0.009,0.774,0.45,0.747,0.073,1131
-951,M. Kilman 23/24,Wolverhampton,26,0.498,0.485,0.574,0.611,0.505,0.278,0.487,1129
-952,F. Schär 23/24,Newcastle United,31,0.827,0.643,0.735,0.098,0.062,0.131,0.537,1125
-953,W. Saliba 23/24,Arsenal,22,0.949,0.96,0.14,0.055,0.937,0.278,0.439,1123
-954,E. Pinnock 23/24,Brentford,30,0.519,0.586,0.354,0.719,0.954,0.703,0.294,1122
-955,K. Walker 23/24,Man City,33,0.868,0.51,0.42,0.025,0.229,0.531,0.954,1113
-956,I. Zabarnyi 23/24,Bournemouth,21,0.367,0.285,0.275,0.586,0.549,0.257,0.404,1112
-957,J. Andersen 23/24,Crystal Palace,27,0.542,0.179,0.816,0.572,0.22,0.609,0.777,1111
-958,G. Magnani 23/24,Hellas Verona,28,0.089,0.121,0.17,0.312,0.381,0.411,0.356,1106
-959,Pau Torres 23/24,Aston Villa,26,0.806,0.786,0.845,0.013,0.144,0.372,0.933,1106
-960,J. Tarkowski 23/24,Everton,30,0.156,0.347,0.613,0.328,0.333,0.714,0.2,1103
-961,M. Pongračić 23/24,Lecce,26,0.48,0.416,0.751,0.767,0.549,0.754,0.685,1101
-962,David García 23/24,Osasuna,29,0.319,0.342,0.462,0.303,0.721,0.664,0.586,1100
-963,R. Drăgușin 23/24,Genoa,21,0.08,0.144,0.045,0.213,0.754,0.868,0.303,1100
-964,C. Dawson 23/24,Wolverhampton,33,0.397,0.547,0.331,0.262,0.082,0.728,0.073,1100
-965,Zubeldía 23/24,Real Sociedad,26,0.62,0.289,0.404,0.227,0.367,0.135,0.586,1099
-966,Y. Abdelhamid 23/24,Reims,36,0.643,0.519,0.675,0.586,0.864,0.08,0.802,1093
-967,J. Robinson 23/24,Sheffield United,30,0.071,0.236,0.087,0.314,0.262,0.418,0.413,1091
-968,Álex Suárez 23/24,Las Palmas,30,0.491,0.668,0.475,0.383,0.547,0.179,0.413,1091
-969,K. Danso 23/24,Lens,25,0.68,0.744,0.682,0.259,0.606,0.671,0.94,1091
-970,G. Lloris 23/24,Le Havre,28,0.604,0.885,0.397,0.862,0.25,0.271,0.36,1090
-971,A. Romagnoli 23/24,Lazio,28,0.719,0.91,0.393,0.066,0.05,0.579,0.206,1089
-972,S. Luperto 23/24,Empoli,27,0.25,0.31,0.098,0.167,0.101,0.16,0.413,1088
-973,M. Talbi 23/24,Lorient,25,0.434,0.473,0.565,0.51,0.436,0.613,0.36,1085
-974,Bremer 23/24,Juventus,26,0.526,0.588,0.556,0.827,0.836,0.691,0.303,1085
-975,Catena 23/24,Osasuna,29,0.271,0.167,0.772,0.34,0.496,0.977,0.073,1082
-976,G. Pezzella 23/24,Real Betis,32,0.466,0.501,0.213,0.388,0.65,0.473,0.248,1079
-977,Dani Vivian 23/24,Athletic Bilbao,24,0.301,0.533,0.581,0.622,0.533,0.022,0.457,1078
-978,Dante 23/24,Nice,40,0.979,0.827,0.944,0.565,0.94,0.848,0.498,1077
-979,M. van de Ven 23/24,Tottenham,22,0.781,0.947,0.105,0.043,0.34,0.137,0.519,1077
-980,B. White 23/24,Arsenal,26,0.786,0.77,0.733,0.062,0.31,0.091,0.606,1063
-981,Hermoso 23/24,Atlético Madrid,28,0.668,0.537,0.721,0.365,0.395,0.802,0.464,1057
-982,David López 23/24,Girona,34,0.843,0.813,0.314,0.436,0.818,0.232,0.678,1037
-983,N. Collins 23/24,Brentford,22,0.682,0.498,0.65,0.28,0.685,0.597,0.427,1037
-984,M. Erlić 23/24,Sassuolo,25,0.248,0.666,0.59,0.905,0.726,0.222,0.213,1023
-985,Fali 23/24,Cádiz,30,0.025,0.075,0.296,0.333,0.678,0.156,0.321,1020
-986,Thiago Silva 23/24,Chelsea,39,0.96,0.997,0.62,0.052,0.158,0.926,0.266,1016
-987,R. Nicolaisen 23/24,Toulouse,26,0.333,0.535,0.245,0.685,0.459,0.804,0.133,1015
-988,B. Cristante 23/24,Roma,28,0.556,0.227,0.501,0.222,0.179,0.124,0.577,1011
-989,L. Dunk 23/24,Brighton,31,0.986,0.857,0.901,0.195,0.526,0.795,0.765,1010
-990,K. Zouma 23/24,West Ham,29,0.119,0.331,0.073,0.133,0.062,0.455,0.133,1006
-991,R. Rodríguez 23/24,Torino,31,0.583,0.797,0.811,0.137,0.273,0.554,0.96,1005
-992,K. Kouyaté 23/24,Montpellier,26,0.234,0.558,0.296,0.836,0.356,0.756,0.133,1005
-993,G. Nyamsi 23/24,Strasbourg,26,0.547,0.634,0.172,0.372,0.508,0.859,0.218,1000
-994,A. Pelmard 23/24,Clermont,23,0.489,0.712,0.066,0.101,0.662,0.473,0.88,999
-995,L. Colwill 23/24,Chelsea,20,0.572,0.482,0.636,0.432,0.501,0.885,0.77,999
-996,S. Beukema 23/24,Bologna,24,0.871,0.822,0.445,0.308,0.305,0.388,0.218,995
-997,A. Dossena 23/24,Cagliari,25,0.147,0.245,0.064,0.979,0.708,0.363,0.08,995
-998,M. Guéhi 23/24,Crystal Palace,23,0.565,0.721,0.494,0.574,0.832,0.117,0.595,994
-999,B. Chardonnet 23/24,Brest,28,0.294,0.448,0.312,0.56,0.268,0.588,0.79,993
-1000,W. Singo 23/24,Monaco,22,0.818,0.795,0.466,0.395,0.204,0.873,0.898,993
-1001,P. Mainka 23/24,Heidenheim,29,0.533,0.836,0.868,0.947,0.995,0.425,0.694,993
-1002,W. Pacho 23/24,Eintracht Frankfurt,22,0.76,0.305,0.712,0.822,0.951,0.273,0.133,993
-1003,R. Koch 23/24,Eintracht Frankfurt,27,0.829,0.25,0.675,0.537,0.997,0.602,0.39,993
-1004,Bernardo 23/24,Bochum,28,0.137,0.19,0.363,0.981,0.811,0.659,0.537,992
-1005,N. Pérez 23/24,Udinese,23,0.429,0.459,0.8,0.754,0.174,0.908,0.79,991
-1006,J. Bijol 23/24,Udinese,24,0.229,0.434,0.531,0.919,0.648,0.671,0.439,991
-1007,W. Anton 23/24,Stuttgart,27,0.919,0.524,0.908,0.429,0.459,0.473,0.836,991
-1008,Y. Salmier 23/24,Le Havre,30,0.133,0.181,0.317,0.298,0.206,0.402,0.551,990
-1009,M. Wöber 23/24,Borussia M'gladbach,25,0.668,0.328,0.949,0.963,0.662,0.763,0.742,987
-1010,M. Lacroix 23/24,Wolfsburg,23,0.678,0.381,0.832,0.404,0.429,0.273,0.218,986
-1011,C. Romero 23/24,Tottenham,25,0.933,0.901,0.597,0.648,0.806,0.606,0.703,984
-1012,Chumi 23/24,Almería,24,0.273,0.694,0.032,0.2,0.018,0.222,0.395,983
-1013,M. Škriniar 23/24,PSG,28,0.995,0.937,0.505,0.154,0.459,0.22,0.328,981
-1014,T. Ream 23/24,Fulham,36,0.783,0.914,0.756,0.528,0.459,0.473,0.813,978
-1015,N. Aguerd 23/24,West Ham,27,0.264,0.117,0.749,0.639,0.388,0.213,0.273,978
-1016,T. Hübers 23/24,Köln,27,0.445,0.195,0.59,0.986,0.367,0.648,0.232,975
-1017,P. Lienhart 23/24,Freiburg,27,0.793,0.526,0.804,0.245,0.519,0.8,0.606,969
-1018,F. Tomori 23/24,Milan,25,0.926,0.868,0.519,0.71,0.494,0.581,0.719,967
-1019,J. Tah 23/24,Bayer Leverkusen,27,0.905,0.995,0.271,0.505,0.34,0.705,0.662,967
-1020,A. Sedlar 23/24,Deportivo Alavés,31,0.163,0.374,0.101,0.324,0.459,0.556,0.606,966
-1021,F. Baschirotto 23/24,Lecce,27,0.372,0.243,0.381,0.17,0.324,0.903,0.802,962
-1022,B. Djimsiti 23/24,Atalanta,30,0.577,0.489,0.179,0.889,0.765,0.809,0,960
-1023,Diogo Leite 23/24,Union Berlin,24,0.588,0.48,0.772,0.967,0.59,0.643,0.563,959
-1024,A. Al Dakhil 23/24,Burnley,21,0.6,0.427,0.218,0.606,0.514,0.068,0.618,959
-1025,E. Tapsoba 23/24,Bayer Leverkusen,24,0.974,0.967,0.977,0.032,0.673,0.167,0.914,958
-1026,M. Bani 23/24,Genoa,29,0.19,0.163,0.28,0.744,0.839,0.471,0.149,958
-1027,D. Alaba 23/24,Real Madrid,31,0.744,0.685,0.505,0.034,0.65,0.029,0.618,956
-1028,M. Simakan 23/24,RB Leipzig,23,0.795,0.622,0.622,0.622,0.71,0.402,0.448,955
-1029,Logan Costa 23/24,Toulouse,22,0.602,0.455,0.655,0.521,0.521,0.666,0.756,954
-1030,Mika Mármol 23/24,Las Palmas,22,0.765,0.82,0.668,0.475,0.698,0.032,0.832,953
-1031,J. Todibo 23/24,Nice,23,0.983,0.758,0.956,0.912,0.977,0.809,0.908,952
-1032,I. Doukouré 23/24,Strasbourg,20,0.167,0.59,0.066,0.11,0.206,0.048,0.625,950
-1033,N. Gyömbér 23/24,Salernitana,31,0.172,0.383,0.137,0.924,0.772,0.411,0.232,950
-1034,T. Lockyer 23/24,Luton Town,28,0.039,0.052,0.475,0.459,0.586,0.643,0.282,948
-1035,Kim Min-Jae 23/24,Bayern München,26,0.99,0.988,0.963,0.471,0.508,0.896,0.625,944
-1036,G. Mancini 23/24,Roma,27,0.673,0.282,0.85,0.105,0.763,0.4,0.758,943
-1037,J. Gradit 23/24,Lens,30,0.689,0.671,0.988,0.657,0.577,0.089,0.836,935
-1038,J. Chabot 23/24,Köln,25,0.512,0.298,0.464,0.891,0.455,0.464,0.149,929
-1039,N. Milenković 23/24,Fiorentina,26,0.708,0.664,0.613,0.397,0.574,0.77,0.082,927
-1040,A. Tchouaméni 23/24,Real Madrid,23,0.873,0.983,0.347,0.128,0.441,0.928,0.82,922
-1041,A. Witsel 23/24,Atlético Madrid,34,0.839,0.905,0.133,0.337,0.827,0.995,0.287,920
-1042,F. Medina 23/24,Lens,24,0.882,0.841,0.94,0.236,0.039,0.717,0.841,918
-1043,Fali Candé 23/24,Metz,25,0.163,0.103,0.696,0.866,0.735,0.694,0.356,915
-1044,L. Yoro 23/24,Lille,17,0.772,0.88,0.268,0.496,0.958,0.983,0.082,911
-1045,N. Gudelj 23/24,Sevilla,31,0.464,0.397,0.227,0.142,0.459,0.422,0.979,905
-1046,J. Branthwaite 23/24,Everton,21,0.14,0.206,0.25,0.896,0.885,0.354,0.082,905
-1047,N. Schlotterbeck 23/24,Borussia Dortmund,23,0.928,0.866,0.974,0.243,0.172,0.36,0.986,903
-1048,J. Vásquez 23/24,Genoa,25,0.085,0.041,0.363,0.901,0.71,0.377,0.586,902
-1049,M. Ginter 23/24,Freiburg,29,0.639,0.724,0.857,0.496,0.409,0.445,0.703,901
-1050,L. Martínez Quarta 23/24,Fiorentina,27,0.618,0.358,0.967,0.811,0.303,0.193,0.473,898
-1051,T. Siersleben 23/24,Heidenheim,23,0.563,0.57,0.931,0.94,0.882,0.239,0.473,897
-1052,C. Mbemba 23/24,Olympique Marseille,29,0.535,0.457,0.347,0.733,0.931,0.875,0.708,893
-1053,G. Scalvini 23/24,Atalanta,19,0.616,0.388,0.542,0.933,0.754,0.462,0.708,892
-1054,C. Klarer 23/24,Darmstadt 98,23,0.287,0.731,0.101,0.377,0.537,0.406,0.294,891
-1055,J. Castelletto 23/24,Nantes,28,0.259,0.574,0.229,0.227,0.098,0.885,0.549,888
-1056,A. Sanganté 23/24,Le Havre,21,0.402,0.781,0.193,0.388,0.616,0.177,0.241,887
-1057,A. Disasi 23/24,Chelsea,25,0.963,0.965,0.76,0.018,0.068,0.855,0.754,886
-1058,H. Ito 23/24,Stuttgart,24,0.889,0.372,0.972,0.124,0.163,0.372,0.781,885
-1059,P. Dawidowicz 23/24,Hellas Verona,28,0.448,0.42,0.319,0.818,0.774,0.652,0.303,884
-1060,J. Koundé 23/24,Barcelona,24,0.958,0.924,0.875,0.08,0.926,0.885,0.983,884
-1061,S. Kolašinac 23/24,Atalanta,30,0.56,0.609,0.583,0.735,0.687,0.255,0.719,883
-1062,Aridane Hernández 23/24,Rayo Vallecano,34,0.101,0.337,0.052,0.266,0.813,0.262,0.158,882
-1063,L. Caldirola 23/24,Monza,32,0.595,0.597,0.331,0.158,0.089,0.666,0.379,880
-1064,Raúl Albiol 23/24,Villarreal,38,0.586,0.657,0.528,0.379,0.696,0.556,0.551,880
-1065,K. Vogt 23/24,Hoffenheim,32,0.65,0.749,0.979,0.659,0.914,0.949,0.786,877
-1066,E. Fernandes 23/24,Mainz 05,27,0.462,0.209,0.908,0.478,0.448,0.091,0.383,871
-1067,Aitor Paredes 23/24,Athletic Bilbao,23,0.503,0.503,0.588,0.14,0.032,0.278,0.432,868
-1068,Robin Le Normand 23/24,Real Sociedad,26,0.724,0.765,0.096,0.275,0.797,0.708,0.678,867
-1069,L. Brassier 23/24,Brest,24,0.303,0.027,0.719,0.462,0.898,0.278,0.31,865
-1070,G. Álvarez 23/24,Getafe,23,0.013,0.068,0.195,0.622,0.579,0.448,0.165,851
-1071,W. Boly 23/24,Nottingham Forest,32,0.183,0.409,0.28,0.622,0.133,0.547,0.165,851
-1072,S. Romagnoli 23/24,Frosinone,33,0.282,0.839,0.151,0.793,0.742,0.473,0,851
-1073,S. van den Berg 23/24,Mainz 05,21,0.34,0.193,0.496,0.914,0.365,0.733,0.094,850
-1074,P. Schuurs 23/24,Torino,23,0.434,0.843,0.02,0.763,0.457,0.731,0.517,847
-1075,F. Terracciano 23/24,Hellas Verona,20,0.209,0.103,0.864,0.505,0.142,0.531,0.97,847
-1076,V. van Dijk 23/24,Liverpool,32,0.903,0.958,0.498,0.411,0.82,0.986,0.57,847
-1077,F. Uduokhai 23/24,Augsburg,26,0.629,0.597,0.634,0.358,0.535,0.473,0.563,837
-1078,A. Ahmedhodžić 23/24,Sheffield United,24,0.073,0.05,0.305,0.717,0.167,0.655,0.519,835
-1079,W. Omari 23/24,Rennes,23,0.742,0.868,0.448,0.443,0.397,0.809,0.954,835
-1080,O. Kossounou 23/24,Bayer Leverkusen,22,0.845,0.774,0.432,0.611,0.554,0.016,0.855,835
-1081,Rúben Dias 23/24,Man City,26,0.977,0.908,0.411,0.057,0.91,0.448,0.997,834
-1082,G. González 23/24,Mallorca,29,0.041,0.057,0.48,0.285,0.094,0.427,0.445,830
-1083,Alexsandro Ribeiro 23/24,Lille,24,0.848,0.834,0.671,0.535,0.36,0.519,0.248,828
-1084,Gabriel Paulista 23/24,Valencia,32,0.494,0.648,0.459,0.291,0.54,0.733,0.2,826
-1085,Cristhian Mosquera 23/24,Valencia,19,0.422,0.606,0.075,0.266,0.616,0.278,0.273,822
-1086,A. Seidu 23/24,Clermont,23,0.556,0.512,0.259,0.632,0.735,0.613,0.816,821
-1087,I. Ordets 23/24,Bochum,31,0.045,0.043,0.043,0.937,0.54,0.349,0,820
-1088,M. Thiaw 23/24,Milan,22,0.896,0.848,0.305,0.795,0.554,0.218,0.751,820
-1089,M. Nastasić 23/24,Mallorca,30,0.124,0.34,0.183,0.372,0.986,0.388,0.094,817
-1090,L. Badé 23/24,Sevilla,23,0.386,0.37,0.701,0.675,0.252,0.885,0.094,815
-1091,A. Abqar 23/24,Deportivo Alavés,24,0.018,0.085,0.377,0.331,0.56,0.406,0,812
-1092,J. Brooks 23/24,Hoffenheim,30,0.209,0.177,0.742,0.958,0.225,0.914,0.395,812
-1093,M. Darmian 23/24,Internazionale,33,0.521,0.471,0.45,0.211,0.124,0.204,0.577,807
-1094,F. Gatti 23/24,Juventus,25,0.317,0.577,0.236,0.117,0.018,0.866,0.719,801
-1095,Pablo Marí 23/24,Monza,30,0.696,0.556,0.236,0.726,0.498,0.809,0.094,801
-1096,D. Doekhi 23/24,Union Berlin,25,0.28,0.478,0.788,0.45,0.839,0.234,0.326,799
-1097,L. Perrin 23/24,Strasbourg,24,0.581,0.248,0.291,0.611,0.432,0.905,0.79,797
-1098,M. Hummels 23/24,Borussia Dortmund,34,0.944,0.662,0.891,0.777,0.71,0.505,0.535,796
-1099,Danilo 23/24,Juventus,32,0.71,0.395,0.841,0.234,0.034,0.99,0.186,793
-1100,Tuta 23/24,Eintracht Frankfurt,24,0.862,0.466,0.894,0.491,0.151,0.197,0.464,792
-1101,A. Christensen 23/24,Barcelona,27,0.972,1,0.609,0.039,0.974,0.809,0.912,792
-1102,I. Diop 23/24,Fulham,26,0.901,0.779,0.914,0.216,0.839,0.859,0.937,791
-1103,D. Zakaria 23/24,Monaco,26,0.634,0.974,0.094,0.666,0.333,0.749,0.891,791
-1104,A. Theate 23/24,Rennes,23,0.935,0.887,0.933,0.041,0.554,0.204,0.731,787
-1105,F. Acerbi 23/24,Internazionale,35,0.767,0.754,0.37,0.096,0.54,0.441,0.666,786
-1106,B. Diakité 23/24,Lille,22,0.797,0.935,0.537,0.367,0.227,0.671,0.666,786
-1107,E. Cömert 23/24,Nantes,25,0.505,0.554,0.158,0.85,0.783,0.393,0.105,774
-1108,Marquinhos 23/24,PSG,29,1,0.993,0.783,0.471,0.606,0.133,0.977,771
-1109,E. Mašović 23/24,Bochum,24,0.011,0.018,0.034,0.822,0.202,0.078,0,769
-1110,G. Zappa 23/24,Cagliari,23,0.158,0.294,0.951,0.177,0.14,0.473,0.802,769
-1111,I. Monterisi 23/24,Frosinone,21,0.694,0.673,0.908,0.319,0.687,0.602,0.105,767
-1112,S. Mitrović 23/24,Getafe,33,0.02,0.36,0.121,0.085,0.273,0.112,0.2,765
-1113,M. Lovato 23/24,Salernitana,23,0.103,0.549,0.383,0.903,0.567,0.781,0.105,760
-1114,Gabriel Magalhaes 23/24,Arsenal,25,0.685,0.689,0.551,0.066,0.312,0.248,0.487,753
-1115,S. Magassa 23/24,Monaco,20,0.763,0.809,0.708,0.455,0.179,0.073,0.57,745
-1116,M. Veljković 23/24,Werder Bremen,28,0.652,0.354,0.664,0.262,0.4,0.213,0.487,745
-1117,V. Lindelöf 23/24,Man United,29,0.756,0.79,0.066,0.16,0.041,0.013,0.347,743
-1118,J. Laporte 23/24,Lorient,30,0.531,0.645,0.549,0.491,0.094,0.048,0.427,742
-1119,C. Lukeba 23/24,RB Leipzig,20,0.857,0.735,0.505,0.618,0.914,0.222,0.891,739
-1120,M. Diakhaby 23/24,Valencia,26,0.36,0.475,0.105,0.742,0.8,0.928,0.641,737
-1121,D. Zagadou 23/24,Stuttgart,24,0.908,0.39,0.882,0.595,0.942,0.949,0.498,735
-1122,A. Jung 23/24,Werder Bremen,32,0.457,0.374,0.822,0.091,0.218,0.809,0.273,734
-1123,M. Friedl 23/24,Werder Bremen,25,0.471,0.436,0.696,0.887,0.128,0.613,0.105,728
-1124,J. Okumu 23/24,Reims,26,0.74,0.158,0.928,0.898,0.508,0.809,0.36,727
-1125,D. Kohr 23/24,Mainz 05,29,0.427,0.167,0.537,0.926,0.271,0.091,0.36,724
-1126,J. Gvardiol 23/24,Man City,21,0.836,0.751,0.744,0.462,0.317,0.048,0.942,723
-1127,A. Buongiorno 23/24,Torino,24,0.225,0.133,0.05,0.988,0.878,0.278,0.314,716
-1128,L. Pirola 23/24,Salernitana,21,0.425,0.719,0.45,0.783,0.137,0.393,0.36,715
-1129,A. Bastoni 23/24,Internazionale,24,0.841,0.896,0.954,0.317,0.588,0.567,0.866,712
-1130,M. Akanji 23/24,Man City,28,0.97,0.942,0.209,0.144,0.531,0.733,0.949,711
-1131,Édgar González 23/24,Almería,26,0.641,0.894,0.455,0.232,0.163,0.717,0.287,700
-1132,I. Traoré 23/24,Metz,37,0.121,0.804,0.039,0.549,0.914,0.179,0.117,695
-1133,S. Diomandé 23/24,Olympique Lyonnais,22,0.625,0.74,0.34,0.489,0.459,0.154,0.682,683
-1134,A. Tamèze 23/24,Torino,29,0.57,0.558,0.344,0.763,0.445,0.091,0.595,681
-1135,K. Itakura 23/24,Borussia M'gladbach,26,0.459,0.859,0.057,0.882,0.514,0.356,0.537,679
-1136,S. de Vrij 23/24,Internazionale,31,0.413,0.468,0.016,0.804,0.179,0.809,0.294,678
-1137,S. Savić 23/24,Atlético Madrid,32,0.39,0.236,0.354,0.848,0.659,0.949,0.457,676
-1138,C. Okoli 23/24,Frosinone,22,0.413,0.79,0.645,0.239,0.105,0.928,0.386,673
-1139,E. Agbadou 23/24,Reims,26,0.788,0.703,0.889,0.977,0.889,0.278,0.963,672
-1140,E. Ndicka 23/24,Roma,24,0.852,0.928,0.436,0.445,0.579,0.17,0.689,668
-1141,C. Özkacar 23/24,Valencia,23,0.37,0.262,0.763,0.51,0.627,0.949,0.689,667
-1142,R. Knoche 23/24,Union Berlin,31,0.691,0.634,0.689,0.448,0.8,0.526,0,666
-1143,K. Sildillia 23/24,Freiburg,21,0.285,0.211,0.606,0.712,0.749,0.278,0.625,665
-1144,D. O'Shea 23/24,Burnley,24,0.8,0.505,0.82,0.466,0.28,0.988,0.551,660
-1145,R. Burke 23/24,Luton Town,27,0.025,0.059,0.14,0.703,0.073,0.565,0.218,660
-1146,César Azpilicueta 23/24,Atlético Madrid,34,0.818,0.659,0.88,0.639,0.351,0.278,0.988,658
-1147,R. Bensebaini 23/24,Borussia Dortmund,28,0.825,0.595,0.878,0.91,0.273,0.239,0.758,652
-1148,J. Gouweleeuw 23/24,Augsburg,32,0.613,0.255,0.935,0.354,0.914,0.2,0.758,651
-1149,Saúl Coco 23/24,Las Palmas,24,0.455,0.875,0.264,0.668,0.179,0.809,0.632,650
-1150,Miguel Rubio 23/24,Granada,25,0.239,0.183,0.2,0.547,0.82,0.848,0,648
-1151,S. Touré 23/24,Lorient,20,0.611,0.804,0.374,0.954,0.252,0.531,0.641,642
-1152,R. Calafiori 23/24,Bologna,21,0.648,0.747,0.218,0.675,0.441,0.473,0.809,639
-1153,N. Elvedi 23/24,Borussia M'gladbach,27,0.79,0.528,0.662,0.832,0.383,0.17,0.774,634
-1154,Eric García 23/24,Girona,22,0.726,0.85,0.809,0.048,0.08,0.124,0.958,633
-1155,D. Upamecano 23/24,Bayern München,24,0.988,0.887,0.832,0.296,0.34,0.898,0.947,632
-1156,Luis Hernández 23/24,Cádiz,34,0.105,0.462,0.694,0.16,0.112,0.613,0.239,631
-1157,S. Bell 23/24,Mainz 05,32,0.496,0.581,0.857,0.239,0.436,0.434,0.119,626
-1158,Domingos Duarte 23/24,Getafe,28,0.022,0.31,0.186,0.004,0.018,0.193,0.487,625
-1159,N. Aké 23/24,Man City,28,0.866,0.933,0.257,0.022,0.239,0.464,0.914,622
-1160,C. Riad 23/24,Real Betis,20,0.54,0.698,0.029,0.441,0.97,0.503,0,621
-1161,A. Bell 23/24,Luton Town,29,0.062,0.149,0.287,0.747,0.873,0.006,0.779,620
-1162,L. Kelly 23/24,Bournemouth,25,0.204,0.011,0.551,0.579,0.36,0.02,0.413,617
-1163,K. Ajer 23/24,Brentford,25,0.239,0.331,0.335,0.558,0.627,0.901,0.852,614
-1164,C. Zesiger 23/24,Wolfsburg,25,0.802,0.278,0.843,0.728,0.291,0.908,0.822,611
-1165,N. Casale 23/24,Lazio,25,0.747,0.937,0.321,0.413,0.698,0.505,0.866,603
-1166,Clinton Mata 23/24,Olympique Lyonnais,30,0.657,0.135,0.802,0.79,0.285,0.17,0.519,600
-1167,J. Matip 23/24,Liverpool,32,0.822,0.765,0.395,0.6,0.147,0.942,0.97,599
-1168,Diego Llorente 23/24,Roma,30,0.774,0.427,0.2,0.813,0.71,0.94,0.875,598
-1169,A. Pieper 23/24,Werder Bremen,25,0.278,0.257,0.868,0.947,0.305,0.763,0.241,594
-1170,J. Gomez 23/24,Liverpool,26,0.809,0.903,0.167,0.388,0.009,0.505,0.834,588
-1171,Natan 23/24,Napoli,22,0.675,0.422,0.089,0.404,0.82,0.048,0.528,583
-1172,S. Walukiewicz 23/24,Empoli,23,0.255,0.31,0.65,0.928,0.678,0.278,0.885,581
-1173,Toti Gomes 23/24,Wolverhampton,24,0.308,0.287,0.363,0.066,0.179,0.68,0.337,572
-1174,Raúl Torrente 23/24,Granada,22,0.222,0.045,0.604,0.202,0.636,0.278,0.126,572
-1175,R. Araújo 23/24,Barcelona,24,0.733,0.974,0.629,0.186,0.901,0.859,0.99,568
-1176,M. Maglica 23/24,Darmstadt 98,25,0.508,0.331,0.862,0.891,0.4,0.997,0.816,567
-1177,R. Pierre-Gabriel 23/24,Nantes,25,0.094,0.119,0.177,0.383,0.774,0.137,0.772,567
-1178,M. Diarra 23/24,Toulouse,22,0.16,0.28,0.705,0.737,0.317,0.567,0.347,560
-1179,F. de Jong 23/24,Barcelona,26,0.993,0.912,0.958,0.009,0.112,0.875,1,558
-1180,M. Senesi 23/24,Bournemouth,26,0.439,0.163,0.986,0.972,0.179,0.809,0.855,554
-1181,L. Østigård 23/24,Napoli,23,0.813,0.714,0.772,0.777,0.935,0.68,0.859,551
-1182,O. Kabak 23/24,Hoffenheim,23,0.443,0.218,0.409,0.919,0.758,0.549,0.448,548
-1183,Danilo Pereira 23/24,PSG,32,0.997,0.981,0.965,0.632,0.636,0.944,0.827,547
-1184,C. Hérelle 23/24,Metz,31,0.174,0.648,0.011,0.011,0.285,0.032,0.248,547
-1185,J. Beyer 23/24,Burnley,23,0.811,0.266,0.059,0.974,0.96,0.694,0.871,546
-1186,I. Konaté 23/24,Liverpool,24,0.931,0.986,0.832,0.59,0.312,0.091,0.648,546
-1187,B. Omeragić 23/24,Montpellier,21,0.213,0.31,0.08,0.537,0.735,0.613,0.558,541
-1188,K. De Winter 23/24,Genoa,21,0.043,0.08,0.039,0.367,0.409,0.278,0.36,538
-1189,J. Egan 23/24,Sheffield United,30,0.062,0.016,0.112,0.931,0.521,0.381,0,536
-1190,Rafa Marín 23/24,Deportivo Alavés,21,0.181,0.418,0.305,0.082,0.662,0.613,0.457,536
-1191,C. Kabasele 23/24,Udinese,32,0.186,0.441,0.055,0.154,0.062,0.593,0.655,534
-1192,M. Bauer 23/24,Augsburg,23,0.655,0.811,0.154,0.758,0.79,0.027,0,532
-1193,J. Lascelles 23/24,Newcastle United,29,0.85,0.698,0.119,0.064,0.048,0.549,0.262,531
-1194,M. Gabbia 23/24,Villarreal,24,0.609,0.742,0.213,0.809,0.602,0.788,0.464,531
-1195,Ruan Tressoldi 23/24,Sassuolo,24,0.098,0.273,0.059,0.275,0.147,0.868,0.262,525
-1196,Jorge Cuenca 23/24,Villarreal,23,0.537,0.878,0.163,0.648,0.245,0.563,0.379,525
-1197,A. Mandi 23/24,Villarreal,32,0.687,0.963,0.714,0.664,0.42,0.278,0.666,522
-1198,M. Vojvoda 23/24,Torino,28,0.349,0.627,0.926,0.006,0.043,0.278,0.822,518
-1199,G. Maripán 23/24,Monaco,29,0.51,0.301,0.264,0.88,0.687,0.108,0.133,510
-1200,Murillo dos Santos 23/24,Nottingham Forest,21,0.227,0.174,0.806,0.404,0.4,0.039,0.809,509
-1201,A. Webster 23/24,Brighton,28,0.965,0.882,0.813,0.51,0.213,0.505,0.848,508
-1202,A. Ismajli 23/24,Empoli,27,0.287,0.627,0.473,0.864,0.05,0.567,0.268,507
-1203,S. Botman 23/24,Newcastle United,23,0.834,0.921,0.48,0.255,0.912,0.717,0,506
-1204,J. Evans 23/24,Man United,35,0.482,0.055,0.558,0.197,0.42,0.593,0,504
-1205,S. Gigot 23/24,Olympique Marseille,30,0.335,0.356,0.144,0.413,0.579,0.708,0.487,497
-1206,J. Duverne 23/24,Nantes,26,0.468,0.508,0.632,0.935,0.16,0.082,0.595,497
-1207,J. Worrall 23/24,Nottingham Forest,26,0.082,0.627,0.022,0.648,0.979,0.427,0,497
-1208,Kaiky 23/24,Almería,19,0.363,0.59,0.218,0.135,0.059,0.278,0.498,496
-1209,F. Mendy 23/24,Lorient,22,0.22,0.216,0.422,1,0.673,0.99,0.708,488
-1210,O. Alderete 23/24,Getafe,26,0,0.025,0.273,0.685,0.891,0.448,0.728,487
-1211,Patric 23/24,Lazio,30,0.894,0.639,0.942,0.002,0.678,0.278,0.4,486
-1212,T. Mengi 23/24,Luton Town,21,0.034,0.294,0.211,0.859,0.942,0.048,0,484
-1213,M. Caufriez 23/24,Clermont,26,0.298,0.708,0.303,0.694,0.705,0.091,0.882,478
-1214,C. Montes 23/24,Almería,26,0.275,0.02,0.535,0.294,0.243,0.875,0,475
-1215,S. McKenna 23/24,Nottingham Forest,26,0.068,0.114,0.236,0.45,0.317,0.979,0.149,471
-1216,J. Aidoo 23/24,Celta de Vigo,28,0.112,0.089,0.245,0.503,0.868,0.708,0.413,469
-1217,R. Tolói 23/24,Atalanta,33,0.528,0.144,0.643,0.643,0.6,0.809,0.528,469
-1218,J. Lucumí 23/24,Bologna,25,0.864,0.756,0.402,0.76,0.926,0.68,0.901,468
-1219,T. Weah 23/24,Juventus,23,0.218,0.236,0.135,0.172,0.459,0.473,0.788,468
-1220,J. Belocian 23/24,Rennes,18,0.878,0.855,0.296,0.202,0.018,0.809,0.737,465
-1221,P. Rosario 23/24,Nice,26,0.705,0.602,0.765,0.402,0.988,0.809,0.921,462
-1222,A. Trusty 23/24,Sheffield United,25,0.004,0,0.006,0.873,0.827,0.204,0.149,462
-1223,A. Carboni 23/24,Monza,22,0.887,0.641,0.898,0.818,0.963,0.278,0,459
-1224,S. Birindelli 23/24,Monza,24,0.154,0.708,0.234,0.22,0.011,0.917,0.926,459
-1225,Amir Rrahmani 23/24,Napoli,29,0.94,0.818,0.703,0.059,0.901,0.717,0.65,451
-1226,H. Maguire 23/24,Man United,30,0.703,0.31,0.845,0.255,0.891,0.924,0.65,448
-1227,C. Bassey 23/24,Fulham,23,0.45,0.029,0.455,0.574,0.993,0.613,0.36,447
-1228,M. Wieteska 23/24,Cagliari,26,0.356,0.303,0.505,0.273,0.257,0.717,0.158,446
-1229,L. Bonucci 23/24,Union Berlin,36,0.342,0.202,0.788,0.073,0.65,0.048,0,445
-1230,G. Ferrari 23/24,Sassuolo,31,0.712,0.625,0.997,0.073,0.71,0.949,0.655,445
-1231,A. Izzo 23/24,Monza,31,0.91,0.898,0.379,0.698,0.285,0.137,0.859,441
-1232,Copete 23/24,Mallorca,24,0.036,0.186,0.126,0.983,0.933,0.032,0.666,436
-1233,A. Rouault 23/24,Stuttgart,22,0.804,0.521,0.947,0.349,0.112,0.278,0.165,435
-1234,N. Pallois 23/24,Nantes,36,0.126,0.066,0.48,0.843,0.328,0.278,0.31,428
-1235,B. Pavard 23/24,Internazionale,27,0.912,0.956,0.636,0.719,0.981,0.949,0,425
-1236,A. Obert 23/24,Cagliari,21,0.409,0.124,0.503,0.997,0.724,0.043,0.891,422
-1237,P. Hatzidiakos 23/24,Cagliari,26,0.236,0.949,0.59,0.549,0.779,0.002,0.165,421
-1238,L. Ranieri 23/24,Fiorentina,24,0.604,0.259,0.852,0.6,0.045,0.137,0.174,418
-1239,M. Niakhaté 23/24,Nottingham Forest,27,0.096,0.816,0.126,0.845,0.965,0.974,0,418
-1240,M. Friedrich 23/24,Borussia M'gladbach,27,0.358,0.096,0.574,0.772,0.839,0.733,0.321,413
-1241,Lisandro Martínez 23/24,Man United,25,0.77,0.852,0.321,0.266,0.22,0,0.931,412
-1242,G. Baldock 23/24,Sheffield United,30,0.032,0.048,0.275,0.121,0.002,0.117,0.174,411
-1243,A. Sylla 23/24,Strasbourg,20,0.593,0.772,0.655,0.99,0.616,0.586,0,409
-1244,C. Groß 23/24,Werder Bremen,34,0.411,0.409,0.542,0.885,0.151,0.117,0.781,409
-1245,Luiz Felipe 23/24,Real Betis,26,0.291,0.788,0.025,0.673,0.871,0.039,0,408
-1246,Sergio Ramos 23/24,Sevilla,37,0.418,0.714,0.505,0.455,0.367,0.908,0.448,408
-1247,M. Andersen 23/24,Luton Town,25,0.016,0.128,0.117,0.875,0.627,0.885,0,405
-1248,K. Schlotterbeck 23/24,Bochum,26,0.059,0.137,0.255,0.797,0.112,0.733,0.174,405
-1249,Íñigo Martínez 23/24,Barcelona,32,0.921,0.919,0.795,0.542,0.8,0.087,0.993,403
-1250,L. Balerdi 23/24,Olympique Marseille,24,0.749,0.432,0.852,0.871,0.567,0.972,0.933,399
-1251,N. Stark 23/24,Werder Bremen,28,0.337,0.013,0.981,0.956,0.42,0.505,0.464,397
-1252,D. Ćaleta-Car 23/24,Olympique Lyonnais,27,0.698,0.783,0.085,0.425,0.459,0.749,0,397
-1253,Juan Jesus 23/24,Napoli,32,0.924,0.825,0.174,0.085,0.229,0.179,0,396
-1254,M. Jenz 23/24,Wolfsburg,24,0.622,0.832,0.112,0.839,0.972,0.179,0.186,388
-1255,I. Hien 23/24,Hellas Verona,24,0.108,0.514,0.075,0.995,0.767,0.809,0.186,387
-1256,K. Akpoguma 23/24,Hoffenheim,28,0.328,0.16,0.622,0.947,0.301,0.278,0.337,384
-1257,L. Klostermann 23/24,RB Leipzig,27,0.956,0.579,0.832,0.4,0.179,0.179,0.618,383
-1258,C. Basham 23/24,Sheffield United,35,0.078,0.004,0.328,0.737,0.018,0.048,0.74,382
-1259,T. Kristensen 23/24,Udinese,21,0.202,0.988,0.018,0.528,0.296,0.278,0.347,375
-1260,F. Ogier 23/24,Clermont,34,0.487,0.31,0.542,0.694,0,0.875,0.436,375
-1261,R. Varane 23/24,Man United,30,0.88,0.972,0.735,0.648,0.901,1,0.995,375
-1262,D. Rugani 23/24,Juventus,29,0.229,0.864,0.144,0.439,0.839,0.427,0,373
-1263,N. Süle 23/24,Borussia Dortmund,28,0.981,0.97,0.868,0.131,0.839,0.949,0.885,371
-1264,Jorge Meré 23/24,Cádiz,26,0.006,0.036,0.188,0.719,0.983,0.163,0,371
-1265,Jon Pacheco 23/24,Real Sociedad,22,0.632,0.563,0,0.245,0.073,0.935,0.498,369`;
+830,Bruno Wilson 23/24,Vizela,26,0.295,0.764,0.733,0.217,0.125,0.352,0.34,1127
+831,Aderllan Santos 23/24,Rio Ave,34,0.569,0.087,0.598,0.58,0.932,0.858,0.123,1125
+832,Rúben Fernandes 23/24,Gil Vicente,37,0.639,0.275,0.417,0.024,0.181,0.491,0.244,1124
+833,C. Awaziem 23/24,Boavista,26,0.522,0.43,0.513,0.163,0.529,0.578,0.123,1119
+834,Jorge Fernandes 23/24,Vitória Guimarães,26,0.302,0.41,0.627,0.618,0.479,0.679,0.491,1114
+835,N. Otamendi 23/24,Benfica,35,0.735,0.84,0.327,0.125,0.553,0.775,0.973,1112
+836,Anderson 23/24,Vizela,28,0.13,0.446,0.13,0.183,0.161,0.291,0.071,1106
+837,Marcelo 23/24,Moreirense,34,0.396,0.201,0.526,0.616,0.786,0.461,0.123,1098
+838,Fernando Varela 23/24,Casa Pia AC,35,0.161,0.282,0.253,0.589,0.76,0.255,0.295,1084
+839,Filipe Relvas 23/24,Portimonense,24,0.219,0.452,0.508,0.739,0.3,0.695,0.295,1083
+840,N. Zolotić 23/24,Casa Pia AC,30,0.54,0.56,0.677,0.786,0.571,0.204,0.609,1080
+841,Kialonda Gaspar 23/24,Estrela Amadora,26,0.482,0.515,0.784,0.697,0.105,0.742,0.652,1065
+842,O. Diomandé 23/24,Sporting CP,19,0.883,0.8,0.713,0.1,0.896,0.618,0.802,1057
+843,António Silva 23/24,Benfica,20,0.728,0.952,0.426,0.45,0.775,0.473,0.901,1020
+844,Otávio 23/24,Famalicão,21,0.352,0.262,0.863,0.932,0.939,0.468,0.078,1017
+845,Manu 23/24,Vitória Guimarães,22,0.381,0.535,0.755,0.874,0.836,0.118,0.201,1013
+846,Gonçalo Inácio 23/24,Sporting CP,22,0.955,0.683,0.995,0.372,0.775,0.147,0.914,1009
+847,Gabriel Pereira 23/24,Gil Vicente,23,0.744,0.547,0.163,0.531,0.461,0.45,0.201,1007
+848,S. Coates 23/24,Sporting CP,33,0.829,0.457,0.551,0.112,0.63,0.979,0.213,958
+849,Gonçalo Silva 23/24,Farense,32,0.132,0.264,0.479,0.432,0.663,0.177,0.224,933
+850,Volnei Feltes 23/24,Estoril,23,0.078,0.004,0.531,0.659,0.008,0.28,0.147,932
+851,Alemão 23/24,Portimonense,21,0.094,0.094,0.049,0.782,0.479,0.544,0.41,892
+852,Bernardo Vital 23/24,Estoril,22,0.343,0.773,0.237,0.607,0.044,0.421,0.087,879
+853,Bruno Rodrigues 23/24,Chaves,22,0.217,0.618,0.473,0.275,0.775,0.291,0.239,876
+854,J. Omurwa 23/24,Estrela Amadora,25,0.383,0.672,0.547,0.699,0.089,0.955,0.551,873
+855,R. Abascal 23/24,Boavista,29,0.636,0.313,0.887,0.589,0.307,0.224,0,871
+856,Pedrão 23/24,Portimonense,26,0.206,0.426,0.726,0.349,0.161,0.239,0.36,857
+857,Pedro Álvaro 23/24,Estoril,23,0.201,0.5,0.161,0.062,0.374,0.434,0,821
+858,Riccieli 23/24,Famalicão,25,0.486,0.405,0.468,0.607,0.616,0.793,0,812
+859,José Fonte 23/24,Sporting Braga,39,0.632,0.607,0.428,0.23,0.302,0.647,0.253,807
+860,Vasco Fernandes 23/24,Casa Pia AC,36,0.275,0.04,0.556,0.522,0.623,0.134,0.17,805
+861,Maracás 23/24,Moreirense,29,0.336,0.582,0.04,0.544,0.026,0.677,0.322,796
+862,N. Galović 23/24,Arouca,31,0.484,0.804,0.428,0.163,0.952,0.291,0.105,791
+863,Javi Montero 23/24,Arouca,24,0.551,0.132,0.786,0.659,0.123,0.152,0.661,789
+864,Josué Sá 23/24,Rio Ave,31,0.488,0.639,0.352,0.289,0.311,0.914,0.679,780
+865,Tiago Esgaio 23/24,Arouca,28,0.195,0.065,0.773,0.843,0.271,0.883,0.784,750
+866,Rafael Fernandes 23/24,Arouca,21,0.495,0.872,0.273,0.21,0.912,0.78,0.639,744
+867,Miguel Lopes 23/24,Estrela Amadora,36,0.358,0.295,0.103,0.208,0.347,0.399,0.273,735
+868,Ygor Nogueira 23/24,Chaves,28,0.226,0.181,0.103,0.338,0.446,0.939,0.45,679
+869,David Carmo 23/24,Porto,24,0.654,0.284,0.636,0.417,0.056,0.914,0.621,679
+870,Sandro Cruz 23/24,Chaves,22,0.076,0.073,0.244,0.544,0.721,0.091,0.699,658
+871,R. Pantalon 23/24,Rio Ave,26,0.517,0.278,0.67,0.15,0.002,0.291,0.394,644
+872,Martín Aguirregabiria 23/24,Famalicão,27,0.123,0.177,0.894,0.533,0.192,0.56,0.562,641
+873,Tomás Ribeiro 23/24,Vitória Guimarães,24,0.237,0.105,0.614,0.3,0.215,0.883,0.109,629
+874,S. Vitória 23/24,Chaves,36,0.091,0.103,0,0.029,0.136,0.647,0.114,606
+875,Wendell 23/24,Porto,30,0.356,0.215,0.338,0.511,0.071,0.955,0.975,600
+876,Mansur 23/24,Estrela Amadora,30,0.529,0.544,0.807,0.443,0.807,0.089,0.596,600
+877,Z. Muscat 23/24,Farense,30,0.067,0.304,0.029,0.356,0.721,0.403,0.114,595
+878,S. Niakaté 23/24,Sporting Braga,24,0.446,0.062,0.461,0.432,0.441,0.39,0.428,570
+879,Artur Jorge 23/24,Farense,29,0.053,0.033,0.02,0.73,0.298,0.506,0.244,554
+880,Matheus Reis 23/24,Sporting CP,28,0.63,0.365,0.639,0.195,0.374,0.017,0.914,529
+881,G. Frimpong 23/24,Moreirense,24,0.073,0.313,0.177,0.293,0.244,0.011,0.475,519
+882,S. Saatçı 23/24,Sporting Braga,20,0.764,0.589,0.558,0.941,0.995,0.39,0.136,511
+883,Nathan 23/24,Famalicão,22,0.047,0.188,0.118,0.95,0.576,0.002,0.982,504
+884,Fábio Cardoso 23/24,Porto,29,0.896,0.95,0.807,0.116,0.201,0.291,0.831,490
+885,Pepe 23/24,Porto,40,0.701,0.461,0.881,0.493,0.856,0.461,0.273,485
+886,Filipe Ferreira 23/24,Boavista,33,0.32,0.313,0.632,0.204,0.076,0.008,0.535,451
+887,Iván Marcano 23/24,Porto,36,0.867,0.804,0.937,0,0.015,0.656,0.872,435
+888,Miguel Nóbrega 23/24,Rio Ave,23,0.273,0.082,0.195,0.136,0,0.618,0.295,425
+889,Paulo Oliveira 23/24,Sporting Braga,31,0.845,0.479,0.986,0.912,0.775,0.179,0.459,403
+890,Mikel Villanueva 23/24,Vitória Guimarães,30,0.392,0.414,0.695,0.656,0.047,0.491,0.596,401
+891,E. Cabaco 23/24,Estoril,28,0.329,0.286,0.928,0.226,0.82,0.291,0.174,398
+892,D. Mirani 23/24,Volendam,27,0.264,0.233,0.195,0.771,0.091,0.347,0.607,1193
+893,D. Hancko 23/24,Feyenoord,25,0.964,0.677,0.899,0.21,0.908,0.246,0.977,1181
+894,D. Siovas 23/24,Fortuna Sittard,35,0.376,0.123,0.461,0.598,0.686,0.975,0.114,1179
+895,L. Geertruida 23/24,Feyenoord,23,0.843,0.894,0.717,0.053,0.852,0.701,0.97,1176
+896,C. Widell 23/24,Excelsior,20,0.443,0.567,0.585,0.726,0.616,0.573,0.174,1170
+897,T. Velthuis 23/24,Sparta Rotterdam,21,0.634,0.632,0.374,0.652,0.674,0.204,0.524,1170
+898,Rodrigo Guth 23/24,Fortuna Sittard,23,0.374,0.058,0.562,0.517,0.479,0.6,0.762,1165
+899,S. Kersten 23/24,PEC Zwolle,25,0.369,0.6,0.486,0.831,0.647,0.051,0.621,1160
+900,J. Hato 23/24,Ajax,17,0.946,0.917,0.874,0.827,0.663,0.829,0.899,1134
+901,M. Hilgers 23/24,Twente,22,0.724,0.695,0.204,0.143,0.408,0.087,0.961,1071
+902,C. Verdonk 23/24,NEC,26,0.439,0.091,0.973,0.946,0.257,0.39,0.699,1070
+903,R. Pröpper 23/24,Twente,30,0.917,0.663,0.959,0.311,0.804,0.345,0.795,1069
+904,B. Vriends 23/24,Sparta Rotterdam,32,0.473,0.71,0.748,0.784,0.403,0.531,0.295,1064
+905,J. Hoogma 23/24,Heracles,25,0.719,0.369,0.926,0.147,0.058,0.573,0.928,1019
+906,O. Boscagli 23/24,PSV,25,0.948,0.607,1,0.69,0.872,0.376,0.905,998
+907,D. Oroz 23/24,Vitesse,23,0.248,0.096,0.383,0.374,0.372,0.872,0.269,995
+908,P. Bochniewicz 23/24,Heerenveen,27,0.665,0.762,0.811,0.423,0.479,0.663,0.551,988
+909,André Ramalho 23/24,PSV,31,0.91,0.721,0.995,0.683,0.721,0.818,0.807,982
+910,R. El Yaakoubi 23/24,Excelsior,27,0.271,0.1,0.645,0.544,0.159,0.522,0.661,963
+911,R. Flamingo 23/24,Utrecht,20,0.208,0.076,0.533,0.482,0.744,0.17,0.459,943
+912,B. Nuytinck 23/24,NEC,33,0.591,0.665,0.641,0.486,0.663,0.491,0.822,941
+913,D. van Bruggen 23/24,Almere City,27,0,0.002,0.112,0.869,0.369,0.289,0,928
+914,N. Isimat-Mirin 23/24,Vitesse,31,0.721,0.363,0.374,0.791,0.634,0.401,0.405,920
+915,B. Benamar 23/24,Volendam,26,0.571,0.733,0.652,0.775,0.596,0.863,0.919,911
+916,B. van Polen 23/24,PEC Zwolle,38,0.159,0.213,0.291,0.816,0.257,0.291,0.347,901
+917,J. Amofa 23/24,Go Ahead Eagles,24,0.118,0.58,0.773,0.32,0.533,0.224,0.724,884
+918,T. Lam 23/24,PEC Zwolle,29,0.753,0.461,0.69,0.753,0.901,0.656,0.755,883
+919,R. Bazoer 23/24,AZ,27,0.793,0.825,0.378,0.038,0.966,0.793,0.878,861
+920,M. Sagnan 23/24,Utrecht,24,0.408,0.529,0.652,0.271,0.84,0.717,0.36,854
+921,J. Kramer 23/24,Go Ahead Eagles,27,0.204,0.239,0.172,0.73,0.926,0.511,0.437,840
+922,R. Hendriks 23/24,Vitesse,22,0.331,0.54,0.468,0.242,0.565,0.76,0.437,838
+923,J. Šutalo 23/24,Ajax,23,0.937,0.591,0.677,0.753,0.919,0.473,0.524,821
+924,T. Barbet 23/24,Almere City,22,0.181,0.204,0.565,0.331,0.293,0.251,0.715,811
+925,S. Floranus 23/24,Almere City,25,0.143,0.226,0.181,0.789,0.082,0.78,0.401,784
+926,J. Schouten 23/24,PSV,26,0.802,0.778,0.479,0.354,0.878,0.033,0.609,780
+927,D. Van den Buijs 23/24,RKC Waalwijk,28,0.863,0.127,0.982,0.621,0.255,0.78,0.903,760
+928,Alexandre Penetra 23/24,AZ,22,0.908,0.699,0.834,0.067,0.224,0.056,0.41,742
+929,J. Flint 23/24,Volendam,23,0.641,0.784,0.908,0.948,0.363,0.417,0.5,731
+930,M. van der Hoorn 23/24,Utrecht,31,0.58,0.497,0.901,0.383,0.329,0.549,0.728,714
+931,S. Bultman 23/24,Heracles,18,0.614,0.071,0.8,0.905,0.744,0.266,0.587,713
+932,S. Nieuwpoort 23/24,Excelsior,30,0.349,0.549,0.002,0.022,0.941,0.17,0,693
+933,J. Gaari 23/24,RKC Waalwijk,29,0.726,0.291,0.394,0.394,0.224,0.531,0.885,686
+934,S. van Beek 23/24,Heerenveen,29,0.674,0.89,0.677,0.643,0.479,0.365,0.354,686
+935,M. Dijks 23/24,Fortuna Sittard,30,0.044,0.015,0.318,0.582,0.825,0.062,0.843,659
+936,G. Nauber 23/24,Go Ahead Eagles,31,0.235,0.504,0.594,0.468,0.257,0.522,0.213,652
+937,B. Plat 23/24,Volendam,23,0.147,0.098,0.253,0.995,0.627,0.793,0.715,651
+938,L. Mbe Soh 23/24,Almere City,22,0.165,0.17,0.715,0.76,0.479,0.024,0.479,644
+939,S. Adewoye 23/24,RKC Waalwijk,23,0.434,0.152,0.32,0.423,0.654,0.605,0.587,614
+940,S. van Ottele 23/24,Heerenveen,21,0.791,0.468,0.991,0.894,0.21,0.618,0.946,602
+941,M. Ross 23/24,NEC,22,0.096,0.067,0.437,0.186,0.035,0.816,0.41,594
+942,R. Vita 23/24,Fortuna Sittard,22,0.049,0.006,0.621,0.959,0.224,0.022,0.652,535
+943,S. Sonnenberg 23/24,Heracles,24,0.56,0.235,0.206,0.86,0.988,0.968,0.656,532
+944,G. Trauner 23/24,Feyenoord,31,0.968,0.959,0.78,0.085,0.856,0.829,0.869,490
+945,J. Jacobs 23/24,Almere City,23,0.031,0.082,0.497,0.802,0.538,0.096,0.542,444
+946,Unai Núñez 23/24,Celta de Vigo,26,0.307,0.134,0.688,0.679,0.374,0.522,0.376,1332
+947,F. Lejeune 23/24,Rayo Vallecano,32,0.316,0.524,0.896,0.253,0.419,0.049,0.213,1307
+948,Ignasi Miquel 23/24,Granada,31,0.233,0.228,0.448,0.349,0.426,0.434,0.295,1291
+949,Dani Vivian 23/24,Athletic Bilbao,24,0.345,0.45,0.591,0.719,0.71,0.029,0.428,1282
+950,Carlos Neva 23/24,Granada,27,0.04,0.024,0.567,0.482,0.477,0.161,0.533,1267
+951,D. Blind 23/24,Girona,33,0.854,0.795,0.964,0.078,0.426,0.186,0.948,1242
+952,E. Konsa 23/24,Aston Villa,26,0.715,0.973,0.082,0.094,0.807,0.255,0.443,1239
+953,C. Starfelt 23/24,Celta de Vigo,28,0.141,0.869,0.004,0.728,0.426,0.773,0.067,1236
+954,M. Kilman 23/24,Wolverhampton,26,0.461,0.367,0.58,0.571,0.551,0.278,0.45,1234
+955,Thiago Silva 23/24,Chelsea,39,0.941,0.997,0.405,0.044,0.08,0.928,0.224,1234
+956,F. Schär 23/24,Newcastle United,31,0.782,0.612,0.735,0.163,0.192,0.161,0.636,1230
+957,W. Saliba 23/24,Arsenal,22,0.957,0.957,0.116,0.029,0.908,0.417,0.491,1227
+958,E. Pinnock 23/24,Brentford,30,0.464,0.616,0.262,0.739,0.982,0.713,0.273,1225
+959,R. Nicolaisen 23/24,Toulouse,26,0.367,0.558,0.266,0.567,0.468,0.827,0.114,1221
+960,I. Zabarnyi 23/24,Bournemouth,21,0.414,0.3,0.369,0.556,0.408,0.233,0.5,1217
+961,J. Andersen 23/24,Crystal Palace,27,0.656,0.208,0.869,0.571,0.273,0.567,0.791,1215
+962,Pau Torres 23/24,Aston Villa,26,0.834,0.786,0.86,0.008,0.172,0.432,0.928,1208
+963,Javi Hernández 23/24,Cádiz,25,0.002,0.031,0.19,0.19,0.033,0.291,0.739,1207
+964,J. Tarkowski 23/24,Everton,30,0.15,0.313,0.567,0.556,0.515,0.697,0.17,1207
+965,C. Dawson 23/24,Wolverhampton,33,0.394,0.466,0.367,0.201,0.062,0.665,0.067,1205
+966,B. Cristante 23/24,Roma,28,0.587,0.255,0.585,0.338,0.17,0.168,0.596,1205
+967,G. Magnani 23/24,Hellas Verona,28,0.105,0.156,0.224,0.322,0.347,0.544,0.322,1204
+968,M. Pongračić 23/24,Lecce,26,0.457,0.526,0.699,0.677,0.459,0.618,0.688,1200
+969,David García 23/24,Osasuna,29,0.322,0.434,0.45,0.255,0.576,0.73,0.596,1199
+970,R. Drăgușin 23/24,Genoa,21,0.08,0.139,0.035,0.244,0.811,0.757,0.322,1198
+971,J. Robinson 23/24,Sheffield United,30,0.085,0.257,0.06,0.248,0.201,0.491,0.36,1193
+972,G. Lloris 23/24,Le Havre,28,0.535,0.883,0.381,0.845,0.284,0.264,0.322,1192
+973,Álex Suárez 23/24,Las Palmas,30,0.432,0.515,0.446,0.417,0.542,0.204,0.36,1190
+974,N. Pérez 23/24,Udinese,23,0.286,0.387,0.753,0.746,0.19,0.878,0.73,1188
+975,J. Bijol 23/24,Udinese,24,0.186,0.428,0.437,0.901,0.614,0.753,0.36,1188
+976,K. Danso 23/24,Lens,25,0.643,0.769,0.665,0.284,0.65,0.755,0.926,1188
+977,Y. Abdelhamid 23/24,Reims,36,0.603,0.551,0.603,0.603,0.838,0.062,0.802,1187
+978,S. Luperto 23/24,Empoli,27,0.224,0.313,0.085,0.199,0.147,0.201,0.36,1186
+979,M. Talbi 23/24,Lorient,25,0.405,0.408,0.508,0.504,0.329,0.656,0.336,1183
+980,M. de Roon 23/24,Atalanta,32,0.683,0.221,0.847,0.538,0.318,0.883,0.778,1182
+981,Dante 23/24,Nice,40,0.982,0.854,0.968,0.538,0.957,0.822,0.52,1182
+982,Catena 23/24,Osasuna,29,0.269,0.192,0.829,0.248,0.399,0.946,0.071,1181
+983,Bremer 23/24,Juventus,26,0.455,0.627,0.517,0.8,0.827,0.697,0.282,1180
+984,A. Romagnoli 23/24,Lazio,28,0.733,0.921,0.372,0.06,0.047,0.569,0.188,1179
+985,G. Pezzella 23/24,Real Betis,32,0.403,0.508,0.195,0.446,0.742,0.531,0.239,1177
+986,M. Valjent 23/24,Mallorca,27,0.056,0.513,0.139,0.529,0.325,0.589,0.174,1175
+987,Mario Hermoso 23/24,Atlético Madrid,28,0.706,0.634,0.746,0.304,0.374,0.771,0.582,1156
+988,A. Rüdiger 23/24,Real Madrid,30,0.589,0.508,0.412,0.017,0.116,0.829,0.699,1155
+989,N. Collins 23/24,Brentford,22,0.645,0.502,0.67,0.331,0.76,0.609,0.383,1140
+990,Logan Costa 23/24,Toulouse,22,0.573,0.387,0.594,0.457,0.39,0.86,0.679,1126
+991,M. Erlić 23/24,Sassuolo,25,0.284,0.69,0.609,0.887,0.719,0.291,0.183,1120
+992,G. Mancini 23/24,Roma,27,0.686,0.347,0.798,0.085,0.634,0.43,0.688,1116
+993,L. Dunk 23/24,Brighton,31,0.984,0.881,0.912,0.174,0.293,0.818,0.755,1108
+994,K. Zouma 23/24,West Ham,29,0.17,0.372,0.069,0.076,0.053,0.387,0.244,1108
+995,A. Pelmard 23/24,Clermont,23,0.544,0.701,0.201,0.04,0.688,0.291,0.852,1107
+996,A. Disasi 23/24,Chelsea,25,0.952,0.941,0.659,0.013,0.024,0.692,0.641,1104
+997,G. Nyamsi 23/24,Strasbourg,26,0.556,0.757,0.237,0.36,0.47,0.91,0.188,1100
+998,Zubeldía 23/24,Real Sociedad,26,0.623,0.302,0.403,0.23,0.374,0.132,0.596,1099
+999,S. Beukema 23/24,Bologna,24,0.872,0.793,0.428,0.452,0.58,0.434,0.188,1098
+1000,M. Guéhi 23/24,Crystal Palace,23,0.67,0.688,0.567,0.475,0.874,0.145,0.641,1098
+1001,B. Chardonnet 23/24,Brest,28,0.3,0.399,0.495,0.652,0.452,0.715,0.784,1095
+1002,W. Singo 23/24,Monaco,22,0.827,0.816,0.589,0.403,0.183,0.932,0.856,1095
+1003,T. Ream 23/24,Fulham,36,0.751,0.856,0.78,0.325,0.278,0.605,0.733,1092
+1004,P. Mainka 23/24,Heidenheim,29,0.475,0.791,0.878,0.959,0.997,0.396,0.733,1091
+1005,W. Anton 23/24,Stuttgart,27,0.923,0.531,0.905,0.428,0.479,0.529,0.836,1091
+1006,W. Pacho 23/24,Eintracht Frankfurt,22,0.762,0.271,0.695,0.811,0.923,0.266,0.123,1091
+1007,Bernardo 23/24,Bochum,28,0.134,0.15,0.358,0.975,0.773,0.69,0.488,1090
+1008,A. Dossena 23/24,Cagliari,25,0.168,0.273,0.033,0.979,0.715,0.45,0.071,1090
+1009,Chumi 23/24,Almería,24,0.26,0.562,0.065,0.136,0.022,0.147,0.347,1087
+1010,N. Aguerd 23/24,West Ham,27,0.327,0.183,0.771,0.596,0.343,0.284,0.253,1080
+1011,M. van de Ven 23/24,Tottenham,22,0.795,0.948,0.089,0.04,0.356,0.134,0.515,1077
+1012,R. Rodríguez 23/24,Torino,31,0.663,0.827,0.89,0.105,0.246,0.372,0.991,1077
+1013,M. Škriniar 23/24,PSG,28,0.993,0.968,0.399,0.156,0.392,0.291,0.295,1075
+1014,T. Hübers 23/24,Köln,27,0.41,0.163,0.65,0.982,0.242,0.531,0.188,1073
+1015,Aitor Paredes 23/24,Athletic Bilbao,23,0.459,0.573,0.504,0.067,0.013,0.356,0.347,1072
+1016,L. Caldirola 23/24,Monza,32,0.567,0.661,0.282,0.174,0.067,0.591,0.295,1072
+1017,M. Wöber 23/24,Borussia M'gladbach,25,0.647,0.311,0.923,0.957,0.632,0.764,0.699,1071
+1018,P. Lienhart 23/24,Freiburg,27,0.773,0.441,0.793,0.271,0.464,0.894,0.609,1071
+1019,F. Tomori 23/24,Milan,25,0.928,0.876,0.475,0.78,0.652,0.571,0.769,1066
+1020,B. White 23/24,Arsenal,26,0.8,0.755,0.73,0.058,0.318,0.096,0.621,1063
+1021,J. Tah 23/24,Bayer Leverkusen,27,0.921,0.995,0.322,0.464,0.479,0.789,0.621,1062
+1022,F. Baschirotto 23/24,Lecce,27,0.345,0.244,0.309,0.125,0.257,0.807,0.769,1061
+1023,B. Djimsiti 23/24,Atalanta,30,0.627,0.468,0.145,0.939,0.874,0.872,0,1058
+1024,A. Sedlar 23/24,Deportivo Alavés,31,0.163,0.421,0.172,0.327,0.553,0.354,0.571,1058
+1025,G. Álvarez 23/24,Getafe,23,0.011,0.022,0.23,0.82,0.594,0.665,0.199,1057
+1026,J. Todibo 23/24,Nice,23,0.979,0.751,0.939,0.912,0.968,0.67,0.86,1057
+1027,L. Colwill 23/24,Chelsea,20,0.547,0.423,0.605,0.479,0.396,0.865,0.775,1056
+1028,D. Alaba 23/24,Real Madrid,31,0.757,0.654,0.408,0.047,0.692,0.082,0.63,1056
+1029,Diogo Leite 23/24,Union Berlin,24,0.565,0.506,0.802,0.97,0.549,0.686,0.571,1054
+1030,Mika Mármol 23/24,Las Palmas,22,0.739,0.775,0.668,0.491,0.739,0.058,0.807,1052
+1031,T. Lockyer 23/24,Luton Town,28,0.051,0.051,0.522,0.607,0.607,0.686,0.26,1051
+1032,I. Doukouré 23/24,Strasbourg,20,0.174,0.434,0.056,0.121,0.224,0.085,0.661,1050
+1033,Kim Min-Jae 23/24,Bayern München,26,0.988,0.982,0.948,0.544,0.52,0.892,0.679,1042
+1034,David López 23/24,Girona,34,0.852,0.82,0.304,0.432,0.845,0.239,0.679,1037
+1035,J. Gradit 23/24,Lens,30,0.661,0.735,0.988,0.71,0.616,0.109,0.872,1032
+1036,N. Milenković 23/24,Fiorentina,26,0.652,0.679,0.517,0.511,0.573,0.822,0.078,1030
+1037,J. Chabot 23/24,Köln,25,0.466,0.354,0.41,0.89,0.343,0.578,0.136,1027
+1038,Fali 23/24,Cádiz,30,0.022,0.069,0.293,0.331,0.692,0.152,0.313,1020
+1039,A. Witsel 23/24,Atlético Madrid,34,0.825,0.93,0.094,0.284,0.881,1,0.36,1019
+1040,F. Medina 23/24,Lens,24,0.869,0.813,0.917,0.343,0.094,0.793,0.82,1015
+1041,A. Abqar 23/24,Deportivo Alavés,24,0.006,0.105,0.183,0.363,0.589,0.45,0.136,1012
+1042,J. Branthwaite 23/24,Everton,21,0.127,0.221,0.264,0.881,0.854,0.374,0.078,1009
+1043,K. Kouyaté 23/24,Montpellier,26,0.242,0.565,0.293,0.813,0.367,0.775,0.136,1005
+1044,M. Ginter 23/24,Freiburg,29,0.614,0.697,0.82,0.607,0.392,0.459,0.695,1003
+1045,N. Schlotterbeck 23/24,Borussia Dortmund,23,0.93,0.852,0.955,0.327,0.201,0.363,0.979,1003
+1046,N. Gudelj 23/24,Sevilla,31,0.47,0.455,0.192,0.15,0.677,0.356,0.984,1003
+1047,L. Martínez Quarta 23/24,Fiorentina,27,0.58,0.459,0.957,0.854,0.352,0.204,0.428,1001
+1048,J. Vásquez 23/24,Genoa,25,0.098,0.029,0.325,0.896,0.8,0.273,0.542,1000
+1049,M. Bani 23/24,Genoa,29,0.21,0.154,0.251,0.701,0.82,0.486,0.136,999
+1050,R. Koch 23/24,Eintracht Frankfurt,27,0.836,0.26,0.692,0.542,1,0.612,0.376,993
+1051,Y. Salmier 23/24,Le Havre,30,0.145,0.165,0.307,0.295,0.179,0.403,0.551,990
+1052,C. Klarer 23/24,Darmstadt 98,23,0.34,0.742,0.219,0.495,0.587,0.434,0.383,989
+1053,A. Sanganté 23/24,Le Havre,21,0.385,0.719,0.257,0.3,0.529,0.19,0.201,989
+1054,C. Mbemba 23/24,Olympique Marseille,29,0.618,0.614,0.298,0.659,0.932,0.919,0.699,988
+1055,M. Lacroix 23/24,Wolfsburg,23,0.672,0.374,0.838,0.387,0.439,0.286,0.201,986
+1056,J. Castelletto 23/24,Nantes,28,0.421,0.625,0.338,0.217,0.224,0.894,0.551,986
+1057,H. Ito 23/24,Stuttgart,24,0.903,0.475,0.975,0.096,0.112,0.291,0.739,985
+1058,C. Romero 23/24,Tottenham,25,0.943,0.905,0.578,0.647,0.834,0.614,0.71,984
+1059,S. Kolašinac 23/24,Atalanta,30,0.605,0.65,0.553,0.82,0.721,0.152,0.71,981
+1060,Raúl Albiol 23/24,Villarreal,38,0.594,0.686,0.401,0.385,0.663,0.542,0.5,979
+1061,K. Vogt 23/24,Hoffenheim,32,0.695,0.73,0.941,0.562,0.952,0.982,0.746,979
+1062,Robin Le Normand 23/24,Real Sociedad,27,0.692,0.713,0.087,0.266,0.885,0.701,0.656,971
+1063,L. Brassier 23/24,Brest,24,0.369,0.035,0.735,0.544,0.899,0.255,0.273,963
+1064,L. Yoro 23/24,Lille,18,0.802,0.878,0.233,0.417,0.977,0.986,0.078,961
+1065,A. Al Dakhil 23/24,Burnley,21,0.598,0.443,0.215,0.623,0.522,0.08,0.63,959
+1066,E. Tapsoba 23/24,Bayer Leverkusen,24,0.977,0.97,0.977,0.026,0.688,0.174,0.919,958
+1067,M. Simakan 23/24,RB Leipzig,23,0.809,0.621,0.614,0.63,0.721,0.403,0.45,955
+1068,J. Koundé 23/24,Barcelona,25,0.97,0.932,0.82,0.114,0.883,0.878,0.986,955
+1069,N. Gyömbér 23/24,Salernitana,31,0.177,0.376,0.125,0.919,0.791,0.421,0.213,950
+1070,V. van Dijk 23/24,Liverpool,32,0.894,0.977,0.452,0.394,0.771,0.984,0.571,950
+1071,S. Magassa 23/24,Monaco,20,0.78,0.836,0.742,0.598,0.221,0.026,0.52,949
+1072,S. van den Berg 23/24,Mainz 05,21,0.338,0.186,0.419,0.899,0.405,0.674,0.147,948
+1073,F. Terracciano 23/24,Hellas Verona,20,0.192,0.136,0.816,0.569,0.096,0.618,0.964,945
+1074,Fali Candé 23/24,Metz,25,0.156,0.116,0.686,0.856,0.708,0.742,0.34,942
+1075,Rúben Dias 23/24,Man City,26,0.975,0.91,0.363,0.049,0.681,0.381,0.995,941
+1076,F. Uduokhai 23/24,Augsburg,26,0.562,0.621,0.621,0.309,0.45,0.421,0.5,939
+1077,Gabriel Paulista 23/24,Valencia,32,0.504,0.708,0.385,0.217,0.356,0.793,0.282,939
+1078,Cristhian Mosquera 23/24,Valencia,19,0.468,0.605,0.035,0.316,0.553,0.403,0.34,930
+1079,O. Kossounou 23/24,Bayer Leverkusen,22,0.876,0.809,0.423,0.582,0.596,0.047,0.854,930
+1080,Alexsandro Ribeiro 23/24,Lille,24,0.892,0.865,0.708,0.468,0.419,0.482,0.286,928
+1081,W. Omari 23/24,Rennes,23,0.798,0.843,0.452,0.432,0.21,0.901,0.959,923
+1082,A. Tchouaméni 23/24,Real Madrid,23,0.89,0.986,0.329,0.121,0.446,0.941,0.829,922
+1083,M. Thiaw 23/24,Milan,22,0.899,0.849,0.354,0.724,0.511,0.224,0.872,919
+1084,A. Seidu 23/24,Clermont,23,0.609,0.401,0.224,0.589,0.607,0.78,0.858,919
+1085,M. Akanji 23/24,Man City,28,0.959,0.937,0.179,0.132,0.585,0.742,0.943,919
+1086,Rubén Duarte 23/24,Deportivo Alavés,28,0.033,0.02,0.708,0.856,0.479,0.719,0.475,917
+1087,L. Badé 23/24,Sevilla,23,0.417,0.336,0.674,0.695,0.239,0.937,0.233,913
+1088,Pablo Marí 23/24,Monza,30,0.704,0.69,0.271,0.737,0.513,0.829,0.087,898
+1089,L. Perrin 23/24,Strasbourg,24,0.578,0.381,0.502,0.708,0.475,0.829,0.816,897
+1090,T. Siersleben 23/24,Heidenheim,23,0.558,0.571,0.932,0.937,0.903,0.251,0.479,897
+1091,F. Gatti 23/24,Juventus,25,0.302,0.394,0.3,0.188,0.065,0.647,0.78,896
+1092,D. Zakaria 23/24,Monaco,26,0.65,0.959,0.08,0.578,0.289,0.764,0.908,893
+1093,G. Scalvini 23/24,Atalanta,19,0.621,0.381,0.535,0.928,0.766,0.47,0.715,892
+1094,Tuta 23/24,Eintracht Frankfurt,24,0.887,0.603,0.901,0.526,0.145,0.239,0.41,890
+1095,A. Theate 23/24,Rennes,23,0.934,0.919,0.892,0.085,0.793,0.186,0.755,885
+1096,P. Dawidowicz 23/24,Hellas Verona,28,0.441,0.432,0.309,0.809,0.793,0.643,0.293,884
+1097,Aridane Hernández 23/24,Rayo Vallecano,34,0.109,0.343,0.047,0.26,0.84,0.275,0.156,882
+1098,S. Diomandé 23/24,Olympique Lyonnais,22,0.69,0.798,0.387,0.432,0.517,0.213,0.609,881
+1099,W. Boly 23/24,Nottingham Forest,32,0.179,0.392,0.286,0.668,0.174,0.6,0.161,874
+1100,E. Fernandes 23/24,Mainz 05,27,0.452,0.197,0.914,0.486,0.457,0.096,0.354,871
+1101,E. Mašović 23/24,Bochum,24,0.013,0.044,0.031,0.769,0.13,0.096,0,867
+1102,Marquinhos 23/24,PSG,29,1,0.991,0.825,0.571,0.479,0.213,0.966,865
+1103,G. Zappa 23/24,Cagliari,23,0.199,0.313,0.979,0.237,0.132,0.121,0.764,864
+1104,I. Monterisi 23/24,Frosinone,21,0.746,0.704,0.959,0.316,0.589,0.618,0.087,863
+1105,E. Ndicka 23/24,Roma,24,0.885,0.934,0.354,0.504,0.354,0.291,0.562,862
+1106,Gabriel Magalhaes 23/24,Arsenal,25,0.677,0.728,0.504,0.051,0.54,0.197,0.428,857
+1107,S. Romagnoli 23/24,Frosinone,33,0.289,0.845,0.141,0.773,0.755,0.491,0,851
+1108,P. Schuurs 23/24,Torino,23,0.437,0.856,0.011,0.76,0.473,0.737,0.5,847
+1109,V. Lindelöf 23/24,Man United,29,0.856,0.903,0.188,0.17,0.071,0.121,0.692,846
+1110,M. Veljković 23/24,Werder Bremen,28,0.686,0.419,0.728,0.226,0.374,0.221,0.437,843
+1111,A. Ahmedhodžić 23/24,Sheffield United,24,0.071,0.049,0.302,0.704,0.15,0.647,0.515,835
+1112,D. Zagadou 23/24,Stuttgart,24,0.919,0.477,0.854,0.5,0.905,0.973,0.443,835
+1113,Eric García 23/24,Girona,22,0.766,0.912,0.699,0.035,0.15,0.114,0.928,833
+1114,A. Jung 23/24,Werder Bremen,32,0.524,0.354,0.804,0.082,0.224,0.872,0.244,832
+1115,G. González 23/24,Mallorca,29,0.035,0.056,0.457,0.278,0.085,0.434,0.443,830
+1116,J. Gvardiol 23/24,Man City,21,0.813,0.802,0.704,0.43,0.219,0.04,0.952,830
+1117,M. Friedl 23/24,Werder Bremen,25,0.506,0.533,0.621,0.93,0.183,0.719,0.094,826
+1118,M. Hummels 23/24,Borussia Dortmund,34,0.95,0.641,0.91,0.795,0.659,0.513,0.585,823
+1119,D. Kohr 23/24,Mainz 05,29,0.39,0.076,0.475,0.845,0.201,0.094,0.313,822
+1120,J. Okumu 23/24,Reims,26,0.71,0.174,0.93,0.852,0.307,0.742,0.383,821
+1121,I. Ordets 23/24,Bochum,31,0.04,0.042,0.04,0.932,0.544,0.349,0,820
+1122,A. Buongiorno 23/24,Torino,24,0.331,0.242,0.065,0.991,0.885,0.28,0.587,820
+1123,M. Nastasić 23/24,Mallorca,30,0.136,0.345,0.165,0.369,0.993,0.385,0.094,817
+1124,J. Scally 23/24,Borussia M'gladbach,20,0.255,0.121,0.558,0.625,0.273,0.13,0.383,815
+1125,E. Cömert 23/24,Nantes,25,0.531,0.515,0.168,0.829,0.775,0.473,0.094,815
+1126,J. Brooks 23/24,Hoffenheim,30,0.213,0.159,0.739,0.955,0.197,0.93,0.383,812
+1127,L. Pirola 23/24,Salernitana,21,0.387,0.739,0.421,0.917,0.36,0.591,0.313,812
+1128,M. Darmian 23/24,Internazionale,33,0.52,0.488,0.428,0.204,0.107,0.213,0.594,807
+1129,Édgar González 23/24,Almería,26,0.54,0.838,0.396,0.174,0.136,0.742,0.26,804
+1130,D. Doekhi 23/24,Union Berlin,25,0.282,0.493,0.791,0.457,0.856,0.246,0.322,799
+1131,Danilo 23/24,Juventus,32,0.713,0.403,0.843,0.239,0.029,0.993,0.174,793
+1132,I. Traoré 23/24,Metz,37,0.121,0.596,0.044,0.634,0.928,0.121,0.094,793
+1133,Diego Llorente 23/24,Roma,30,0.811,0.656,0.118,0.807,0.856,0.921,0.764,792
+1134,A. Christensen 23/24,Barcelona,27,0.973,1,0.6,0.033,0.984,0.829,0.91,792
+1135,I. Diop 23/24,Fulham,26,0.905,0.771,0.919,0.21,0.856,0.883,0.941,791
+1136,B. Diakité 23/24,Lille,22,0.816,0.943,0.526,0.363,0.199,0.67,0.661,786
+1137,F. Acerbi 23/24,Internazionale,35,0.769,0.746,0.338,0.091,0.544,0.45,0.661,786
+1138,A. Tamèze 23/24,Torino,29,0.708,0.757,0.441,0.735,0.174,0.255,0.542,777
+1139,C. Okoli 23/24,Frosinone,22,0.553,0.834,0.748,0.533,0.136,0.908,0.338,769
+1140,K. Sildillia 23/24,Freiburg,21,0.215,0.143,0.58,0.719,0.634,0.197,0.551,767
+1141,E. Agbadou 23/24,Reims,26,0.735,0.668,0.885,0.977,0.917,0.271,0.957,766
+1142,S. Mitrović 23/24,Getafe,33,0.02,0.36,0.109,0.078,0.278,0.116,0.183,765
+1143,D. O'Shea 23/24,Burnley,24,0.775,0.542,0.764,0.363,0.417,0.991,0.63,764
+1144,M. Lovato 23/24,Salernitana,23,0.112,0.556,0.358,0.905,0.565,0.809,0.103,760
+1145,D. Upamecano 23/24,Bayern München,25,0.986,0.896,0.827,0.405,0.56,0.737,0.937,756
+1146,J. Gouweleeuw 23/24,Augsburg,32,0.538,0.237,0.921,0.412,0.946,0.224,0.746,753
+1147,O. Kabak 23/24,Hoffenheim,23,0.508,0.313,0.329,0.865,0.704,0.486,0.408,749
+1148,Saúl Coco 23/24,Las Palmas,24,0.508,0.811,0.497,0.452,0.121,0.719,0.562,749
+1149,L. Østigård 23/24,Napoli,23,0.818,0.706,0.744,0.704,0.744,0.76,0.751,744
+1150,R. Calafiori 23/24,Bologna,21,0.697,0.778,0.257,0.686,0.455,0.618,0.881,742
+1151,J. Laporte 23/24,Lorient,30,0.531,0.656,0.542,0.504,0.076,0.062,0.41,742
+1152,S. Touré 23/24,Lorient,20,0.594,0.86,0.235,0.921,0.318,0.506,0.571,740
+1153,C. Lukeba 23/24,RB Leipzig,20,0.865,0.726,0.486,0.625,0.941,0.235,0.885,739
+1154,R. Knoche 23/24,Union Berlin,31,0.679,0.63,0.724,0.401,0.721,0.367,0,738
+1155,J. Beyer 23/24,Burnley,23,0.86,0.394,0.073,0.901,0.964,0.643,0.793,738
+1156,M. Diakhaby 23/24,Valencia,26,0.363,0.491,0.089,0.739,0.829,0.941,0.641,737
+1157,N. Elvedi 23/24,Borussia M'gladbach,27,0.789,0.551,0.634,0.836,0.284,0.165,0.715,728
+1158,R. Bensebaini 23/24,Borussia Dortmund,28,0.771,0.573,0.867,0.91,0.464,0.378,0.724,725
+1159,L. Kelly 23/24,Bournemouth,25,0.228,0.013,0.614,0.41,0.304,0.017,0.423,722
+1160,C. Riad 23/24,Real Betis,20,0.448,0.724,0.017,0.345,0.975,0.367,0,719
+1161,K. Ajer 23/24,Brentford,25,0.188,0.41,0.266,0.582,0.522,0.867,0.811,717
+1162,G. Maripán 23/24,Monaco,29,0.576,0.515,0.221,0.818,0.755,0.19,0.188,714
+1163,Neto Borges 23/24,Clermont,27,0.43,0.298,0.544,0.109,0.479,0.033,0.95,714
+1164,A. Bastoni 23/24,Internazionale,24,0.849,0.899,0.95,0.313,0.582,0.56,0.865,712
+1165,C. Zesiger 23/24,Wolfsburg,25,0.881,0.352,0.795,0.639,0.423,0.719,0.847,705
+1166,J. Matip 23/24,Liverpool,32,0.784,0.753,0.336,0.674,0.112,0.95,0.968,702
+1167,M. Diarra 23/24,Toulouse,23,0.1,0.165,0.54,0.863,0.329,0.551,0.354,693
+1168,Clinton Mata 23/24,Olympique Lyonnais,31,0.742,0.197,0.865,0.885,0.408,0.179,0.609,686
+1169,K. Itakura 23/24,Borussia M'gladbach,26,0.45,0.867,0.049,0.878,0.522,0.36,0.535,679
+1170,S. de Vrij 23/24,Internazionale,31,0.423,0.484,0.006,0.793,0.161,0.829,0.289,678
+1171,Toti Gomes 23/24,Wolverhampton,24,0.318,0.349,0.289,0.056,0.311,0.829,0.289,677
+1172,S. Savić 23/24,Atlético Madrid,32,0.401,0.244,0.334,0.825,0.677,0.955,0.459,676
+1173,Raúl Torrente 23/24,Granada,22,0.311,0.038,0.717,0.192,0.764,0.491,0.105,675
+1174,C. Özkacar 23/24,Valencia,23,0.378,0.28,0.76,0.517,0.634,0.955,0.695,667
+1175,R. Araújo 23/24,Barcelona,24,0.82,0.975,0.607,0.23,0.957,0.926,0.997,666
+1176,S. Gigot 23/24,Olympique Marseille,30,0.399,0.493,0.098,0.473,0.603,0.618,0.468,662
+1177,R. Burke 23/24,Luton Town,27,0.022,0.06,0.13,0.686,0.06,0.558,0.201,660
+1178,M. Senesi 23/24,Bournemouth,26,0.513,0.145,0.966,0.973,0.257,0.701,0.843,659
+1179,César Azpilicueta 23/24,Atlético Madrid,34,0.831,0.67,0.883,0.639,0.363,0.291,0.988,658
+1180,Miguel Rubio 23/24,Granada,25,0.251,0.172,0.183,0.556,0.847,0.867,0,648
+1181,Amir Rrahmani 23/24,Napoli,29,0.926,0.822,0.876,0.071,0.683,0.551,0.641,644
+1182,Rafa Marín 23/24,Deportivo Alavés,21,0.139,0.358,0.208,0.071,0.706,0.596,0.394,644
+1183,B. Omeragić 23/24,Montpellier,21,0.264,0.468,0.056,0.448,0.753,0.461,0.479,639
+1184,J. Lascelles 23/24,Newcastle United,30,0.84,0.715,0.278,0.141,0.042,0.681,0.213,636
+1185,Domingos Duarte 23/24,Getafe,28,0.017,0.313,0.156,0.004,0.015,0.291,0.486,635
+1186,C. Kabasele 23/24,Udinese,32,0.114,0.378,0.026,0.174,0.087,0.578,0.571,633
+1187,Luis Hernández 23/24,Cádiz,34,0.116,0.482,0.704,0.15,0.096,0.618,0.224,631
+1188,S. Bell 23/24,Mainz 05,32,0.493,0.587,0.854,0.246,0.441,0.448,0.109,626
+1189,Jorge Cuenca 23/24,Villarreal,23,0.612,0.831,0.13,0.497,0.15,0.578,0.311,624
+1190,N. Aké 23/24,Man City,28,0.878,0.939,0.273,0.02,0.215,0.473,0.919,622
+1191,A. Bell 23/24,Luton Town,29,0.058,0.147,0.28,0.748,0.894,0.013,0.78,620
+1192,C. Hérelle 23/24,Metz,31,0.183,0.578,0.015,0.013,0.399,0.291,0.224,619
+1193,J. Belocian 23/24,Rennes,18,0.858,0.829,0.338,0.278,0.069,0.955,0.661,614
+1194,A. Webster 23/24,Brighton,28,0.966,0.883,0.847,0.374,0.156,0.793,0.836,610
+1195,A. Ismajli 23/24,Empoli,27,0.262,0.582,0.392,0.831,0.161,0.556,0.233,605
+1196,N. Casale 23/24,Lazio,25,0.755,0.946,0.313,0.392,0.717,0.513,0.865,603
+1197,O. Alderete 23/24,Getafe,26,0.004,0.026,0.567,0.67,0.816,0.291,0.739,603
+1198,K. De Winter 23/24,Genoa,21,0.035,0.116,0.024,0.295,0.278,0.482,0.322,596
+1199,J. Duverne 23/24,Nantes,26,0.515,0.338,0.609,0.838,0.118,0.029,0.751,595
+1200,A. Pieper 23/24,Werder Bremen,25,0.28,0.269,0.869,0.943,0.311,0.789,0.233,594
+1201,J. Gomez 23/24,Liverpool,26,0.822,0.908,0.154,0.381,0.006,0.513,0.847,588
+1202,Murillo dos Santos 23/24,Nottingham Forest,21,0.293,0.21,0.764,0.405,0.329,0.062,0.811,588
+1203,T. Mengi 23/24,Luton Town,21,0.026,0.253,0.107,0.838,0.973,0.112,0,587
+1204,Natan 23/24,Napoli,22,0.668,0.434,0.078,0.387,0.847,0.062,0.524,583
+1205,S. Walukiewicz 23/24,Empoli,23,0.257,0.313,0.652,0.923,0.692,0.291,0.881,581
+1206,F. Mendy 23/24,Lorient,22,0.197,0.206,0.412,0.997,0.562,0.995,0.816,578
+1207,Patric 23/24,Lazio,30,0.901,0.647,0.943,0.002,0.692,0.291,0.394,576
+1208,M. Caufriez 23/24,Clermont,26,0.5,0.887,0.363,0.522,0.789,0.19,0.892,576
+1209,M. Maglica 23/24,Darmstadt 98,25,0.5,0.34,0.858,0.892,0.408,0.997,0.822,567
+1210,P. Rosario 23/24,Nice,26,0.625,0.674,0.663,0.116,0.692,0.618,0.822,567
+1211,R. Pierre-Gabriel 23/24,Nantes,25,0.103,0.112,0.156,0.374,0.793,0.134,0.769,567
+1212,A. Trusty 23/24,Sheffield United,25,0.008,0,0.006,0.775,0.829,0.291,0.123,564
+1213,C. Bassey 23/24,Fulham,23,0.549,0.047,0.683,0.713,0.979,0.421,0.535,561
+1214,F. de Jong 23/24,Barcelona,26,0.995,0.923,0.952,0.004,0.096,0.901,1,558
+1215,A. Carboni 23/24,Monza,22,0.847,0.598,0.843,0.804,0.961,0.235,0.123,554
+1216,I. Hien 23/24,Hellas Verona,24,0.19,0.567,0.13,0.968,0.661,0.829,0.253,553
+1217,H. Maguire 23/24,Man United,30,0.786,0.266,0.831,0.224,0.766,0.813,0.831,551
+1218,Danilo Pereira 23/24,PSG,32,0.997,0.984,0.97,0.636,0.654,0.952,0.836,547
+1219,I. Konaté 23/24,Liverpool,24,0.939,0.988,0.838,0.603,0.325,0.096,0.65,546
+1220,G. Ferrari 23/24,Sassuolo,31,0.717,0.636,0.993,0.1,0.634,0.829,0.737,542
+1221,J. van Hecke 23/24,Brighton,23,0.991,0.993,0.813,0.172,0.031,0.134,0.562,537
+1222,J. Egan 23/24,Sheffield United,30,0.058,0.011,0.096,0.926,0.533,0.381,0,536
+1223,M. Vojvoda 23/24,Torino,28,0.309,0.652,0.934,0.011,0.035,0.291,0.955,536
+1224,M. Bauer 23/24,Augsburg,23,0.656,0.818,0.143,0.751,0.816,0.033,0,532
+1225,M. Gabbia 23/24,Villarreal,24,0.607,0.737,0.208,0.798,0.612,0.811,0.468,531
+1226,S. Birindelli 23/24,Monza,24,0.152,0.643,0.246,0.159,0.011,0.932,0.912,531
+1227,Ruan Tressoldi 23/24,Sassuolo,24,0.107,0.286,0.053,0.269,0.132,0.899,0.26,525
+1228,A. Mandi 23/24,Villarreal,32,0.681,0.966,0.721,0.659,0.426,0.531,0.661,522
+1229,M. Niakhaté 23/24,Nottingham Forest,27,0.172,0.742,0.145,0.872,0.968,0.988,0,520
+1230,G. Baldock 23/24,Sheffield United,30,0.065,0.293,0.347,0.134,0.004,0.213,0.266,513
+1231,S. Botman 23/24,Newcastle United,23,0.838,0.926,0.457,0.257,0.928,0.733,0,506
+1232,J. Evans 23/24,Man United,35,0.477,0.053,0.547,0.197,0.426,0.596,0,504
+1233,K. Schlotterbeck 23/24,Bochum,26,0.082,0.215,0.145,0.5,0.109,0.616,0.269,503
+1234,Íñigo Martínez 23/24,Barcelona,32,0.932,0.914,0.755,0.63,0.914,0.062,0.993,501
+1235,D. D'Ambrosio 23/24,Monza,35,0.73,0.874,0.627,0.764,0.125,0.291,0.376,499
+1236,J. Worrall 23/24,Nottingham Forest,26,0.089,0.643,0.013,0.647,0.986,0.434,0,497
+1237,Kaiky 23/24,Almería,19,0.365,0.594,0.215,0.13,0.051,0.291,0.491,496
+1238,J. O'Brien 23/24,Olympique Lyonnais,22,0.746,0.892,0.17,0.098,0.8,0.829,0.491,490
+1239,K. Akpoguma 23/24,Hoffenheim,28,0.497,0.251,0.789,0.984,0.603,0.701,0.5,486
+1240,N. Pallois 23/24,Nantes,36,0.291,0.125,0.764,0.845,0.248,0.152,0.5,485
+1241,J. Lucumí 23/24,Bologna,25,0.874,0.748,0.387,0.753,0.946,0.681,0.896,482
+1242,C. Montes 23/24,Almería,26,0.278,0.017,0.524,0.289,0.224,0.901,0,475
+1243,S. McKenna 23/24,Nottingham Forest,26,0.069,0.109,0.237,0.457,0.329,0.977,0.147,471
+1244,N. Süle 23/24,Borussia Dortmund,28,0.961,0.928,0.818,0.307,0.721,0.062,0.892,471
+1245,L. Ranieri 23/24,Fiorentina,24,0.479,0.161,0.836,0.717,0.04,0.096,0.147,470
+1246,J. Aidoo 23/24,Celta de Vigo,28,0.125,0.089,0.246,0.515,0.885,0.719,0.403,469
+1247,R. Tolói 23/24,Atalanta,33,0.526,0.141,0.647,0.645,0.6,0.829,0.524,469
+1248,L. Bonucci 23/24,Union Berlin,36,0.325,0.19,0.76,0.065,0.721,0.062,0,469
+1249,T. Weah 23/24,Juventus,23,0.221,0.244,0.118,0.161,0.479,0.491,0.795,468
+1250,D. Rugani 23/24,Juventus,29,0.23,0.681,0.145,0.475,0.919,0.179,0,468
+1251,João Ferreira 23/24,Udinese,22,0.087,0.192,0.513,0.966,0.663,0.006,0.795,465
+1252,M. Gulde 23/24,Freiburg,32,0.488,0.847,0.127,0.105,0.257,0.948,0,447
+1253,M. Wieteska 23/24,Cagliari,26,0.36,0.309,0.486,0.264,0.251,0.733,0.156,446
+1254,E. Goldaniga 23/24,Cagliari,30,0.239,0.381,0.443,0.766,0.71,0.403,0.41,446
+1255,Nacho 23/24,Real Madrid,33,0.6,0.977,0.069,0.394,0.479,0.013,0.542,443
+1256,A. Izzo 23/24,Monza,31,0.912,0.901,0.349,0.679,0.291,0.134,0.863,441
+1257,M. Friedrich 23/24,Borussia M'gladbach,27,0.313,0.08,0.466,0.692,0.856,0.56,0.423,439
+1258,Copete 23/24,Mallorca,24,0.029,0.179,0.112,0.986,0.95,0.042,0.661,436
+1259,A. Rouault 23/24,Stuttgart,22,0.807,0.538,0.946,0.347,0.096,0.291,0.161,435
+1260,B. Pavard 23/24,Internazionale,27,0.914,0.964,0.641,0.713,0.991,0.955,0,425
+1261,A. Obert 23/24,Cagliari,21,0.412,0.114,0.479,1,0.744,0.06,0.885,422
+1262,C. Zimmermann 23/24,Darmstadt 98,30,0.244,0.215,0.773,0.988,0.253,0.618,0.161,421
+1263,P. Chatzidiakos 23/24,Cagliari,26,0.244,0.952,0.576,0.562,0.811,0.004,0.161,421
+1264,Lisandro Martínez 23/24,Man United,25,0.778,0.863,0.313,0.26,0.188,0,0.934,412
+1265,J. Giménez 23/24,Atlético Madrid,28,0.253,0.307,0.228,0.143,0.015,0.403,0,411
+1266,A. Mumin 23/24,Rayo Vallecano,25,0.062,0.486,0.06,0.356,0.856,0.042,0,411
+1267,C. Groß 23/24,Werder Bremen,34,0.419,0.417,0.535,0.883,0.136,0.121,0.784,409
+1268,A. Sylla 23/24,Strasbourg,20,0.585,0.766,0.661,0.993,0.623,0.578,0,409
+1269,Luiz Felipe 23/24,Real Betis,26,0.298,0.789,0.022,0.672,0.892,0.051,0,408
+1270,M. Leitsch 23/24,Mainz 05,25,0.154,0.313,0.282,0.282,0.329,0.829,0.313,408
+1271,Sergio Ramos 23/24,Sevilla,37,0.428,0.717,0.486,0.466,0.374,0.923,0.45,408
+1272,M. Andersen 23/24,Luton Town,25,0.015,0.13,0.098,0.874,0.634,0.91,0,405
+1273,J. Müller 23/24,Darmstadt 98,29,0.426,0.23,0.213,0.964,0.937,0.701,0.459,401
+1274,L. Balerdi 23/24,Olympique Marseille,24,0.76,0.448,0.852,0.865,0.565,0.968,0.939,399
+1275,D. Ćaleta-Car 23/24,Olympique Lyonnais,27,0.699,0.782,0.076,0.412,0.479,0.764,0,397
+1276,N. Stark 23/24,Werder Bremen,28,0.354,0.008,0.984,0.952,0.426,0.513,0.468,397`;
 
 
 
