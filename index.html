@@ -13,7 +13,6 @@
 
 
 
-
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 
@@ -913,83 +912,85 @@ body.dark-mode .button-10 {
 </defs>
 
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+ 
 
 
 	
 </head>
-
-
 	  <div id="parent-container">
 
-<body>
-  <input type="text" id="searchInput1" class="search-bar" placeholder="Enter centreback name..." />
-  <input type="button" id="searchButton1" value="+&nbsp;" />
-  <br />
-  <div id="resultsTable"></div>
-<div id="similarPlayersTable"></div>
-<div id="matchingNames"></div>
- <div class="dark-mode-toggle" onclick="toggleDarkMode()">
-    <div class="toggle-icon"></div>
-  </div>
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-    <g class="radar_label">
-     <text class="label" data-type="Aerial%" data-idx="0" transform="translate(163.99 36.45) rotate(-1)">Aerial%</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Long%" data-idx="6" transform="matrix(0.5, -0.86, 0.86, 0.5, 53.89, 115) rotate(3.87)">Duel%</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Passes" data-idx="5" transform="matrix(-0.38, -0.93, 0.93, -0.38, 55.38, 259.78) rotate(4.88)">Def Actions</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Exits" data-idx="4" transform="translate(87.19 324.04) rotate(17.9)">Prog Passes</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Aerial" data-idx="3" transform="translate(252.36 341.52) rotate(-32.32)">Fwd Pass%</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Def Actions" data-idx="2" transform="translate(351.56 184.26) rotate(100.11)">Passes</text>
-   </g>
-   
-   <g class="radar_label">
-     <text class="label" data-type="Shotstopping" data-idx="1" transform="translate(290.42 68.68) rotate(48.09)">Carrying</text>
-   </g>
+      <body>
+        <input type="text" id="searchInput1" class="search-bar" placeholder="Enter centreback name..." />
+        <input type="button" id="searchButton1" value="+&nbsp;" />
+        <br />
+        <div id="resultsTable"></div>
+      <div id="similarPlayersTable"></div>
+      <div id="matchingNames"></div>
+       <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+          <div class="toggle-icon"></div>
+        </div>
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <g class="radar_label">
+           <text class="label" data-type="Aerial%" data-idx="0" transform="translate(163.99 36.45) rotate(-1)">Aerial%</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Long%" data-idx="6" transform="matrix(0.5, -0.86, 0.86, 0.5, 53.89, 115) rotate(3.87)">Duel%</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Passes" data-idx="5" transform="matrix(-0.38, -0.93, 0.93, -0.38, 55.38, 259.78) rotate(4.88)">Def Actions</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Exits" data-idx="4" transform="translate(87.19 324.04) rotate(17.9)">Prog Passes</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Aerial" data-idx="3" transform="translate(252.36 341.52) rotate(-32.32)">Fwd Pass%</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Def Actions" data-idx="2" transform="translate(351.56 184.26) rotate(100.11)">Passes</text>
+         </g>
+         
+         <g class="radar_label">
+           <text class="label" data-type="Shotstopping" data-idx="1" transform="translate(290.42 68.68) rotate(48.09)">Carrying</text>
+         </g>
+             
+           </svg>					
+                 
+      
+      
+      <svg width="390" height="390" class="radar"><g transform="translate(231.77,225.77)"><g class="axisWrapper">
+      
+      <circle class="blackCircle" r="150" style="fill:none; stroke:#D3D3D3; stroke-width:1;"></circle>
+      <circle class="gridCircle" r="150" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+      <circle class="gridCircle" r="128" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+      <circle class="gridCircle" r="90" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+      <circle class="gridCircle" r="60" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+      <circle class="gridCircle" r="30" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle></g>
+                                      
+        
        
-     </svg>					
-           
-
-
-<svg width="390" height="390" class="radar"><g transform="translate(231.77,225.77)"><g class="axisWrapper">
-
-<circle class="blackCircle" r="150" style="fill:none; stroke:#D3D3D3; stroke-width:1;"></circle>
-<circle class="gridCircle" r="150" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
-<circle class="gridCircle" r="128" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
-<circle class="gridCircle" r="90" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
-<circle class="gridCircle" r="60" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
-<circle class="gridCircle" r="30" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle></g>
-                                
-  
- 
-<line x1="0" y1="0" x2="7.37" y2="149.57" stroke="#D3D3D3" stroke-width="1" transform="translate(-7.36, -149.8)"></line>
-<line x1="0" y1="0" x2="-112.26" y2="99.60" stroke="#D3D3D3" stroke-width="1" transform="translate(112.11, -99.6)"></line>
-<line x1="0" y1="0" x2="-147.68" y2="-25.48" stroke="#D3D3D3" stroke-width="1" transform="translate(147.82, 25.44)"></line>
-<line x1="0" y1="0" x2="-72.34" y2="-131.68" stroke="#D3D3D3" stroke-width="1" transform="translate(72.34, 131.4)"></line>
-<line x1="0" y1="0" x2="57.50" y2="-138.88" stroke="#D3D3D3" stroke-width="1" transform="translate(-57.53, 138.51)"></line>
-<line x1="0" y1="0" x2="144.16" y2="-41.52" stroke="#D3D3D3" stroke-width="1" transform="translate(-144.14, 41.48)"></line>
-<line x1="0" y1="0" x2="122.14" y2="86.58" stroke="#D3D3D3" stroke-width="1" transform="translate(-122.357, -86.768)"></line>
-
-
-<g class="radarWrapper"></g>
-<g class="radarWrapper2"></g>
-</g>
+      <line x1="0" y1="0" x2="7.37" y2="149.57" stroke="#D3D3D3" stroke-width="1" transform="translate(-7.36, -149.8)"></line>
+      <line x1="0" y1="0" x2="-112.26" y2="99.60" stroke="#D3D3D3" stroke-width="1" transform="translate(112.11, -99.6)"></line>
+      <line x1="0" y1="0" x2="-147.68" y2="-25.48" stroke="#D3D3D3" stroke-width="1" transform="translate(147.82, 25.44)"></line>
+      <line x1="0" y1="0" x2="-72.34" y2="-131.68" stroke="#D3D3D3" stroke-width="1" transform="translate(72.34, 131.4)"></line>
+      <line x1="0" y1="0" x2="57.50" y2="-138.88" stroke="#D3D3D3" stroke-width="1" transform="translate(-57.53, 138.51)"></line>
+      <line x1="0" y1="0" x2="144.16" y2="-41.52" stroke="#D3D3D3" stroke-width="1" transform="translate(-144.14, 41.48)"></line>
+      <line x1="0" y1="0" x2="122.14" y2="86.58" stroke="#D3D3D3" stroke-width="1" transform="translate(-122.357, -86.768)"></line>
+      
+      
+      <g class="radarWrapper"></g>
+      <g class="radarWrapper2"></g>
+      </g>
 
 
 
@@ -998,568 +999,14 @@ body.dark-mode .button-10 {
 
 <script>
 
- const xhr2 = new XMLHttpRequest();
-    xhr2.open('GET', 'https://datamb.football/data/freeradar/cb.csv', false); // false for synchronous request
-    xhr2.send(null);
-    
+const _0x53384b=_0x155f;(function(_0x1847b2,_0x3c4718){const _0x3d3a4d=_0x155f,_0x29a91d=_0x1847b2();while(!![]){try{const _0x1e1ccf=parseInt(_0x3d3a4d(0x166))/0x1*(parseInt(_0x3d3a4d(0x16e))/0x2)+parseInt(_0x3d3a4d(0x1cb))/0x3+parseInt(_0x3d3a4d(0x1ae))/0x4+-parseInt(_0x3d3a4d(0x1a7))/0x5+parseInt(_0x3d3a4d(0x13d))/0x6+-parseInt(_0x3d3a4d(0x1ad))/0x7*(parseInt(_0x3d3a4d(0x129))/0x8)+-parseInt(_0x3d3a4d(0x1c4))/0x9*(parseInt(_0x3d3a4d(0x1bc))/0xa);if(_0x1e1ccf===_0x3c4718)break;else _0x29a91d['push'](_0x29a91d['shift']());}catch(_0x2cb6a1){_0x29a91d['push'](_0x29a91d['shift']());}}}(_0x2829,0x5ebe4));const allData1=[],allData2=[];let allDataAsString='';const urls1=['https://datamb.football/database/radars/TOP72324/cb/3.xlsx',_0x53384b(0x141),'https://datamb.football/database/radars/TOP72324/cb/2.xlsx'],urls2=['https://datamb.football/database/radars/TOP72223/cb/3.xlsx','https://datamb.football/database/radars/TOP72223/cb/1.xlsx',_0x53384b(0x19f)],fetchPromises1=urls1['map'](_0x3be950=>fetch(_0x3be950)[_0x53384b(0x1a9)](_0x507670=>_0x507670[_0x53384b(0x18b)]())),fetchPromises2=urls2['map'](_0x216fa8=>fetch(_0x216fa8)[_0x53384b(0x1a9)](_0x1ac4c4=>_0x1ac4c4[_0x53384b(0x18b)]()));function _0x2829(){const _0x5752af=['transform','matchingNames','click','result-color-8','SheetNames','result-color-46','table','forEach','https://datamb.football/database/radars/TOP72223/cb/2.xlsx','width','NFD','normalize','pointer','result-color-23','key','Backspace','62765aKcMGe','backgroundColor','then','sin',')\x20-\x20','trim','287FMWuYX','1878588XhfCRr','padding','result-color-5','\x20min','name','searchButton','result-color-orange','target','resultsTable','fullName','children','catch','style','substring','9868490EQekgy','result-color-1','9px','fillOpacity','result-color-41','remove','.radarLines.','keyup','9QFcGLj','searchInput1','Enter','result-color-22','<u>','left','result-color-20','488673YpMPVl','div','\x2023/24','.age','sheet_to_json','includes','x-cell','87128OeSzHy','searchButton1','similarPlayersContainer','Similar\x20data\x20to\x20','colspan','paddingLeft','body','closest','Arial,\x20sans-serif','index','result-color-39','result-color-blue','removeChild','result-color-11','array','result-color-47','result-color-3','getElementById','map','difference','2979972QGZjEY','pow','80px','add','https://datamb.football/database/radars/TOP72324/cb/1.xlsx','points','absolute','0.2','0.86','input','result-color-12','#9c9b9b','push','result-color-7','radarLines\x20','result-color-9','toLowerCase','class','result-color-17','fontSize','http://www.w3.org/2000/svg','radarPolygon\x20','join','result-color-4','querySelector','addEventListener','age','result-color-29','result-color-31','translate(231.77,225.77)','setAttribute','sqrt','appendChild','createElement','querySelectorAll','.name','innerHTML','\x2022/23','slice','.radarCircle.','value','1huxIvv','utils','sort','zIndex','result-color-14','length','dispatchEvent','9999','1409602HiJbIe','toFixed','replace','result-color-21','Sheets','split','result-color-42','result-color-rose','result-color-13','result-color-40','result-color-33','result-color-35','read','result-color-37','firstChild','result-color-45','none','result-color-38','10.75%','10px','result-color-32','createElementNS','metrics-table','.team','unshift','result-color-30','top','cursor','600px','arrayBuffer','button','span','position','result-color-2','result-color-25','textContent','display','result-color-18','classList','result-color-34','filter'];_0x2829=function(){return _0x5752af;};return _0x2829();}function processAndStoreData1(_0x4bd93c){const _0x34b89f=_0x53384b;let _0x4403be=0x1;_0x4bd93c[_0x34b89f(0x19e)](_0x3e2c57=>{const _0x238f8b=_0x34b89f,_0x5d166b=XLSX['read'](new Uint8Array(_0x3e2c57),{'type':_0x238f8b(0x137)}),_0x3cbdde=_0x5d166b[_0x238f8b(0x19b)][0x0],_0x7823aa=_0x5d166b[_0x238f8b(0x172)][_0x3cbdde],_0x4240c3=XLSX[_0x238f8b(0x167)][_0x238f8b(0x126)](_0x7823aa,{'header':0x1}),_0x22a41f=_0x4240c3[_0x238f8b(0x163)](0x1);_0x22a41f[_0x238f8b(0x19e)](_0x4f214a=>{const _0x459309=_0x238f8b;_0x4f214a[_0x459309(0x186)](''+_0x4403be++),_0x4f214a[0xe]=_0x4f214a[0x9]*_0x4f214a[0xa]/0x64,_0x4f214a[0xf]=_0x4f214a[0x1]+_0x459309(0x162),_0x4f214a[0x3]=_0x4f214a[0x3]-0x1;const _0x3446ea=[_0x4f214a[0x0],_0x4f214a[0xf],_0x4f214a[0x2],_0x4f214a[0x3],_0x4f214a[0xe],_0x4f214a[0xb],_0x4f214a[0xc],_0x4f214a[0x5],_0x4f214a[0x6],_0x4f214a[0x7],_0x4f214a[0x8],_0x4f214a[0x4]];allData1[_0x459309(0x149)](_0x3446ea);});});const _0x15c6c3=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x2954da=_0x15c6c3['map'](_0x4c2f9f=>allData1[_0x34b89f(0x13b)](_0x37446e=>parseFloat(_0x37446e[_0x4c2f9f]))),_0x344914=_0x2954da[_0x34b89f(0x13b)](_0x40defb=>{const _0x516645=_0x34b89f,_0x4767c2=[..._0x40defb][_0x516645(0x168)]((_0x3e7aed,_0x4b89de)=>_0x3e7aed-_0x4b89de);return _0x40defb[_0x516645(0x13b)](_0x5a2c50=>{const _0x4bf17b=_0x4767c2['indexOf'](_0x5a2c50)+0x1;return _0x4bf17b/_0x4767c2['length'];});});allData1['forEach']((_0xfeb665,_0x3361ec)=>{_0x15c6c3['forEach']((_0x5a3815,_0x5b4aaa)=>{const _0x4a6bc7=_0x155f;_0xfeb665[_0x5a3815]=_0x344914[_0x5b4aaa][_0x3361ec][_0x4a6bc7(0x16f)](0x3);});});}function _0x155f(_0x3d4b6b,_0x27c797){const _0x282925=_0x2829();return _0x155f=function(_0x155fcb,_0x10d89a){_0x155fcb=_0x155fcb-0x123;let _0x1494fd=_0x282925[_0x155fcb];return _0x1494fd;},_0x155f(_0x3d4b6b,_0x27c797);}function processAndStoreData(_0x4d3710){const _0x421fdd=_0x53384b;let _0x5abb8f=0x1;_0x4d3710[_0x421fdd(0x19e)](_0xdfe432=>{const _0x512464=_0x421fdd,_0x35710b=XLSX[_0x512464(0x17a)](new Uint8Array(_0xdfe432),{'type':_0x512464(0x137)}),_0x482638=_0x35710b[_0x512464(0x19b)][0x0],_0xbacc20=_0x35710b[_0x512464(0x172)][_0x482638],_0x5372de=XLSX['utils']['sheet_to_json'](_0xbacc20,{'header':0x1}),_0x29df59=_0x5372de[_0x512464(0x163)](0x1);_0x29df59[_0x512464(0x19e)](_0x4987c4=>{const _0x4e2998=_0x512464;_0x4987c4[_0x4e2998(0x186)](''+_0x5abb8f++),_0x4987c4[0xe]=_0x4987c4[0x9]*_0x4987c4[0xa]/0x64,_0x4987c4[0xf]=_0x4987c4[0x1]+_0x4e2998(0x124);const _0x2cba24=[_0x4987c4[0x0],_0x4987c4[0xf],_0x4987c4[0x2],_0x4987c4[0x3],_0x4987c4[0xe],_0x4987c4[0xb],_0x4987c4[0xc],_0x4987c4[0x5],_0x4987c4[0x6],_0x4987c4[0x7],_0x4987c4[0x8],_0x4987c4[0x4]];allData2[_0x4e2998(0x149)](_0x2cba24);});});const _0xc51cbf=[0x4,0x5,0x6,0x7,0x8,0x9,0xa],_0x171d6b=_0xc51cbf[_0x421fdd(0x13b)](_0x19cfce=>allData2[_0x421fdd(0x13b)](_0x584277=>parseFloat(_0x584277[_0x19cfce]))),_0x5b66ee=_0x171d6b[_0x421fdd(0x13b)](_0x198d73=>{const _0x473b7d=_0x421fdd,_0x174b56=[..._0x198d73][_0x473b7d(0x168)]((_0x22c75d,_0x1cf12f)=>_0x22c75d-_0x1cf12f);return _0x198d73['map'](_0x151a78=>{const _0x2132e0=_0x174b56['indexOf'](_0x151a78)+0x1;return _0x2132e0/_0x174b56['length'];});});allData2[_0x421fdd(0x19e)]((_0x529b6d,_0x3e3670)=>{const _0x4e48d3=_0x421fdd;_0xc51cbf[_0x4e48d3(0x19e)]((_0x21f036,_0x31478f)=>{_0x529b6d[_0x21f036]=_0x5b66ee[_0x31478f][_0x3e3670]['toFixed'](0x3);});});}Promise['all'](fetchPromises1)['then'](_0x850fbb=>{const _0x167752=_0x53384b;processAndStoreData(_0x850fbb),Promise['all'](fetchPromises2)[_0x167752(0x1a9)](_0x5a3ee6=>{const _0x4d3424=_0x167752;processAndStoreData1(_0x5a3ee6);const _0x4cb7a4=allData2['concat'](allData1);_0x4cb7a4['forEach']((_0x3a9bf1,_0x6904c)=>{_0x3a9bf1[0x0]=''+(_0x6904c+0x1);}),_0x4cb7a4[_0x4d3424(0x19e)](_0x3d95cc=>{const _0xf6e9c8=_0x4d3424;allDataAsString+=_0x3d95cc[_0xf6e9c8(0x153)](',')+'\x0a';});const _0x507db0=allDataAsString[_0x4d3424(0x1ac)]()[_0x4d3424(0x173)]('\x0a'),_0x314eaa=[];for(const _0x45fddb of _0x507db0){const _0x2fbcff=_0x45fddb[_0x4d3424(0x173)](','),_0x21c7fd=_0x2fbcff[0x1],_0x1933c7=_0x2fbcff[0x3],_0x53ec73=_0x2fbcff[0x2],_0x301051=_0x21c7fd+','+_0x1933c7+','+_0x53ec73;_0x314eaa[_0x4d3424(0x149)](_0x301051);}const _0x576b1d=_0x314eaa,_0xed30=document[_0x4d3424(0x13a)]('searchInput1'),_0x5229f6=document[_0x4d3424(0x13a)](_0x4d3424(0x198)),_0x249b1d=document[_0x4d3424(0x13a)](_0x4d3424(0x1b3));function _0x37ec86(){const _0x27861=_0x4d3424,_0x435895=_0x15e39e(_0xed30[_0x27861(0x165)][_0x27861(0x14d)]()),_0x394251=_0x576b1d[_0x27861(0x196)](function(_0x164f55){const _0x8d47d4=_0x27861,[_0x31f679]=_0x164f55[_0x8d47d4(0x173)](','),_0x270ca1=_0x15e39e(_0x31f679[_0x8d47d4(0x14d)]());return _0x270ca1[_0x8d47d4(0x127)](_0x435895);});_0x5229f6[_0x27861(0x161)]='',_0x394251[_0x27861(0x19e)](function(_0x1c05b9){const _0x5bed04=_0x27861,[_0x277b63,_0x3f6651,_0x5624a2]=_0x1c05b9['split'](','),_0x2b5448=document[_0x5bed04(0x15e)](_0x5bed04(0x123));_0x2b5448[_0x5bed04(0x194)][_0x5bed04(0x140)](_0x5bed04(0x1b2));const _0x5799d5=document[_0x5bed04(0x15e)](_0x5bed04(0x18d));_0x5799d5[_0x5bed04(0x191)]=_0x277b63,_0x5799d5['classList']['add'](_0x5bed04(0x1b7)),_0x2b5448[_0x5bed04(0x15d)](_0x5799d5);const _0xa7cc78=document[_0x5bed04(0x15e)](_0x5bed04(0x18d));_0xa7cc78[_0x5bed04(0x191)]='\x20('+_0x3f6651+',',_0xa7cc78[_0x5bed04(0x194)][_0x5bed04(0x140)](_0x5bed04(0x157)),_0x2b5448[_0x5bed04(0x15d)](_0xa7cc78);const _0xb64ccb=document[_0x5bed04(0x15e)]('span');_0xb64ccb[_0x5bed04(0x191)]='\x20'+_0x5624a2+')',_0xb64ccb[_0x5bed04(0x194)][_0x5bed04(0x140)]('team'),_0x2b5448[_0x5bed04(0x15d)](_0xb64ccb),_0x2b5448[_0x5bed04(0x156)]('click',function(_0x2dcaec){const _0x51eddc=_0x5bed04,_0x115f06=_0x2dcaec[_0x51eddc(0x1b5)][_0x51eddc(0x130)](_0x51eddc(0x160));if(_0x115f06){const _0x16dc7f=_0x115f06['querySelector']('.fullName')[_0x51eddc(0x191)],_0x3f8b8d=_0x115f06['querySelector'](_0x51eddc(0x125))[_0x51eddc(0x191)]['trim'](),_0x1f68fa=_0x115f06['querySelector'](_0x51eddc(0x185))['textContent']['trim']()[_0x51eddc(0x170)](/[^a-zA-Z\s]/g,''),_0x3a0c9a=_0x16dc7f+','+_0x3f8b8d[_0x51eddc(0x1bb)](0x1,_0x3f8b8d['length']-0x1)+','+_0x1f68fa;_0xed30[_0x51eddc(0x165)]=_0x3a0c9a;const _0x3636f0=new KeyboardEvent(_0x51eddc(0x1c3),{'key':'Enter'});_0xed30[_0x51eddc(0x16c)](_0x3636f0);}}),_0x5229f6[_0x5bed04(0x15d)](_0x2b5448);}),_0x435895===''&&_0x394251[_0x27861(0x16b)]===0x0?_0x5229f6[_0x27861(0x1ba)][_0x27861(0x192)]=_0x27861(0x17e):(_0x5229f6['style']['display']='block',_0x5229f6[_0x27861(0x1ba)][_0x27861(0x1a8)]=_0x27861(0x148),_0x5229f6[_0x27861(0x1ba)][_0x27861(0x1a0)]='384px',_0x5229f6[_0x27861(0x1ba)][_0x27861(0x1af)]=_0x27861(0x181),_0x5229f6[_0x27861(0x1ba)][_0x27861(0x18e)]=_0x27861(0x143),_0x5229f6[_0x27861(0x1ba)][_0x27861(0x188)]=_0x27861(0x180),_0x5229f6[_0x27861(0x1ba)][_0x27861(0x1c9)]='12px',_0x5229f6[_0x27861(0x1ba)][_0x27861(0x169)]=_0x27861(0x16d)),_0x435895===''&&(_0x5229f6[_0x27861(0x1ba)][_0x27861(0x192)]=_0x27861(0x17e));}_0xed30[_0x4d3424(0x156)](_0x4d3424(0x146),_0x37ec86),_0xed30[_0x4d3424(0x156)](_0x4d3424(0x1c3),function(_0x223fc1){const _0x1a6f20=_0x4d3424;if(_0x223fc1[_0x1a6f20(0x1a5)]===_0x1a6f20(0x1c6))searchButton1[_0x1a6f20(0x199)]();else _0x223fc1[_0x1a6f20(0x1a5)]===_0x1a6f20(0x1a6)&&_0x37ec86();});const _0x5da0d6=allDataAsString;let _0x2bff8d=_0x5da0d6[_0x4d3424(0x1ac)]()[_0x4d3424(0x173)]('\x0a')[_0x4d3424(0x13b)](_0x58b5f1=>_0x58b5f1['split'](','));function _0x4b31d8(_0x398634,_0x2b9160){const _0x2ba47a=_0x4d3424;let _0x255bba=0x0;for(let _0x24dbc9=0x4;_0x24dbc9<=0xa;_0x24dbc9++){const _0x2f45b6=parseFloat(_0x398634[_0x24dbc9]),_0x272027=parseFloat(_0x2b9160[_0x24dbc9]);_0x255bba+=Math[_0x2ba47a(0x13e)](_0x2f45b6-_0x272027,0x2);}return Math[_0x2ba47a(0x15c)](_0x255bba);}const _0x374029=[_0x4d3424(0x134),'result-color-pink',_0x4d3424(0x1b4),'result-color-green','result-color-bleu',_0x4d3424(0x175),_0x4d3424(0x1bd),_0x4d3424(0x18f),_0x4d3424(0x139),_0x4d3424(0x154),_0x4d3424(0x1b0),'result-color-6',_0x4d3424(0x14a),_0x4d3424(0x19a),_0x4d3424(0x14c),'result-color-10',_0x4d3424(0x136),_0x4d3424(0x147),_0x4d3424(0x176),_0x4d3424(0x16a),'result-color-15','result-color-16',_0x4d3424(0x14f),_0x4d3424(0x193),'result-color-19',_0x4d3424(0x1ca),_0x4d3424(0x171),_0x4d3424(0x1c7),_0x4d3424(0x1a4),'result-color-24',_0x4d3424(0x190),'result-color-26','result-color-27','result-color-28',_0x4d3424(0x158),_0x4d3424(0x187),_0x4d3424(0x159),_0x4d3424(0x182),_0x4d3424(0x178),_0x4d3424(0x195),_0x4d3424(0x179),'result-color-36',_0x4d3424(0x17b),_0x4d3424(0x17f),_0x4d3424(0x133),_0x4d3424(0x177),_0x4d3424(0x1c0),_0x4d3424(0x174),'result-color-43','result-color-44',_0x4d3424(0x17d),_0x4d3424(0x19c),_0x4d3424(0x138),'result-color-48'];let _0x2fc4db=[];function _0x15e39e(_0x47fb68){const _0x51846a=_0x4d3424;return _0x47fb68[_0x51846a(0x1a2)](_0x51846a(0x1a1))[_0x51846a(0x170)](/[\u0300-\u036f\s]/g,'')[_0x51846a(0x170)](/Ø/g,'O')[_0x51846a(0x170)](/ø/g,'o');}function _0x1d7d06(_0x179ed3){const _0x518f8a=_0x4d3424,_0x3c3db1=_0x179ed3[_0x518f8a(0x173)](',')[_0x518f8a(0x13b)](_0x1a88fa=>_0x1a88fa[_0x518f8a(0x1ac)]()),_0x5368d8=_0x3c3db1[0x0];let _0x1dfe03,_0x2eaec2;_0x3c3db1[_0x518f8a(0x16b)]>0x1&&(_0x1dfe03=_0x3c3db1[0x1][_0x518f8a(0x1ac)](),_0x3c3db1['length']>0x2&&(_0x2eaec2=_0x3c3db1[0x2]['trim']()));const _0x5a721a=_0x2bff8d['filter'](_0x573d02=>{const _0x1616d3=_0x518f8a,_0x385a78=_0x15e39e(_0x573d02[0x1][_0x1616d3(0x14d)]()),_0x149778=_0x15e39e(_0x573d02[0x2]['toLowerCase']()),_0x289455=_0x573d02[0x3][_0x1616d3(0x1ac)]()[_0x1616d3(0x14d)](),_0x43dc39=_0x385a78[_0x1616d3(0x127)](_0x15e39e(_0x5368d8[_0x1616d3(0x14d)]())),_0xbbf06f=!_0x1dfe03||_0x289455===_0x15e39e(_0x1dfe03[_0x1616d3(0x14d)]()),_0x37eb00=!_0x2eaec2||_0x149778===_0x15e39e(_0x2eaec2['toLowerCase']());return _0x43dc39&&(_0xbbf06f||_0x37eb00);});return _0x5a721a;}function _0x3142b4(_0x52326e,_0x1f950d,_0x4646e9){const _0x12972e=_0x4d3424,_0x1bde3a=document['getElementById'](_0x12972e(0x1b6)),_0xede811=[],_0x5496bd=_0x1bde3a[_0x12972e(0x155)]('th')!==null,_0x37e797=_0x5496bd?_0x1bde3a[_0x12972e(0x155)](_0x12972e(0x19d)):document['createElement'](_0x12972e(0x19d));_0x37e797[_0x12972e(0x194)][_0x12972e(0x140)](_0x12972e(0x184));if(!_0x5496bd){const _0x1e4994=document[_0x12972e(0x15e)]('tr');for(let _0x28d924=0x1;_0x28d924<_0xede811['length'];_0x28d924++){const _0x3a96bc=document[_0x12972e(0x15e)]('th');_0x3a96bc[_0x12972e(0x191)]=_0xede811[_0x28d924],_0x1e4994['appendChild'](_0x3a96bc);}const _0x185094=document[_0x12972e(0x15e)]('th');_0x185094[_0x12972e(0x191)]='',_0x1e4994[_0x12972e(0x15d)](_0x185094),_0x37e797[_0x12972e(0x15d)](_0x1e4994);}const _0x489597=_0x2bff8d[_0x1f950d],_0x3ad099=document[_0x12972e(0x15e)]('tr');for(let _0x9b8126=0x1;_0x9b8126<=0xb;_0x9b8126++){if(_0x9b8126===0x1||_0x9b8126===0x2||_0x9b8126===0x3||_0x9b8126===0xb){const _0x453265=document[_0x12972e(0x15e)]('td');_0x9b8126===0xb?_0x453265[_0x12972e(0x191)]=_0x489597[_0x9b8126]+_0x12972e(0x1b1):_0x453265[_0x12972e(0x191)]=_0x489597[_0x9b8126]+',',_0x453265['classList'][_0x12972e(0x140)](_0x4646e9),_0x3ad099[_0x12972e(0x15d)](_0x453265);}}const _0x5ae54b=document[_0x12972e(0x15e)]('td'),_0x5e836a=document[_0x12972e(0x15e)](_0x12972e(0x18c));_0x5e836a[_0x12972e(0x191)]='x',_0x5e836a[_0x12972e(0x194)][_0x12972e(0x140)]('x-button'),_0x5ae54b[_0x12972e(0x194)]['add'](_0x12972e(0x128)),_0x5e836a['addEventListener']('click',function(){const _0x47548b=_0x12972e;_0x3ad099[_0x47548b(0x1c1)]();const _0x135343=document[_0x47548b(0x15f)]('.radarPolygon.'+_0x4646e9),_0x407dd8=document[_0x47548b(0x15f)](_0x47548b(0x1c2)+_0x4646e9),_0xa95ac1=document[_0x47548b(0x15f)](_0x47548b(0x164)+_0x4646e9);_0x135343[_0x47548b(0x19e)](_0x1bd87c=>_0x1bd87c['remove']()),_0x407dd8[_0x47548b(0x19e)](_0x5aa7a1=>_0x5aa7a1[_0x47548b(0x1c1)]()),_0xa95ac1[_0x47548b(0x19e)](_0x25b397=>_0x25b397[_0x47548b(0x1c1)]());}),_0x5ae54b[_0x12972e(0x15d)](_0x5e836a),_0x3ad099[_0x12972e(0x15d)](_0x5ae54b),_0x37e797['appendChild'](_0x3ad099);!_0x5496bd&&_0x1bde3a[_0x12972e(0x15d)](_0x37e797);const _0x3aa3e0=_0x2bff8d[_0x1f950d][_0x12972e(0x153)](',\x20'),_0x397d9a=0x96,_0x5d3752=[0x0,0x0],_0x2d5d8b=[0x0,0x2*Math['PI']/0x7,0x4*Math['PI']/0x7,0x6*Math['PI']/0x7,0x8*Math['PI']/0x7,0xa*Math['PI']/0x7,0xc*Math['PI']/0x7];function _0x3390fb(_0x19169c,_0x5eca8e){const _0xf86b37=_0x12972e;let _0x4bc701=_0x2d5d8b[_0x19169c-0x1];_0x4bc701+=0x2*Math['PI']/0x7*0.2;const _0x290d55=0x96*_0x5eca8e*Math['cos'](_0x4bc701),_0x31896b=0x96*_0x5eca8e*Math[_0xf86b37(0x1aa)](_0x4bc701);return{'x':_0x290d55,'y':_0x31896b};}const _0x5871f8=document[_0x12972e(0x155)]('.radar'),_0x191629=_0x5871f8['appendChild'](document[_0x12972e(0x183)](_0x12972e(0x151),'g'));_0x191629[_0x12972e(0x15b)](_0x12972e(0x197),_0x12972e(0x15a)),_0x191629[_0x12972e(0x161)]='';const _0x3d3adf=[],_0x2cd830=_0x3aa3e0[_0x12972e(0x173)](',');for(let _0x305356=0x4;_0x305356<0xb;_0x305356++){_0x3d3adf[_0x12972e(0x149)]({'axis':_0x305356-0x3,'value':parseFloat(_0x2cd830[_0x305356])});}const _0x46765a=_0x3d3adf[_0x12972e(0x13b)](({axis:_0xac2aaa,value:_0xa3708d})=>{const {x:_0xe869fa,y:_0x343b51}=_0x3390fb(_0xac2aaa,_0xa3708d);return _0xe869fa+','+_0x343b51;})[_0x12972e(0x153)]('\x20'),_0x2c9db1=document[_0x12972e(0x183)](_0x12972e(0x151),'polyline');_0x2c9db1[_0x12972e(0x15b)](_0x12972e(0x14e),_0x12972e(0x14b)+_0x4646e9),_0x2c9db1[_0x12972e(0x15b)](_0x12972e(0x142),_0x46765a+'\x20'+_0x46765a['split']('\x20')[0x0]),_0x2c9db1[_0x12972e(0x15b)]('stroke-width','3'),_0x2c9db1[_0x12972e(0x15b)]('fill','none'),_0x191629[_0x12972e(0x15d)](_0x2c9db1);const _0x580820=document[_0x12972e(0x183)](_0x12972e(0x151),'polygon');_0x580820[_0x12972e(0x15b)](_0x12972e(0x14e),_0x12972e(0x152)+_0x4646e9),_0x580820[_0x12972e(0x15b)](_0x12972e(0x142),_0x46765a),_0x580820[_0x12972e(0x1ba)]['fillOpacity']=_0x12972e(0x144),_0x191629[_0x12972e(0x15d)](_0x580820),_0x3d3adf[_0x12972e(0x19e)](({axis:_0x5e1f7c,value:_0x553cdd})=>{const _0x30c424=_0x12972e,{x:_0x5a1efa,y:_0x42d2bd}=_0x3390fb(_0x5e1f7c,_0x553cdd),_0xf85103=document[_0x30c424(0x183)](_0x30c424(0x151),'circle');_0xf85103[_0x30c424(0x15b)](_0x30c424(0x14e),'radarCircle\x20'+_0x4646e9),_0xf85103[_0x30c424(0x1ba)][_0x30c424(0x1bf)]=_0x30c424(0x145),_0xf85103['setAttribute']('r','6'),_0xf85103[_0x30c424(0x15b)]('cx',_0x5a1efa),_0xf85103['setAttribute']('cy',_0x42d2bd),_0x191629[_0x30c424(0x15d)](_0xf85103);});}function _0x57a4b9(){const _0x11fa2c=_0x4d3424,_0x2bdc2f=document[_0x11fa2c(0x13a)](_0x11fa2c(0x1c5)),_0x4f766e=document[_0x11fa2c(0x13a)](_0x11fa2c(0x12a)),_0x3d7620=document[_0x11fa2c(0x13a)]('resultsTable'),_0x506ead=new Set(),_0x5520de=document['createElement']('ul');_0x5520de[_0x11fa2c(0x1ba)]['fontFamily']=_0x11fa2c(0x131),_0x5520de[_0x11fa2c(0x1ba)]['listStyleType']=_0x11fa2c(0x17e),_0x5520de[_0x11fa2c(0x1ba)][_0x11fa2c(0x12e)]=_0x11fa2c(0x1be),_0x3d7620[_0x11fa2c(0x15d)](_0x5520de);let _0x381852=0x0;_0x4f766e[_0x11fa2c(0x156)](_0x11fa2c(0x199),function(){const _0xb038ec=_0x11fa2c,_0x5ce5c3=_0x2bdc2f[_0xb038ec(0x165)],_0x113dce=_0x1d7d06(_0x5ce5c3);if(_0x113dce){const _0x5ea198=parseInt(_0x113dce[0x0]),_0x5329d7=_0x113dce[0x1]+'\x20('+_0x113dce[0x2]+',\x20'+_0x113dce[0x3]+_0xb038ec(0x1ab)+_0x113dce[0xb]+_0xb038ec(0x1b1),_0x22708e=_0x374029[_0x381852%_0x374029[_0xb038ec(0x16b)]];if(!_0x506ead['has'](_0x5329d7)){const _0x5ad8e0=document[_0xb038ec(0x15e)]('li');_0x5ad8e0[_0xb038ec(0x191)]=_0x5329d7,_0x5ad8e0['classList'][_0xb038ec(0x140)](_0x22708e),_0x3142b4(_0x5329d7,_0x5ea198-0x1,_0x22708e),_0x381852++;}}});}_0x57a4b9();const _0xd6967f=document[_0x4d3424(0x15e)](_0x4d3424(0x123));_0xd6967f['id']=_0x4d3424(0x12b),_0xd6967f['style'][_0x4d3424(0x18e)]=_0x4d3424(0x143),_0xd6967f[_0x4d3424(0x1ba)][_0x4d3424(0x188)]=_0x4d3424(0x18a),_0xd6967f[_0x4d3424(0x1ba)]['left']=_0x4d3424(0x13f),document[_0x4d3424(0x12f)][_0x4d3424(0x15d)](_0xd6967f);let _0x2d597b=0x0;searchButton1[_0x4d3424(0x156)](_0x4d3424(0x199),function(){const _0x45b8f7=_0x4d3424,_0x3da9e3=_0xed30[_0x45b8f7(0x165)],_0x418dcf=_0x1d7d06(_0x3da9e3);if(_0x418dcf['length']>0x0){const _0x41ee97=_0x418dcf[0x0],_0x3368bf=parseInt(_0x41ee97[0x0])-0x1,_0x525870=[];for(let _0xb79fea=0x0;_0xb79fea<_0x2bff8d[_0x45b8f7(0x16b)];_0xb79fea++){if(_0xb79fea!==_0x3368bf){const _0x4e8a83=_0x4b31d8(_0x41ee97,_0x2bff8d[_0xb79fea]);_0x525870['push']({'index':_0xb79fea,'difference':_0x4e8a83});}}_0x525870[_0x45b8f7(0x168)]((_0x4ab2c1,_0x1b3c64)=>_0x4ab2c1[_0x45b8f7(0x13c)]-_0x1b3c64['difference']);const _0x398e11=_0x525870[_0x45b8f7(0x163)](0x0,0x3);for(let _0x29b1fc=0x0;_0x29b1fc<0x1;_0x29b1fc++){const _0x35817d=_0x398e11[_0x29b1fc]['index'],_0x46e568=_0x2bff8d[_0x35817d][0x1],_0x1de3f9=_0x2bff8d[_0x35817d][0x3],_0x5e5ca0=_0x2bff8d[_0x35817d][0x2],_0x2d55b6=document[_0x45b8f7(0x15e)](_0x45b8f7(0x19d));_0x2d55b6[_0x45b8f7(0x194)]['add'](_0x45b8f7(0x184));const _0x508234=document['createElement']('tr'),_0x47c6c4=document[_0x45b8f7(0x15e)]('th');_0x47c6c4[_0x45b8f7(0x15b)](_0x45b8f7(0x12d),'5'),_0x47c6c4[_0x45b8f7(0x191)]=_0x45b8f7(0x12c)+_0x418dcf[0x0][0x1],_0x47c6c4[_0x45b8f7(0x194)][_0x45b8f7(0x140)](_0x374029[_0x2d597b%_0x374029['length']]),_0x508234[_0x45b8f7(0x15d)](_0x47c6c4),_0x2d55b6[_0x45b8f7(0x15d)](_0x508234);const _0x3ac243=document[_0x45b8f7(0x15e)]('tr');for(let _0x13e4de=0x0;_0x13e4de<_0x398e11['length'];_0x13e4de++){const _0x1494f9=_0x398e11[_0x13e4de][_0x45b8f7(0x132)],_0x32dfdc=_0x2bff8d[_0x1494f9][0x1],_0x38b1a8=_0x2bff8d[_0x1494f9][0x3],_0x2669c2=_0x2bff8d[_0x1494f9][0x2],_0x40962c=document[_0x45b8f7(0x15e)]('td');_0x40962c[_0x45b8f7(0x161)]=_0x45b8f7(0x1c8)+_0x32dfdc+'</u><br/>',_0x40962c[_0x45b8f7(0x1ba)][_0x45b8f7(0x150)]='10.8px',_0x40962c[_0x45b8f7(0x1ba)][_0x45b8f7(0x189)]=_0x45b8f7(0x1a3),_0x40962c[_0x45b8f7(0x156)](_0x45b8f7(0x199),function(){const _0x4ce58d=_0x45b8f7;_0xed30[_0x4ce58d(0x165)]=_0x32dfdc,searchButton1[_0x4ce58d(0x199)]();}),_0x3ac243['appendChild'](_0x40962c);}_0xd6967f[_0x45b8f7(0x1b8)][_0x45b8f7(0x16b)]>0x0&&_0xd6967f[_0x45b8f7(0x135)](_0xd6967f[_0x45b8f7(0x17c)]),_0x2d55b6[_0x45b8f7(0x15d)](_0x3ac243),_0xd6967f[_0x45b8f7(0x15d)](_0x2d55b6),_0x2d597b++;}}_0xed30[_0x45b8f7(0x165)]='',_0x37ec86();});});})[_0x53384b(0x1b9)](_0x5064de=>{console['error']('Error\x20fetching\x20or\x20processing\x20data:',_0x5064de);});
+  </script>
 
-        const inputLines = xhr2.responseText;
-    const outputLines = [];
-
-// Split input into lines
-const lines = inputLines.trim().split('\n');
-
-// Process each line
-for (const line of lines) {
-  // Split the line by comma
-  const parts = line.split(',');
-
-  // Extract the desired fields
-  const name = parts[1];
-  const age = parts[3];
-  const club = parts[2];
-
-  // Create the formatted string
-  const outputLine = `${name},${age},${club}`;
-
-  // Add the formatted string to the output array
-  outputLines.push(outputLine);
-}
-
-    const names = outputLines;
-	const searchInput = document.getElementById("searchInput1");
-   const matchingNamesContainer = document.getElementById("matchingNames");
-  const searchButton = document.getElementById("searchButton");
-
-function updateMatchingNames() {
-  const searchQuery = removeSpecialChars(searchInput.value.toLowerCase());
-  const matchingNames = names.filter(function(name) {
-  const [fullName] = name.split(",");
-    const normalizedName = removeSpecialChars(fullName.toLowerCase());
-	  return normalizedName.includes(searchQuery);
-  });
-
-  matchingNamesContainer.innerHTML = "";
-
-  matchingNames.forEach(function(name) {
-    const [fullName, team, age] = name.split(",");
-
-    const nameElement = document.createElement("div");
-    nameElement.classList.add("name");
-
-    const fullNameElement = document.createElement("span");
-    fullNameElement.textContent = fullName;
-    fullNameElement.classList.add("fullName");
-    nameElement.appendChild(fullNameElement);
-
-    const ageElement = document.createElement("span");
-    ageElement.textContent = " (" + team + ",";
-    ageElement.classList.add("age");
-    nameElement.appendChild(ageElement);
-
-    const teamElement = document.createElement("span");
-    teamElement.textContent = " " + age + ")";
-    teamElement.classList.add("team");
-    nameElement.appendChild(teamElement);
-
-    nameElement.addEventListener("click", function(event) {
-      const clickedElement = event.target.closest(".name");
-      if (clickedElement) {
-        const fullName = clickedElement.querySelector(".fullName").textContent;
-        const age = clickedElement.querySelector(".age").textContent.trim();
-        const team = clickedElement.querySelector(".team").textContent.trim().replace(/[^a-zA-Z\s]/g, ''); // Remove non-alphanumeric characters
-        const searchQuery = fullName + "," + age.substring(1, age.length - 1) + "," + team;
-    
-        searchInput.value = searchQuery; // Set the full query as the search input value
-        const enterKeyEvent = new KeyboardEvent("keyup", { key: "Enter" });
-        searchInput.dispatchEvent(enterKeyEvent); // Dispatch enter key event
-      }
-    });
-
-    matchingNamesContainer.appendChild(nameElement);
-  });
-
-  if (searchQuery === "" && matchingNames.length === 0) {
-    matchingNamesContainer.style.display = "none";
-  } else {
-    matchingNamesContainer.style.display = "block";
-
-    // Style the matching names container
-    matchingNamesContainer.style.backgroundColor = "#9c9b9b";
-    matchingNamesContainer.style.width = "384px";
-    matchingNamesContainer.style.padding = "10px";
-    matchingNamesContainer.style.position = "absolute";
-    matchingNamesContainer.style.top = "10.75%";
-    matchingNamesContainer.style.left = "12px";
-matchingNamesContainer.style.zIndex = "9999"; // Set a high z-index value
-  }
-
-  if (searchQuery === "") {
-    matchingNamesContainer.style.display = "none";
-  }
-}
-
-searchInput.addEventListener("input", updateMatchingNames);
-searchInput.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    searchButton1.click(); // Trigger the search button click event
-  } else if (event.key === "Backspace") {
-    updateMatchingNames();
-  }
-});
-</script>
-
-<button onclick="takeScreenshot()" class="button-10"><div class="icon2"></div></button>
 
   <script>
-
-
-
-function takeScreenshot() {
-
-
- const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-  let x, y, cropPercentageX, cropPercentageY, cropPercentageRight, captureWidth, captureHeight;
-
-  if (isMobile) {
-    // Values for mobile devices
-    x = 0;
-    y = 0;
-    cropPercentageX = -0.0147;
-    cropPercentageY = 0.15;
-    cropPercentageRight = 0.53;
-    captureWidth = 930;
-    captureHeight = 573;
-  } else {
-    // Values for desktop
-    x = 0;
-    y = 0;
-    cropPercentageX = -0.0087;
-    cropPercentageY = 0.14;
-    cropPercentageRight = 0.45;
-    captureWidth = 1200;
-    captureHeight = 573;
-  }
-
-
-
-domtoimage.toBlob(document.getElementById('parent-container'), {
-  width: captureWidth,
-  height: captureHeight,
-  style: {
-    transform: 'none' // Remove any applied transformations
-  }
-}).then(blob => {
-    // Create an image element to load the screenshot blob
-    const img = new Image();
-    img.onload = () => {
-      // Calculate the crop dimensions based on the percentages and image size
-      const cropX = img.width * cropPercentageX;
-      const cropY = img.height * cropPercentageY;
-      const cropWidth = img.width - cropX - (img.width * cropPercentageRight);
-      const cropHeight = img.height - cropY;
-
-      // Create a new canvas element with the cropped dimensions
-      const canvas = document.createElement('canvas');
-      canvas.width = cropWidth;
-      canvas.height = cropHeight;
-
-      // Get the 2D drawing context of the canvas
-      const ctx = canvas.getContext('2d');
-
-const storedDarkMode = localStorage.getItem("darkMode");
-
-// Check if dark mode is enabled based on stored preference or system preference
-const darkModeEnabled = storedDarkMode === "true" || window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Fill the canvas with the appropriate color
-if (darkModeEnabled) {
-  ctx.fillStyle = '#000000'; // Black color
-} else {
-  ctx.fillStyle = '#ffffff'; // White color
-}
-ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-
-      ctx.drawImage(img, cropX, cropY, cropWidth, cropHeight, 0, 0, cropWidth, cropHeight);
-
-ctx.font = '12px Arial'; // Adjust the font size for the other text
-ctx.fillStyle = 'grey'; // Adjust the color for the other text
-ctx.fillText('datamb.football', 345, 476);
-
-
-      // Convert the canvas to a PNG image
-      canvas.toBlob(croppedBlob => {
-        // Create a temporary link element
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(croppedBlob);
-        link.download = 'screenshot.png'; // Specify the filename for the downloaded image
-
-        // Simulate a click on the link to trigger the download
-        link.click();
-      }, 'image/png');
-    };
-    img.src = URL.createObjectURL(blob);
-  });
-}
-
-	  
-	          const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://datamb.football/data/freeradar/cb.csv', false); // false for synchronous request
-        xhr.send(null);
-        
-    
-            const csvData = xhr.responseText;
-            let dataArray = csvData.trim().split('\n').map(line => line.split(','));
-            
-
-
-
-function calculateEuclideanDifference(data1, data2) {
-  let difference = 0;
-  for (let i = 4; i <= 10; i++) {
-    const metric1 = parseFloat(data1[i]);
-    const metric2 = parseFloat(data2[i]);
-    difference += Math.pow(metric1 - metric2, 2);
-  }
-  return Math.sqrt(difference);
-}
-
-
-
-
-
-const colorClasses = ['result-color-blue', 'result-color-pink', 'result-color-orange', 'result-color-green', 'result-color-bleu', 'result-color-rose', 'result-color-1', 'result-color-2', 'result-color-3', 'result-color-4', 'result-color-5', 'result-color-6', 'result-color-7', 'result-color-8', 'result-color-9', 'result-color-10', 'result-color-11', 'result-color-12', 'result-color-13', 'result-color-14', 'result-color-15', 'result-color-16', 'result-color-17', 'result-color-18', 'result-color-19', 'result-color-20', 'result-color-21', 'result-color-22', 'result-color-23', 'result-color-24', 'result-color-25', 'result-color-26', 'result-color-27', 'result-color-28', 'result-color-29', 'result-color-30', 'result-color-31', 'result-color-32', 'result-color-33', 'result-color-34', 'result-color-35', 'result-color-36', 'result-color-37', 'result-color-38', 'result-color-39', 'result-color-40', 'result-color-41', 'result-color-42', 'result-color-43', 'result-color-44', 'result-color-45', 'result-color-46', 'result-color-47', 'result-color-48'];
-
-let searchResults = []; // Declare the search results variable
-
-
-    function removeSpecialChars(str) {
-  return str.normalize("NFD").replace(/[\u0300-\u036f\s]/g, "");
-    }
-
-    function search(query) {
-      const queryParts = query.split(',').map(part => part.trim()); // Split the query by commas and trim whitespace
-      const name = queryParts[0]; // Extract the name part
-      let age, team;
-      
-      // Extract age and team if they exist
-      if (queryParts.length > 1) {
-        age = queryParts[1].trim(); // Trim any leading or trailing spaces
-        if (queryParts.length > 2) {
-          team = queryParts[2].trim(); // Trim any leading or trailing spaces
-        }
-      }
-    
-      console.log("Query Parts:", queryParts);
-    
-      const results = dataArray.filter(data => {
-        const normalizedName = removeSpecialChars(data[1].toLowerCase());
-        const normalizedTeam = removeSpecialChars(data[2].toLowerCase());
-        const normalizedAge = data[3].trim().toLowerCase(); // Trim any leading or trailing spaces
-    
-        console.log("Normalized Data:", normalizedName, normalizedAge, normalizedTeam);
-        console.log("Query Data:", name, age, team);
-    
-        // Check if the name matches
-        const nameMatches = normalizedName.includes(removeSpecialChars(name.toLowerCase()));
-    
-        // Check if the age matches (or if age is not provided)
-        const ageMatches = !age || normalizedAge === removeSpecialChars(age.toLowerCase());
-    
-        // Check if the team matches (or if team is not provided)
-        const teamMatches = !team || normalizedTeam === removeSpecialChars(team.toLowerCase());
-    
-        // Return true if name matches and either age or team matches
-        return nameMatches && (ageMatches || teamMatches);
-      });
-    
-      return results;
-    }
-    
-
-
-function createTable(teamName, teamIndex, color) {
-  const resultsTable = document.getElementById('resultsTable');
-
-  const headerNames = [
-  ];
-
-  // Check if table headers exist
-  const headersExist = resultsTable.querySelector('th') !== null;
-
-  const table = headersExist ? resultsTable.querySelector('table') : document.createElement('table');
-  table.classList.add('metrics-table');
-
-  if (!headersExist) {
-    // Create the table header
-    const headerRow = document.createElement('tr');
-  for (let i = 1; i < headerNames.length; i++) {
-  const th = document.createElement('th');
-  th.textContent = headerNames[i];
-  headerRow.appendChild(th);
-}
-// Add a separate table header for the "x" column
-const xHeader = document.createElement('th');
-xHeader.textContent = '';
-headerRow.appendChild(xHeader);
-    table.appendChild(headerRow);
-  }
-
-
-
-
-const teamData = dataArray[teamIndex];
-const dataRow = document.createElement('tr');
-for (let i = 1; i <= 11; i++) {
-  if (i === 1 || i === 2 || i === 3 || i === 11) {
-    const td = document.createElement('td');
-    if (i === 11) {
-      td.textContent = teamData[i] + ' min';
-    } else {
-      td.textContent = teamData[i] + ',';
-    }
-    td.classList.add(color);
-    dataRow.appendChild(td);
-  }
-}
-
-// Add a separate table cell for the "x" column
-const xCell = document.createElement('td');
-const xButton = document.createElement('button');
-xButton.textContent = 'x';
-xButton.classList.add('x-button');
-xCell.classList.add('x-cell');
-xButton.addEventListener('click', function () {
-  dataRow.remove(); // Remove the corresponding row from the table
-  const radarPolygons = document.querySelectorAll(`.radarPolygon.${color}`);
-  const radarLines = document.querySelectorAll(`.radarLines.${color}`);
-  const radarCircles = document.querySelectorAll(`.radarCircle.${color}`);
-
-  radarPolygons.forEach((polygon) => polygon.remove()); // Remove radar polygons with the specified color
-  radarLines.forEach((line) => line.remove()); // Remove radar lines with the specified color
-  radarCircles.forEach((circle) => circle.remove()); // Remove radar circles with the specified color
-});
-
-xCell.appendChild(xButton);
-dataRow.appendChild(xCell);
-
-table.appendChild(dataRow);
-
-  if (!headersExist) {
-    resultsTable.appendChild(table);
-  }
-
-      const combResults = dataArray[teamIndex].join(', ');
-      console.log(combResults);
-
-
-
-      const outerRadius = 150;
-      const center = [0, 0];
-      const angles = [0, 2 * Math.PI / 7, 4 * Math.PI / 7, 6 * Math.PI / 7, 8 * Math.PI / 7, 10 * Math.PI / 7, 12 * Math.PI / 7];
-
-      function axisValueToCartesian(axis, value) {
-        let angle = angles[axis - 1];
-        angle += (2 * Math.PI / 7) * 0.2;
-        const x = 150 * value * Math.cos(angle);
-        const y = 150 * value * Math.sin(angle);
-        return { x, y };
-      }
-
-      const svg = document.querySelector('.radar');
-      const radarWrapper = svg.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'g'));
-      radarWrapper.setAttribute('transform', 'translate(231.77,225.77)');
-      radarWrapper.innerHTML = '';
-
-      const data = [];
-      const rowCols = combResults.split(',');
-      for (let i = 4; i < 11; i++) {
-        data.push({ axis: i - 3, value: parseFloat(rowCols[i]) });
-      }
-
-      const points = data.map(({ axis, value }) => {
-        const { x, y } = axisValueToCartesian(axis, value);
-        return `${x},${y}`;
-      }).join(' ');
-
-   const polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
-  polyline.setAttribute('class', `radarLines ${color}`); // Add the color class to the polyline
-  polyline.setAttribute('points', `${points} ${points.split(' ')[0]}`);
-  polyline.setAttribute('stroke-width', '3');
-  polyline.setAttribute('fill', 'none');
-  radarWrapper.appendChild(polyline);
-
-  const polygon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-  polygon.setAttribute('class', `radarPolygon ${color}`); // Add the color class to the polygon
-  polygon.setAttribute('points', points);
-  polygon.style.fillOpacity = '0.2';
-  radarWrapper.appendChild(polygon);
-
-  data.forEach(({ axis, value }) => {
-    const { x, y } = axisValueToCartesian(axis, value);
-    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-    circle.setAttribute('class', `radarCircle ${color}`); // Add the color class to the circle
-circle.style.fillOpacity = '0.86'; // Set the opacity to 1 (fully opaque)
-    circle.setAttribute('r', '6');
-    circle.setAttribute('cx', x);
-    circle.setAttribute('cy', y);
-    radarWrapper.appendChild(circle);
-  });
-    }
-
-
-function createTableForTeam1() {
-  const searchInput = document.getElementById('searchInput1');
-  const searchButton = document.getElementById('searchButton1');
-  const resultsTable = document.getElementById('resultsTable');
-
-
-  const teamNames = new Set(); // Keep track of unique team names
-
-  const teamNamesList = document.createElement('ul');
-teamNamesList.style.fontFamily = 'Arial, sans-serif'; 
-teamNamesList.style.listStyleType = 'none'; // Remove the bullet points
-teamNamesList.style.paddingLeft = '9px'; // Adjust the padding to move it further left
- resultsTable.appendChild(teamNamesList);
-
-
-  let searchCounter = 0; // Initialize search counter
-
-  searchButton.addEventListener('click', function () {
-    const searchQuery = searchInput.value;
-    const results = search(searchQuery);
-
-    if (results) {
-      const teamId = parseInt(results[0]); // Parse the team ID from the results
-
-      const teamName = results[1] + ' (' + results[2] + ', ' + results[3] + ') - ' + results[11] + ' min';
-      const color = colorClasses[searchCounter % colorClasses.length]; // Get the color class based on the search counter
-
-      if (!teamNames.has(teamName)) {
-
-        const teamNameItem = document.createElement('li');
-        teamNameItem.textContent = teamName;
-        teamNameItem.classList.add(color); // Apply the color class to the team name
-
-        
-createTable(teamName, teamId - 1, color); // Pass the team ID and color to createTable
-searchCounter++;
-
-      }
-    } 
-
-  });
- 
-
-}
-
-
-
-createTableForTeam1();
-
-
-
-const similarPlayersContainer = document.createElement("div");
-similarPlayersContainer.id = "similarPlayersContainer";
-similarPlayersContainer.style.position = "absolute";
-similarPlayersContainer.style.top = "600px";
-similarPlayersContainer.style.left = "80px";
-document.body.appendChild(similarPlayersContainer);
-
-let colorIndex = 0; // Initialize color index
-
-
-searchButton1.addEventListener("click", function() {
- const searchQuery = searchInput.value;
-const searchedPlayer = search(searchQuery);
-
-if (searchedPlayer.length > 0) {
-  const searchedPlayerData = searchedPlayer[0];
-  const searchedPlayerIndex = parseInt(searchedPlayerData[0]) - 1;
-
-  // Calculate Euclidean difference with all matching players and find the most similar players
-  const similarPlayers = [];
-  for (let i = 0; i < dataArray.length; i++) {
-    if (i !== searchedPlayerIndex) {
-      const difference = calculateEuclideanDifference(searchedPlayerData, dataArray[i]);
-      similarPlayers.push({ index: i, difference: difference });
-    }
-  }
-
-  similarPlayers.sort((a, b) => a.difference - b.difference);
-
-  // Get the three most similar players
-  const mostSimilarPlayers = similarPlayers.slice(0, 3);
-
-  for (let i = 0; i < 1; i++) {
-    const playerIndex = mostSimilarPlayers[i].index;
-    const playerName = dataArray[playerIndex][1];
-    const playerAge = dataArray[playerIndex][3];
-    const playerTeam = dataArray[playerIndex][2];
-
-const similarPlayerTable = document.createElement("table");
-similarPlayerTable.classList.add("metrics-table");
-
-const headerRow = document.createElement("tr");
-const headerCell = document.createElement("th");
-headerCell.setAttribute("colspan", "5");
-headerCell.textContent = `Similar data to ${searchedPlayer[0][1]}`;
-  headerCell.classList.add(colorClasses[colorIndex % colorClasses.length]);
-headerRow.appendChild(headerCell);
-similarPlayerTable.appendChild(headerRow);
-
-const similarPlayerRow = document.createElement("tr");
-
-for (let i = 0; i < mostSimilarPlayers.length; i++) {
-  const playerIndex = mostSimilarPlayers[i].index;
-  const playerName = dataArray[playerIndex][1];
-  const playerAge = dataArray[playerIndex][3];
-  const playerTeam = dataArray[playerIndex][2];
-
-  const playerCell = document.createElement("td");
-   playerCell.innerHTML = `<u>${playerName}</u><br/>`;
-    playerCell.style.fontSize = "10.8px"; // Set the desired font size
-    playerCell.style.cursor = "pointer"; // Set cursor to pointer
-
-
-  // Add click event listener to the player name cell
-  playerCell.addEventListener("click", function() {
-    searchInput.value = playerName; // Set search input value to the clicked player name
-    // Trigger the search button click event to perform the search
-    searchButton1.click();
-  });
-
-  similarPlayerRow.appendChild(playerCell);
-}
-
-if (similarPlayersContainer.children.length > 0) {
-  // Remove the previous table if it exists
-  similarPlayersContainer.removeChild(similarPlayersContainer.firstChild);
-}
-
-similarPlayerTable.appendChild(similarPlayerRow);
-similarPlayersContainer.appendChild(similarPlayerTable);
-
-colorIndex++; // Increment color index for the next search
-
-
-
-  }
-
-}
-
-
-  searchInput.value = '';
-  updateMatchingNames();
-
-});
-
-
-
-
-  </script>
+    function _0x34cb(_0x260957,_0x1e92c7){const _0x1ac907=_0x1ac9();return _0x34cb=function(_0x34cb21,_0x2d226b){_0x34cb21=_0x34cb21-0x18c;let _0x229d3a=_0x1ac907[_0x34cb21];return _0x229d3a;},_0x34cb(_0x260957,_0x1e92c7);}(function(_0x500b2c,_0x288fef){const _0x2aa5a8=_0x34cb,_0x1918d6=_0x500b2c();while(!![]){try{const _0x272929=parseInt(_0x2aa5a8(0x19b))/0x1*(-parseInt(_0x2aa5a8(0x1ac))/0x2)+-parseInt(_0x2aa5a8(0x1af))/0x3*(parseInt(_0x2aa5a8(0x1b3))/0x4)+parseInt(_0x2aa5a8(0x194))/0x5+-parseInt(_0x2aa5a8(0x18e))/0x6+parseInt(_0x2aa5a8(0x1a5))/0x7*(-parseInt(_0x2aa5a8(0x198))/0x8)+parseInt(_0x2aa5a8(0x1a0))/0x9+-parseInt(_0x2aa5a8(0x1a7))/0xa*(-parseInt(_0x2aa5a8(0x1a3))/0xb);if(_0x272929===_0x288fef)break;else _0x1918d6['push'](_0x1918d6['shift']());}catch(_0x12d0f0){_0x1918d6['push'](_0x1918d6['shift']());}}}(_0x1ac9,0x60e02));function takeScreenshot(){const _0x172687=_0x34cb,_0x2f4940=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i[_0x172687(0x1a1)](navigator['userAgent']);let _0x3e5ae9,_0x472551,_0x321edb,_0x545e6e,_0x47e7c3,_0x153781,_0x402a34;_0x2f4940?(_0x3e5ae9=0x0,_0x472551=0x0,_0x321edb=-0.0147,_0x545e6e=0.15,_0x47e7c3=0.53,_0x153781=0x3a2,_0x402a34=0x23d):(_0x3e5ae9=0x0,_0x472551=0x0,_0x321edb=-0.0087,_0x545e6e=0.14,_0x47e7c3=0.45,_0x153781=0x4b0,_0x402a34=0x23d),domtoimage[_0x172687(0x1a6)](document['getElementById'](_0x172687(0x1b5)),{'width':_0x153781,'height':_0x402a34,'style':{'transform':_0x172687(0x1b2)}})[_0x172687(0x18f)](_0x40761f=>{const _0x7d5b42=_0x172687,_0x10be75=new Image();_0x10be75[_0x7d5b42(0x1ae)]=()=>{const _0x40cf8e=_0x7d5b42,_0x2bbdd6=_0x10be75[_0x40cf8e(0x19f)]*_0x321edb,_0x576736=_0x10be75['height']*_0x545e6e,_0x59795e=_0x10be75[_0x40cf8e(0x19f)]-_0x2bbdd6-_0x10be75[_0x40cf8e(0x19f)]*_0x47e7c3,_0x4749cc=_0x10be75['height']-_0x576736,_0xc8e09c=document[_0x40cf8e(0x1aa)](_0x40cf8e(0x191));_0xc8e09c[_0x40cf8e(0x19f)]=_0x59795e,_0xc8e09c['height']=_0x4749cc;const _0x581f85=_0xc8e09c[_0x40cf8e(0x1b1)]('2d'),_0x5eee3c=localStorage[_0x40cf8e(0x1a8)](_0x40cf8e(0x1ab)),_0x16a95a=_0x5eee3c===_0x40cf8e(0x1ad)||window[_0x40cf8e(0x18d)](_0x40cf8e(0x19e))[_0x40cf8e(0x19c)];_0x16a95a?_0x581f85[_0x40cf8e(0x195)]=_0x40cf8e(0x19a):_0x581f85[_0x40cf8e(0x195)]=_0x40cf8e(0x199),_0x581f85[_0x40cf8e(0x193)](0x0,0x0,_0xc8e09c[_0x40cf8e(0x19f)],_0xc8e09c[_0x40cf8e(0x190)]),_0x581f85[_0x40cf8e(0x197)](_0x10be75,_0x2bbdd6,_0x576736,_0x59795e,_0x4749cc,0x0,0x0,_0x59795e,_0x4749cc),_0x581f85[_0x40cf8e(0x19d)]=_0x40cf8e(0x196),_0x581f85['fillStyle']=_0x40cf8e(0x1a2),_0x581f85['fillText'](_0x40cf8e(0x1a9),0x159,0x1dc),_0xc8e09c[_0x40cf8e(0x1a6)](_0x5b7691=>{const _0x361617=_0x40cf8e,_0x1027a6=document['createElement']('a');_0x1027a6['href']=URL[_0x361617(0x1b4)](_0x5b7691),_0x1027a6[_0x361617(0x18c)]='screenshot.png',_0x1027a6[_0x361617(0x1b0)]();},_0x40cf8e(0x192));},_0x10be75[_0x7d5b42(0x1a4)]=URL['createObjectURL'](_0x40761f);});}function _0x1ac9(){const _0xd5f5cd=['font','(prefers-color-scheme:\x20dark)','width','1707435JbbADD','test','grey','22576444BjVgqp','src','3227SioFXh','toBlob','10gxsuIe','getItem','datamb.football','createElement','darkMode','6914VIGiHY','true','onload','362469cHOsKN','click','getContext','none','4NoyeWw','createObjectURL','parent-container','download','matchMedia','2794830PqMvql','then','height','canvas','image/png','fillRect','78155mqYtGQ','fillStyle','12px\x20Arial','drawImage','8376WrkMbN','#ffffff','#000000','229vxtxmz','matches'];_0x1ac9=function(){return _0xd5f5cd;};return _0x1ac9();}
+    </script>
+      <button onclick="takeScreenshot()" class="button-10"><div class="icon2"></div></button>
 
  <script>
 
